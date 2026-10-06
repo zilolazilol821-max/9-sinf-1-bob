@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9-sinf fizika — 5 ta dars + 5 ta simulyatsiya</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%;font-family:Segoe UI,Arial,sans-serif;background:#eef2f7}
+.top{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#173b70,#2563eb);color:#fff;padding:12px;text-align:center;box-shadow:0 3px 12px #0003}
+.top h1{margin:0 0 10px;font-size:clamp(18px,3vw,26px)}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.tabs button{border:0;border-radius:10px;padding:10px 16px;background:#e6edf7;color:#173b70;font-weight:700;cursor:pointer}
+.tabs button.active{background:#50e3c2}
+.panel{display:none;width:100%;height:calc(100vh - 105px);min-height:700px;border:0;background:#fff}
+.panel.active{display:block}
+@media(max-width:700px){
+ .tabs button{font-size:12px;padding:8px 10px}
+ .panel{height:calc(100vh - 145px);min-height:650px}
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>📚 9-sinf fizika — Interaktiv darslar va simulyatsiyalar</h1>
+  <div class="tabs">
+    <button id="b0" class="active" onclick="showPanel(0)">📖 5 ta interaktiv dars</button>
+    <button id="b1" onclick="showPanel(1)">🔬 5 ta interaktiv simulyatsiya</button>
+  </div>
+</div>
+
+<iframe id="p0" class="panel active" title="5 ta interaktiv dars"
+  srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;uz&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;9-sinf fizika — Molekulyar fizika interaktiv darslar to‘plami&lt;/title&gt;
+&lt;style&gt;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  background:linear-gradient(135deg,#eef5ff,#f8fbff);
+  color:#172033;
+}
+header{
+  padding:28px 18px;
+  text-align:center;
+  color:white;
+  background:linear-gradient(135deg,#1e40af,#2563eb,#7c3aed);
+  box-shadow:0 6px 22px #0002;
+}
+header h1{margin:0 0 8px;font-size:clamp(24px,5vw,38px)}
+header p{margin:0;opacity:.95}
+nav{
+  position:sticky;top:0;z-index:20;
+  display:flex;gap:8px;flex-wrap:wrap;justify-content:center;
+  padding:12px;
+  background:#ffffffee;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #dbe4f0;
+}
+nav button{
+  border:0;border-radius:10px;padding:10px 14px;
+  background:#2563eb;color:white;font-weight:700;cursor:pointer;
+}
+nav button:hover{filter:brightness(1.08)}
+nav button.active{background:#7c3aed}
+main{max-width:1250px;margin:auto;padding:18px}
+.lesson{
+  background:white;border-radius:18px;padding:14px;margin:20px 0;
+  box-shadow:0 5px 22px #17203314;
+}
+.lesson&gt;h2{
+  margin:0 0 12px;padding:12px 14px;border-radius:12px;
+  color:#1d4ed8;background:#eff6ff;
+}
+iframe{
+  display:block;width:100%;height:900px;border:0;border-radius:12px;
+  background:white;
+}
+footer{text-align:center;padding:30px;color:#64748b}
+@media(max-width:700px){
+  main{padding:8px}
+  .lesson{padding:8px}
+  iframe{height:1100px}
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;h1&gt;📚 9-sinf fizika — Interaktiv darslar&lt;/h1&gt;
+  &lt;p&gt;Molekulyar fizika bo‘yicha 5 ta HTML5 material bitta faylda&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;button onclick=&quot;go(0)&quot; id=&quot;btn-0&quot;&gt;Molekulyar-kinetik nazariya&lt;/button&gt;&lt;button onclick=&quot;go(1)&quot; id=&quot;btn-1&quot;&gt;Molekulalarning massasi va o‘lchami&lt;/button&gt;&lt;button onclick=&quot;go(2)&quot; id=&quot;btn-2&quot;&gt;Temperatura va uni o‘lchash&lt;/button&gt;&lt;button onclick=&quot;go(3)&quot; id=&quot;btn-3&quot;&gt;Ideal gaz va uning qonunlari&lt;/button&gt;&lt;button onclick=&quot;go(4)&quot; id=&quot;btn-4&quot;&gt;Modda miqdori va Avogadro doimiysi&lt;/button&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+    &lt;section class=&quot;lesson&quot; id=&quot;lesson-0&quot;&gt;
+      &lt;h2&gt;1. Molekulyar-kinetik nazariya&lt;/h2&gt;
+      &lt;iframe title=&quot;1. Molekulyar-kinetik nazariya&quot; srcdoc=&quot;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;uz&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;9-sinf fizika — Molekulyar-kinetik nazariya&amp;lt;/title&amp;gt;
+&amp;lt;style&amp;gt;
+body{font-family:Arial,sans-serif;margin:0;background:#eef5ff;color:#17324d}
+header{background:#1769aa;color:white;padding:22px;text-align:center}
+main{max-width:950px;margin:auto;padding:18px}
+section{background:white;border-radius:14px;padding:18px;margin:15px 0;box-shadow:0 3px 12px #0001}
+h2{color:#1769aa}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:#f5f9ff;padding:14px;border-radius:10px}
+canvas{width:100%;height:280px;background:#10263a;border-radius:12px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+button,select,input{padding:9px;border-radius:8px;border:1px solid #aac}
+button{background:#1769aa;color:white;cursor:pointer}
+.question{margin:10px 0;padding:10px;background:#f5f9ff;border-radius:8px}
+.correct{color:green;font-weight:bold}.wrong{color:#c00;font-weight:bold}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;h1&amp;gt;1-§. Modda tuzilishining molekulyar-kinetik nazariyasi&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;9-sinf fizika • Interaktiv qisqa dars&amp;lt;/p&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;main&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;🎯 Dars maqsadi&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;Moddaning molekulyar tuzilishini tushunish&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;Molekulalarning doimiy va tartibsiz harakatini kuzatish&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;Molekulyar-kinetik nazariyaning 3 qoidasini bilish&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;1. Moddaning molekulyar tuzilishi&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Barcha moddalar juda kichik zarrachalardan — atom va molekulalardan tashkil topgan. &amp;lt;b&amp;gt;Molekula&amp;lt;/b&amp;gt; — moddaning uning asosiy xossalarini saqlab qoluvchi eng kichik zarrachalaridan biridir.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Qattiq jism:&amp;lt;/b&amp;gt; zarrachalar zich joylashgan, muvozanat holati atrofida tebranadi.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Suyuqlik:&amp;lt;/b&amp;gt; zarrachalar yaqin, lekin bir-biriga nisbatan siljiy oladi.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Gaz:&amp;lt;/b&amp;gt; zarrachalar uzoq va tartibsiz harakat qiladi.&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;2. Molekulalarning doimiy va tartibsiz harakati&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Molekulalar doimo tartibsiz harakatda bo‘ladi. Temperatura oshsa, ularning o‘rtacha kinetik energiyasi va harakat tezligi ortadi.&amp;lt;/p&amp;gt;
+&amp;lt;canvas id=&amp;quot;sim&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;button onclick=&amp;quot;running=!running&amp;quot;&amp;gt;▶/Ⅱ Play/Pause&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;reset()&amp;quot;&amp;gt;↻ Reset&amp;lt;/button&amp;gt;
+&amp;lt;label&amp;gt;Holat:
+&amp;lt;select id=&amp;quot;state&amp;quot; onchange=&amp;quot;reset()&amp;quot;&amp;gt;&amp;lt;option value=&amp;quot;solid&amp;quot;&amp;gt;Qattiq&amp;lt;/option&amp;gt;&amp;lt;option value=&amp;quot;liquid&amp;quot;&amp;gt;Suyuq&amp;lt;/option&amp;gt;&amp;lt;option value=&amp;quot;gas&amp;quot;&amp;gt;Gaz&amp;lt;/option&amp;gt;&amp;lt;/select&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;label&amp;gt;Temperatura &amp;lt;input id=&amp;quot;temp&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;1&amp;quot; max=&amp;quot;100&amp;quot; value=&amp;quot;50&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p id=&amp;quot;info&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;3. Molekulyar-kinetik nazariyaning 3 qoidasi&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;1.&amp;lt;/b&amp;gt; Barcha moddalar juda kichik zarrachalardan tashkil topgan.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;2.&amp;lt;/b&amp;gt; Zarrachalar doimo tartibsiz harakatda bo‘ladi.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;3.&amp;lt;/b&amp;gt; Zarrachalar o‘zaro ta’sirlashadi: tortishish va itarilish mavjud.&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;🔬 Tajribalar va hodisalar&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Diffuziya&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;Atir hidining xonaga tarqalishi yoki bo‘yoqning suvda yoyilishi zarrachalarning harakatini ko‘rsatadi.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Broun harakati&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;Suyuqlik yoki gazdagi juda mayda zarrachalarning tartibsiz harakati molekulalar bilan to‘qnashuvlar natijasidir.&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Gaz bosimi&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;Gaz molekulalarining idish devoriga urilishi natijasida bosim hosil bo‘ladi.&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;🧪 Oddiy amaliy tajriba&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Ikki stakanga sovuq va iliq suv quying. Har biriga bir tomchi oziq-ovqat bo‘yog‘i qo‘shing. Iliq suvda rang tezroq tarqalishini kuzating.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Xulosa:&amp;lt;/b&amp;gt; temperatura oshishi zarrachalarning tartibsiz harakatini tezlashtiradi.&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;❓ Mustahkamlash savollari&amp;lt;/h2&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Modda nimalardan tashkil topgan?&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Molekulalar qanday harakat qiladi?&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Temperatura oshganda molekulalar harakati qanday o‘zgaradi?&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Diffuziya nima?&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Gaz bosimi qanday hosil bo‘ladi?&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;📝 Test&amp;lt;/h2&amp;gt;
+&amp;lt;div id=&amp;quot;tests&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;button onclick=&amp;quot;check()&amp;quot;&amp;gt;Javoblarni tekshirish&amp;lt;/button&amp;gt;
+&amp;lt;p id=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section&amp;gt;&amp;lt;h2&amp;gt;📌 Bugun nimani o‘rgandik?&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Moddalar mayda zarrachalardan tashkil topgan. Zarrachalar doimo tartibsiz harakat qiladi va o‘zaro ta’sirlashadi. Diffuziya, Broun harakati va gaz bosimi molekulyar harakatning tajribaviy dalillaridir.&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+&amp;lt;/main&amp;gt;
+
+&amp;lt;script&amp;gt;
+const c=document.getElementById(&amp;#x27;sim&amp;#x27;),x=c.getContext(&amp;#x27;2d&amp;#x27;);
+let W=900,H=280, p=[],running=true;
+function reset(){
+ c.width=W;c.height=H;p=[];
+ let s=document.getElementById(&amp;#x27;state&amp;#x27;).value,n=s===&amp;#x27;solid&amp;#x27;?55:s===&amp;#x27;liquid&amp;#x27;?50:35;
+ for(let i=0;i&amp;lt;n;i++){
+  let a=Math.random()*Math.PI*2;
+  p.push({x:s===&amp;#x27;solid&amp;#x27;?80+(i%11)*55:Math.random()*W,y:s===&amp;#x27;solid&amp;#x27;?45+Math.floor(i/11)*40:Math.random()*H,
+  vx:Math.cos(a),vy:Math.sin(a)});
+ }
+ draw();
+}
+function draw(){
+ x.clearRect(0,0,W,H);
+ let s=document.getElementById(&amp;#x27;state&amp;#x27;).value,t=+document.getElementById(&amp;#x27;temp&amp;#x27;).value;
+ let speed=.25+t/35;
+ p.forEach((q,i)=&amp;gt;{
+  if(running){
+   if(s===&amp;#x27;solid&amp;#x27;){q.x+=q.vx*speed*.35;q.y+=q.vy*speed*.35;
+    if(q.x&amp;lt;50||q.x&amp;gt;W-50)q.vx*=-1;if(q.y&amp;lt;30||q.y&amp;gt;H-30)q.vy*=-1;}
+   else {q.x+=q.vx*speed;q.y+=q.vy*speed;
+    if(q.x&amp;lt;8||q.x&amp;gt;W-8)q.vx*=-1;if(q.y&amp;lt;8||q.y&amp;gt;H-8)q.vy*=-1;}
+  }
+  x.beginPath();x.arc(q.x,q.y,6,0,7);x.fillStyle=&amp;#x27;#66d9ff&amp;#x27;;x.fill();
+ });
+ document.getElementById(&amp;#x27;info&amp;#x27;).textContent=`Temperatura: ${t}%. Zarrachalar harakati: ${t&amp;gt;65?&amp;#x27;tez&amp;#x27;:&amp;#x27;o‘rtacha&amp;#x27;}.`;
+ requestAnimationFrame(draw);
+}
+const qs=[
+[&amp;#x27;Modda nimadan tashkil topgan?&amp;#x27;,[&amp;#x27;Molekulalardan&amp;#x27;,&amp;#x27;Faqat suvdan&amp;#x27;,&amp;#x27;Faqat havodan&amp;#x27;,&amp;#x27;Issiqlikdan&amp;#x27;],0],
+[&amp;#x27;Temperatura oshsa molekulalar harakati qanday bo‘ladi?&amp;#x27;,[&amp;#x27;Sekinlashadi&amp;#x27;,&amp;#x27;Tezlashadi&amp;#x27;,&amp;#x27;To‘xtaydi&amp;#x27;,&amp;#x27;O‘zgarmaydi&amp;#x27;],1],
+[&amp;#x27;Diffuziya nimani ko‘rsatadi?&amp;#x27;,[&amp;#x27;Zarrachalar harakatini&amp;#x27;,&amp;#x27;Jism massasini&amp;#x27;,&amp;#x27;Rangni&amp;#x27;,&amp;#x27;Og‘irlikni&amp;#x27;],0],
+[&amp;#x27;Gaz bosimi nimadan hosil bo‘ladi?&amp;#x27;,[&amp;#x27;Molekulalarning devorga urilishidan&amp;#x27;,&amp;#x27;Yorug‘likdan&amp;#x27;,&amp;#x27;Rangdan&amp;#x27;,&amp;#x27;Suvdan&amp;#x27;],0],
+[&amp;#x27;Molekulyar-kinetik nazariyada nechta asosiy qoida bor?&amp;#x27;,[&amp;#x27;1&amp;#x27;,&amp;#x27;2&amp;#x27;,&amp;#x27;3&amp;#x27;,&amp;#x27;5&amp;#x27;],2]
+];
+document.getElementById(&amp;#x27;tests&amp;#x27;).innerHTML=qs.map((q,i)=&amp;gt;`&amp;lt;div class=&amp;quot;question&amp;quot;&amp;gt;&amp;lt;b&amp;gt;${i+1}. ${q[0]}&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;`+
+q[1].map((a,j)=&amp;gt;`&amp;lt;label&amp;gt;&amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;q${i}&amp;quot; value=&amp;quot;${j}&amp;quot;&amp;gt; ${a}&amp;lt;/label&amp;gt;&amp;lt;br&amp;gt;`).join(&amp;#x27;&amp;#x27;)+&amp;#x27;&amp;lt;/div&amp;gt;&amp;#x27;).join(&amp;#x27;&amp;#x27;);
+function check(){
+ let n=0;qs.forEach((q,i)=&amp;gt;{let a=document.querySelector(`input[name=q${i}]:checked`);if(a&amp;amp;&amp;amp;+a.value===q[2])n++});
+ document.getElementById(&amp;#x27;result&amp;#x27;).innerHTML=`Natija: &amp;lt;b&amp;gt;${n}/5&amp;lt;/b&amp;gt;`;
+}
+reset();
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&quot;&gt;&lt;/iframe&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;lesson&quot; id=&quot;lesson-1&quot;&gt;
+      &lt;h2&gt;2. Molekulalarning massasi va o‘lchami&lt;/h2&gt;
+      &lt;iframe title=&quot;2. Molekulalarning massasi va o‘lchami&quot; srcdoc=&quot;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;uz&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;9-Sinf Fizika: 2-Mavzu (Mukammal Nashr)&amp;lt;/title&amp;gt;
+    &amp;lt;style&amp;gt;
+        :root {
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: &amp;#x27;Segoe UI&amp;#x27;, Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--secondary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        #zoom-container {
+            text-align: center;
+            background: #111827;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .zoom-view {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .scale-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .balance-beam {
+            width: 200px;
+            height: 10px;
+            background: #64748b;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            background: #f1f5f9;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .quiz-option:hover {
+            background: #e2e8f0;
+        }
+
+        .correct { background-color: #d1fae5 !important; border-color: #34d399 !important; }
+        .wrong { background-color: #fee2e2 !important; border-color: #f87171 !important; }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover { background: #1d4ed8; }
+
+        input[type=&amp;quot;number&amp;quot;], select {
+            padding: 8px;
+            border: 2px solid #cbd5e1;
+            border-radius: 6px;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+    &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+
+&amp;lt;header&amp;gt;
+    &amp;lt;h1&amp;gt;2-Mavzu: Molekulalarning massasi va o&amp;#x27;lchami&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;9-sinf Fizika fani bo&amp;#x27;yicha interaktiv mukammal raqamli darslik&amp;lt;/p&amp;gt;
+&amp;lt;/header&amp;gt;
+
+&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;1. Molekulalar va ularning o&amp;#x27;lchami&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;Molekulalar nihoyatda kichik zarrachalardir. Ularning o&amp;#x27;lchami o&amp;#x27;rtacha &amp;lt;b&amp;gt;10&amp;lt;sup&amp;gt;-10&amp;lt;/sup&amp;gt; metr&amp;lt;/b&amp;gt; (1 angstrem) atrofida bo&amp;#x27;ladi. Quyidagi slayderni o&amp;#x27;ngga surib, makrodunyodan mikrodunyoga sayohat qiling:&amp;lt;/p&amp;gt;
+        
+        &amp;lt;div id=&amp;quot;zoom-container&amp;quot;&amp;gt;
+            &amp;lt;input type=&amp;quot;range&amp;quot; id=&amp;quot;zoom-range&amp;quot; min=&amp;quot;1&amp;quot; max=&amp;quot;100&amp;quot; value=&amp;quot;1&amp;quot; style=&amp;quot;width: 80%;&amp;quot;&amp;gt;
+            &amp;lt;div id=&amp;quot;zoom-label&amp;quot;&amp;gt;Hozirgi ko&amp;#x27;rinish: Oddiy suv tomchisi (Makrodunyo)&amp;lt;/div&amp;gt;
+            &amp;lt;div class=&amp;quot;zoom-view&amp;quot;&amp;gt;
+                &amp;lt;div id=&amp;quot;visual-object&amp;quot; style=&amp;quot;width: 150px; height: 150px; background: #3b82f6; border-radius: 50%;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;2. Molekulalarning massasi (Laboratoriya)&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;Molekulalar o&amp;#x27;ta kichik bo&amp;#x27;lgani uchun ularning absolyut massasi ham juda kichik (masalan, suv molekulasi ≈ 3·10&amp;lt;sup&amp;gt;-26&amp;lt;/sup&amp;gt; kg). Virtual tarozida moddalarni tanlab tortib ko&amp;#x27;ring:&amp;lt;/p&amp;gt;
+        
+        &amp;lt;div style=&amp;quot;margin-bottom: 15px;&amp;quot;&amp;gt;
+            &amp;lt;label&amp;gt;Moddani tanlang: &amp;lt;/label&amp;gt;
+            &amp;lt;select id=&amp;quot;substance-select&amp;quot;&amp;gt;
+                &amp;lt;option value=&amp;quot;water&amp;quot;&amp;gt;Suv molekulasi (H₂O)&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;oxygen&amp;quot;&amp;gt;Kislorod molekulasi (O₂)&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;hydrogen&amp;quot;&amp;gt;Vodorod atomi (H)&amp;lt;/option&amp;gt;
+            &amp;lt;/select&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;div class=&amp;quot;scale-container&amp;quot;&amp;gt;
+            &amp;lt;div&amp;gt;⚖️ Virtual Tarozi&amp;lt;/div&amp;gt;
+            &amp;lt;div id=&amp;quot;scale-beam&amp;quot; class=&amp;quot;balance-beam&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;div id=&amp;quot;mass-result&amp;quot;&amp;gt;Absolyut massa: &amp;lt;b&amp;gt;2.99 × 10&amp;lt;sup&amp;gt;-26&amp;lt;/sup&amp;gt; kg&amp;lt;/b&amp;gt;&amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;3. Nisbiy molekulyar massa va amaliy topshiriq&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;Nisbiy molekulyar massa (M&amp;lt;sub&amp;gt;r&amp;lt;/sub&amp;gt;) — modda molekulasi massasining uglerod atomi massasi 1/12 qismiga nisbatidir. Quyidagi kalkulyatorda modda miqdoriga ko&amp;#x27;ra molekulalar sonini hisoblang:&amp;lt;/p&amp;gt;
+        
+        &amp;lt;div style=&amp;quot;background: #f8fafc; padding: 15px; border-radius: 6px;&amp;quot;&amp;gt;
+            &amp;lt;h4&amp;gt;Formulalarni amalda tekshirish:&amp;lt;/h4&amp;gt;
+            &amp;lt;input type=&amp;quot;number&amp;quot; id=&amp;quot;moles-input&amp;quot; placeholder=&amp;quot;Modda miqdori (mol)&amp;quot; value=&amp;quot;1&amp;quot; min=&amp;quot;0&amp;quot;&amp;gt; mol
+            &amp;lt;button class=&amp;quot;btn&amp;quot; onclick=&amp;quot;calculateParticles()&amp;quot;&amp;gt;Hisoblash&amp;lt;/button&amp;gt;
+            &amp;lt;p id=&amp;quot;calc-result&amp;quot; style=&amp;quot;margin-top: 15px; font-weight: bold; color: var(--success);&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;🧠 Bilimni tekshirish (Interaktiv Test)&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;Mavzuni qanchalik yaxshi o&amp;#x27;zlashtirganingizni tekshirib ko&amp;#x27;ring. To&amp;#x27;g&amp;#x27;ri javobni bosing:&amp;lt;/p&amp;gt;
+        
+        &amp;lt;div id=&amp;quot;quiz-block&amp;quot;&amp;gt;
+            &amp;lt;h4 id=&amp;quot;question-text&amp;quot;&amp;gt;Savol: Molekulalarning o&amp;#x27;rtacha o&amp;#x27;lchami qanchaga teng?&amp;lt;/h4&amp;gt;
+            &amp;lt;button class=&amp;quot;quiz-option&amp;quot; onclick=&amp;quot;checkAnswer(this, false)&amp;quot;&amp;gt;A) 10&amp;lt;sup&amp;gt;-5&amp;lt;/sup&amp;gt; metr&amp;lt;/button&amp;gt;
+            &amp;lt;button class=&amp;quot;quiz-option&amp;quot; onclick=&amp;quot;checkAnswer(this, true)&amp;quot;&amp;gt;B) 10&amp;lt;sup&amp;gt;-10&amp;lt;/sup&amp;gt; metr&amp;lt;/button&amp;gt;
+            &amp;lt;button class=&amp;quot;quiz-option&amp;quot; onclick=&amp;quot;checkAnswer(this, false)&amp;quot;&amp;gt;C) 10&amp;lt;sup&amp;gt;-20&amp;lt;/sup&amp;gt; metr&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;p id=&amp;quot;quiz-feedback&amp;quot; style=&amp;quot;font-weight: bold; margin-top: 10px;&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;card&amp;quot; style=&amp;quot;border-left-color: #eab308;&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;🏠 Uyga vazifa va Mustaqil ish&amp;lt;/h2&amp;gt;
+        &amp;lt;p&amp;gt;Quyidagi topshiriqni daftaringizga bajaring va yakuniy sonli javobni tekshirish uchun bosing:&amp;lt;/p&amp;gt;
+        &amp;lt;div style=&amp;quot;background: #fef08a; padding: 15px; border-radius: 8px; color: #854d0e;&amp;quot;&amp;gt;
+            &amp;lt;b&amp;gt;Masala:&amp;lt;/b&amp;gt; 36 gramm suvda (H₂O) qancha molekula bor? (Suvning molyar massasi M = 18 g/mol).
+        &amp;lt;/div&amp;gt;
+        &amp;lt;p style=&amp;quot;margin-top: 15px;&amp;quot;&amp;gt;
+            Siz topgan javob (N × 10&amp;lt;sup&amp;gt;23&amp;lt;/sup&amp;gt; dona): 
+            &amp;lt;input type=&amp;quot;number&amp;quot; id=&amp;quot;homework-input&amp;quot; placeholder=&amp;quot;Masalan: 12&amp;quot;&amp;gt; × 10&amp;lt;sup&amp;gt;23&amp;lt;/sup&amp;gt;
+            &amp;lt;button class=&amp;quot;btn&amp;quot; style=&amp;quot;background: #eab308; color: black;&amp;quot; onclick=&amp;quot;checkHomework()&amp;quot;&amp;gt;Tekshirish&amp;lt;/button&amp;gt;
+        &amp;lt;/p&amp;gt;
+        &amp;lt;p id=&amp;quot;homework-feedback&amp;quot; style=&amp;quot;font-weight: bold;&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    const slider = document.getElementById(&amp;#x27;zoom-range&amp;#x27;);
+    const label = document.getElementById(&amp;#x27;zoom-label&amp;#x27;);
+    const obj = document.getElementById(&amp;#x27;visual-object&amp;#x27;);
+
+    slider.addEventListener(&amp;#x27;input&amp;#x27;, (e) =&amp;gt; {
+        let val = e.target.value;
+        if(val &amp;lt; 40) {
+            label.innerText = &amp;quot;Hozirgi ko&amp;#x27;rinish: Oddiy suv tomchisi (Makrodunyo)&amp;quot;;
+            obj.style.borderRadius = &amp;quot;50%&amp;quot;;
+            obj.style.background = &amp;quot;#3b82f6&amp;quot;;
+            obj.style.transform = `scale(${1 - val/100})`;
+        } else if (val &amp;gt;= 40 &amp;amp;&amp;amp; val &amp;lt; 80) {
+            label.innerText = &amp;quot;Yaqinlashmoqda: Mikroskopik mikro-tomchi&amp;quot;;
+            obj.style.background = &amp;quot;#60a5fa&amp;quot;;
+            obj.style.borderRadius = &amp;quot;40%&amp;quot;;
+        } else {
+            label.innerText = &amp;quot;Mikrodunyo: Suv (H₂O) molekulasi shakllandi! (10⁻¹⁰ m)&amp;quot;;
+            obj.style.background = &amp;quot;#ef4444&amp;quot;;
+            obj.style.borderRadius = &amp;quot;50px&amp;quot;;
+            obj.style.boxShadow = &amp;quot;0 0 20px rgba(239,68,68,0.8)&amp;quot;;
+        }
+    });
+
+    const select = document.getElementById(&amp;#x27;substance-select&amp;#x27;);
+    const beam = document.getElementById(&amp;#x27;scale-beam&amp;#x27;);
+    const massRes = document.getElementById(&amp;#x27;mass-result&amp;#x27;);
+
+    select.addEventListener(&amp;#x27;change&amp;#x27;, (e) =&amp;gt; {
+        let val = e.target.value;
+        if(val === &amp;#x27;water&amp;#x27;) {
+            beam.style.transform = &amp;quot;rotate(3deg)&amp;quot;;
+            massRes.innerHTML = &amp;quot;Absolyut massa: &amp;lt;b&amp;gt;2.99 × 10&amp;lt;sup&amp;gt;-26&amp;lt;/sup&amp;gt; kg&amp;lt;/b&amp;gt; | Nisbiy massa: 18 a.m.b&amp;quot;;
+        } else if(val === &amp;#x27;oxygen&amp;#x27;) {
+            beam.style.transform = &amp;quot;rotate(7deg)&amp;quot;;
+            massRes.innerHTML = &amp;quot;Absolyut massa: &amp;lt;b&amp;gt;5.31 × 10&amp;lt;sup&amp;gt;-26&amp;lt;/sup&amp;gt; kg&amp;lt;/b&amp;gt; | Nisbiy massa: 32 a.m.b&amp;quot;;
+        } else {
+            beam.style.transform = &amp;quot;rotate(-5deg)&amp;quot;;
+            massRes.innerHTML = &amp;quot;Absolyut massa: &amp;lt;b&amp;gt;1.67 × 10&amp;lt;sup&amp;gt;-27&amp;lt;/sup&amp;gt; kg&amp;lt;/b&amp;gt; | Nisbiy massa: 1 a.m.b&amp;quot;;
+        }
+    });
+
+    function calculateParticles() {
+        let moles = document.getElementById(&amp;#x27;moles-input&amp;#x27;).value;
+        let Na = 6.02;
+        let result = moles * Na;
+        document.getElementById(&amp;#x27;calc-result&amp;#x27;).innerText = `Javob: Kiritilgan modda miqdorida jami ${result.toFixed(2)} × 10²³ dona molekula mavjud!`;
+    }
+
+    function checkAnswer(button, isCorrect) {
+        let options = document.querySelectorAll(&amp;#x27;.quiz-option&amp;#x27;);
+        options.forEach(opt =&amp;gt; opt.disabled = true);
+
+        if(isCorrect) {
+            button.classList.add(&amp;#x27;correct&amp;#x27;);
+            document.getElementById(&amp;#x27;quiz-feedback&amp;#x27;).innerText = &amp;quot;🎉 To&amp;#x27;g&amp;#x27;ri! Barakalla. Molekulalar aynan 10⁻¹⁰ metr tartibiga ega.&amp;quot;;
+            document.getElementById(&amp;#x27;quiz-feedback&amp;#x27;).style.color = &amp;quot;var(--success)&amp;quot;;
+        } else {
+            button.classList.add(&amp;#x27;wrong&amp;#x27;);
+            document.getElementById(&amp;#x27;quiz-feedback&amp;#x27;).innerText = &amp;quot;❌ Noto&amp;#x27;g&amp;#x27;ri. Mavzuni qayta o&amp;#x27;qib ko&amp;#x27;ring.&amp;quot;;
+            document.getElementById(&amp;#x27;quiz-feedback&amp;#x27;).style.color = &amp;quot;var(--danger)&amp;quot;;
+        }
+    }
+
+    function checkHomework() {
+        let userAns = document.getElementById(&amp;#x27;homework-input&amp;#x27;).value;
+        let feedback = document.getElementById(&amp;#x27;homework-feedback&amp;#x27;);
+        if(userAns == 12 || userAns == 12.04) {
+            feedback.innerText = &amp;quot;⭐ Ajoyib! Javobingiz mutloqo to&amp;#x27;g&amp;#x27;ri (12 × 10²³ dona).&amp;quot;;
+            feedback.style.color = &amp;quot;var(--success)&amp;quot;;
+        } else {
+            feedback.innerText = &amp;quot;⚠️ Noto&amp;#x27;g&amp;#x27;ri. Yordam: Dastlab n = m/M dan modda miqdorini toping, keyin uni Avogadro soniga ko&amp;#x27;paytiring.&amp;quot;;
+            feedback.style.color = &amp;quot;var(--danger)&amp;quot;;
+        }
+    }
+&amp;lt;/script&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&quot;&gt;&lt;/iframe&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;lesson&quot; id=&quot;lesson-2&quot;&gt;
+      &lt;h2&gt;3. Temperatura va uni o‘lchash&lt;/h2&gt;
+      &lt;iframe title=&quot;3. Temperatura va uni o‘lchash&quot; srcdoc=&quot;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;uz&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;9-sinf Fizika — Temperatura va uni o‘lchash&amp;lt;/title&amp;gt;
+&amp;lt;style&amp;gt;
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#eef5ff;color:#14213d}
+header{padding:22px 16px;text-align:center;background:linear-gradient(135deg,#244c9b,#5b8def);color:white}
+h1{margin:0 0 8px;font-size:30px}.sub{margin:0;font-size:16px}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:12px;background:white;position:sticky;top:0;z-index:5}
+nav button,.btn{border:0;border-radius:10px;padding:10px 14px;background:#244c9b;color:white;cursor:pointer;font-weight:600}
+nav button:hover,.btn:hover{filter:brightness(1.1)}
+main{max-width:1100px;margin:auto;padding:18px}.card{background:white;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 5px 18px #00000012}
+h2{color:#244c9b;margin-top:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+canvas{width:100%;height:260px;border-radius:14px;background:#0e1830;display:block}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}
+input[type=range]{width:min(500px,100%)}.value{font-size:22px;font-weight:bold}
+.thermo{height:270px;display:flex;justify-content:center;align-items:center;background:#f4f7fc;border-radius:15px;position:relative}
+.tube{width:24px;height:190px;border:4px solid #27364d;border-radius:15px 15px 12px 12px;position:relative;background:#fff;overflow:hidden}
+.mercury{position:absolute;bottom:0;left:0;width:100%;background:#e84c4c;height:50%}
+.bulb{position:absolute;width:48px;height:48px;border-radius:50%;background:#e84c4c;border:4px solid #27364d;bottom:25px}
+.scale{position:absolute;left:calc(50% + 35px);height:190px;display:flex;flex-direction:column;justify-content:space-between;font-size:12px}
+.formula{font-size:20px;background:#f0f5ff;padding:14px;border-radius:12px;text-align:center}
+.quiz{border:1px solid #d9e3f5;border-radius:12px;padding:14px;margin:10px 0}.quiz button{margin:5px;padding:9px 12px;border-radius:8px;border:1px solid #b9c8e5;background:white;cursor:pointer}
+.feedback{font-weight:bold;margin-top:6px}.ok{color:#16803c}.bad{color:#b42318}
+.hidden{display:none}.note{background:#fff8db;padding:12px;border-left:5px solid #e3b341;border-radius:8px}
+footer{text-align:center;padding:25px;color:#516079}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;header&amp;gt;
+&amp;lt;h1&amp;gt;🌡️ Temperatura va uni o‘lchash&amp;lt;/h1&amp;gt;
+&amp;lt;p class=&amp;quot;sub&amp;quot;&amp;gt;9-sinf fizika • Interaktiv animatsiyalar va simulyatsiyalar&amp;lt;/p&amp;gt;
+&amp;lt;/header&amp;gt;
+
+&amp;lt;nav&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;intro&amp;#x27;)&amp;quot;&amp;gt;Temperatura&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;particles&amp;#x27;)&amp;quot;&amp;gt;Zarrachalar&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;thermo&amp;#x27;)&amp;quot;&amp;gt;Termometr&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;scale&amp;#x27;)&amp;quot;&amp;gt;Shkalalar&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;heat&amp;#x27;)&amp;quot;&amp;gt;Qizish/Sovish&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;show(&amp;#x27;quiz&amp;#x27;)&amp;quot;&amp;gt;Mini-test&amp;lt;/button&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;main&amp;gt;
+&amp;lt;section id=&amp;quot;plan&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;📚 Dars rejasi&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;1-reja. Temperatura tushunchasi&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Temperatura nima? Molekulalarning tartibsiz harakati va temperatura bilan zarrachalar harakati orasidagi bog‘lanishni animatsiya orqali o‘rganish.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;2-reja. Temperaturani o‘lchash&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Termometrning ishlash prinsipi, termometr shkalasi hamda Selsiy, Kelvin va Farengeyt shkalalarini interaktiv simulyatsiya yordamida o‘rganish.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;3-reja. Qizish va sovish jarayonlari&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Jismlarning qizishi va sovishi, issiqlik almashinuvi hamda temperatura o‘zgarishini grafik va animatsiya orqali kuzatish.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;note&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Dars maqsadi:&amp;lt;/b&amp;gt; temperatura tushunchasi, uni o‘lchash usullari va temperatura o‘zgarishlarini interaktiv simulyatsiyalar yordamida tushuntirish.&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+&amp;lt;section id=&amp;quot;intro&amp;quot; class=&amp;quot;card&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;1. Temperatura nima?&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Temperatura&amp;lt;/b&amp;gt; — jismning qanchalik issiq yoki sovuqligini tavsiflovchi fizik kattalik. Modda zarrachalari doimo tartibsiz harakatda bo‘ladi.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;canvas id=&amp;quot;introCanvas&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;p&amp;gt;🔵 &amp;lt;b&amp;gt;Past temperatura:&amp;lt;/b&amp;gt; zarrachalar sekinroq harakat qiladi.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;🔴 &amp;lt;b&amp;gt;Yuqori temperatura:&amp;lt;/b&amp;gt; zarrachalar tezroq harakat qiladi.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;note&amp;quot;&amp;gt;Simulyatsiyada temperaturani o‘zgartirib, zarrachalar tezligidagi farqni kuzating.&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section id=&amp;quot;particles&amp;quot; class=&amp;quot;card hidden&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;2. Temperatura va molekulalar harakati&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Idish ichidagi gaz zarrachalarining tartibsiz harakatini kuzating.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;button class=&amp;quot;btn&amp;quot; onclick=&amp;quot;changeT(10)&amp;quot;&amp;gt;➕ Temperaturani oshirish&amp;lt;/button&amp;gt;
+&amp;lt;button class=&amp;quot;btn&amp;quot; onclick=&amp;quot;changeT(-10)&amp;quot;&amp;gt;➖ Temperaturani kamaytirish&amp;lt;/button&amp;gt;
+&amp;lt;button class=&amp;quot;btn&amp;quot; onclick=&amp;quot;pTemp=20&amp;quot;&amp;gt;↺ 20°C ga qaytarish&amp;lt;/button&amp;gt;
+&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;pVal&amp;quot;&amp;gt;20°C&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;canvas id=&amp;quot;particlesCanvas&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;p id=&amp;quot;particleText&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section id=&amp;quot;thermo&amp;quot; class=&amp;quot;card hidden&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;3. Termometr&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Termometr temperaturani o‘lchaydi. Suyuqlikli termometrda qizish natijasida suyuqlik hajmi ortadi va naychada yuqoriga ko‘tariladi.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;label&amp;gt;🌡️ Suyuqlik temperaturasi:
+&amp;lt;input id=&amp;quot;thermoRange&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;-20&amp;quot; max=&amp;quot;120&amp;quot; value=&amp;quot;20&amp;quot; oninput=&amp;quot;updateThermo()&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;thermoVal&amp;quot;&amp;gt;20°C&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;thermo&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;tube&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;mercury&amp;quot; id=&amp;quot;mercury&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;bulb&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;scale&amp;quot;&amp;gt;&amp;lt;span&amp;gt;120°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;100°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;80°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;60°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;40°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;20°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;0°C&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;-20°C&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Vazifa:&amp;lt;/b&amp;gt; slayder yordamida 0°C, 20°C, 50°C va 100°C qiymatlarini toping.&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section id=&amp;quot;scale&amp;quot; class=&amp;quot;card hidden&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;4. Temperatura shkalalari&amp;lt;/h2&amp;gt;
+&amp;lt;div class=&amp;quot;formula&amp;quot;&amp;gt;K = t(°C) + 273 &amp;amp;nbsp;&amp;amp;nbsp; | &amp;amp;nbsp;&amp;amp;nbsp; °F = 9/5 · °C + 32&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;label&amp;gt;Selsiy:
+&amp;lt;input id=&amp;quot;cRange&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;-50&amp;quot; max=&amp;quot;150&amp;quot; value=&amp;quot;20&amp;quot; oninput=&amp;quot;convert()&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;cVal&amp;quot;&amp;gt;20°C&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Selsiy&amp;lt;/h3&amp;gt;&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;cOut&amp;quot;&amp;gt;20°C&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Kelvin&amp;lt;/h3&amp;gt;&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;kOut&amp;quot;&amp;gt;293 K&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Farengeyt&amp;lt;/h3&amp;gt;&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;fOut&amp;quot;&amp;gt;68°F&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;note&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Misol:&amp;lt;/b&amp;gt; 20°C = 293 K.&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section id=&amp;quot;heat&amp;quot; class=&amp;quot;card hidden&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;5. Qizish va sovish simulyatsiyasi&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Issiq suv xona haroratiga yaqinlashib soviydi, sovuq suv esa xona haroratiga yaqinlashib isiydi.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;button class=&amp;quot;btn&amp;quot; onclick=&amp;quot;resetHeat()&amp;quot;&amp;gt;▶ Qayta boshlash&amp;lt;/button&amp;gt;
+&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;timeVal&amp;quot;&amp;gt;0 s&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;grid&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;🔥 Issiq suv&amp;lt;/h3&amp;gt;&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;hotVal&amp;quot;&amp;gt;90°C&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;❄️ Sovuq suv&amp;lt;/h3&amp;gt;&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;coldVal&amp;quot;&amp;gt;5°C&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;canvas id=&amp;quot;heatCanvas&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;p&amp;gt;Grafikda temperaturaning vaqt o‘tishi bilan xona temperaturasi tomon o‘zgarishi ko‘rsatiladi.&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;section id=&amp;quot;quiz&amp;quot; class=&amp;quot;card hidden&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;6. Mini-test&amp;lt;/h2&amp;gt;
+&amp;lt;div id=&amp;quot;quizBox&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;value&amp;quot; id=&amp;quot;score&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+&amp;lt;/main&amp;gt;
+&amp;lt;footer&amp;gt;9-sinf fizika • Temperatura va uni o‘lchash • Interaktiv dars materiali&amp;lt;/footer&amp;gt;
+
+&amp;lt;script&amp;gt;
+function show(id){document.querySelectorAll(&amp;#x27;main section&amp;#x27;).forEach(s=&amp;gt;s.classList.add(&amp;#x27;hidden&amp;#x27;));document.getElementById(id).classList.remove(&amp;#x27;hidden&amp;#x27;)}
+const intro=document.getElementById(&amp;#x27;introCanvas&amp;#x27;), ic=intro.getContext(&amp;#x27;2d&amp;#x27;);
+let balls=[]; for(let i=0;i&amp;lt;28;i++)balls.push({x:Math.random()*intro.width,y:Math.random()*intro.height,vx:(Math.random()-.5)*2,vy:(Math.random()-.5)*2});
+function drawIntro(){ic.clearRect(0,0,intro.width,intro.height);balls.forEach(b=&amp;gt;{b.x=(b.x+b.vx+intro.width)%intro.width;b.y=(b.y+b.vy+intro.height)%intro.height;ic.beginPath();ic.arc(b.x,b.y,6,0,7);ic.fillStyle=&amp;#x27;#70a1ff&amp;#x27;;ic.fill()});requestAnimationFrame(drawIntro)}drawIntro();
+
+const pc=document.getElementById(&amp;#x27;particlesCanvas&amp;#x27;), ctx=pc.getContext(&amp;#x27;2d&amp;#x27;); let pTemp=20;
+let ps=[];for(let i=0;i&amp;lt;45;i++)ps.push({x:Math.random()*pc.width,y:Math.random()*pc.height,vx:Math.random()-.5,vy:Math.random()-.5});
+function changeT(d){pTemp=Math.max(-50,Math.min(150,pTemp+d))}
+function drawParticles(){ctx.clearRect(0,0,pc.width,pc.height);let speed=.4+(pTemp+50)/100;
+ps.forEach(p=&amp;gt;{let m=Math.hypot(p.vx,p.vy)||1;p.vx=p.vx/m*speed;p.vy=p.vy/m*speed;p.x+=p.vx;p.y+=p.vy;if(p.x&amp;lt;5||p.x&amp;gt;pc.width-5)p.vx*=-1;if(p.y&amp;lt;5||p.y&amp;gt;pc.height-5)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,5,0,7);ctx.fillStyle=pTemp&amp;gt;70?&amp;#x27;#ff5a5f&amp;#x27;:pTemp&amp;lt;10?&amp;#x27;#58a6ff&amp;#x27;:&amp;#x27;#ffd166&amp;#x27;;ctx.fill()});
+document.getElementById(&amp;#x27;pVal&amp;#x27;).textContent=pTemp+&amp;#x27;°C&amp;#x27;;
+document.getElementById(&amp;#x27;particleText&amp;#x27;).textContent=pTemp&amp;gt;60?&amp;#x27;Temperatura yuqori: zarrachalar tezroq harakat qilmoqda.&amp;#x27;:pTemp&amp;lt;10?&amp;#x27;Temperatura past: zarrachalar sekinroq harakat qilmoqda.&amp;#x27;:&amp;#x27;O‘rtacha temperatura: zarrachalar harakati o‘rtacha tezlikda.&amp;#x27;;
+requestAnimationFrame(drawParticles)}drawParticles();
+
+function updateThermo(){let t=+document.getElementById(&amp;#x27;thermoRange&amp;#x27;).value;document.getElementById(&amp;#x27;thermoVal&amp;#x27;).textContent=t+&amp;#x27;°C&amp;#x27;;document.getElementById(&amp;#x27;mercury&amp;#x27;).style.height=Math.max(3,((t+20)/140)*100)+&amp;#x27;%&amp;#x27;}
+function convert(){let c=+document.getElementById(&amp;#x27;cRange&amp;#x27;).value;document.getElementById(&amp;#x27;cVal&amp;#x27;).textContent=c+&amp;#x27;°C&amp;#x27;;document.getElementById(&amp;#x27;cOut&amp;#x27;).textContent=c+&amp;#x27;°C&amp;#x27;;document.getElementById(&amp;#x27;kOut&amp;#x27;).textContent=(c+273)+&amp;#x27; K&amp;#x27;;document.getElementById(&amp;#x27;fOut&amp;#x27;).textContent=((9*c/5)+32).toFixed(1)+&amp;#x27;°F&amp;#x27;}
+let hot=90,cold=5,time=0,heatTimer=null,history=[];
+function resetHeat(){hot=90;cold=5;time=0;history=[];clearInterval(heatTimer);heatTimer=setInterval(()=&amp;gt;{hot-=.7; cold+=.45;time++;history.push([hot,cold]);document.getElementById(&amp;#x27;hotVal&amp;#x27;).textContent=hot.toFixed(1)+&amp;#x27;°C&amp;#x27;;document.getElementById(&amp;#x27;coldVal&amp;#x27;).textContent=cold.toFixed(1)+&amp;#x27;°C&amp;#x27;;document.getElementById(&amp;#x27;timeVal&amp;#x27;).textContent=time+&amp;#x27; s&amp;#x27;;drawHeat();if(time&amp;gt;=90)clearInterval(heatTimer)},100)}
+const hc=document.getElementById(&amp;#x27;heatCanvas&amp;#x27;),hh=hc.getContext(&amp;#x27;2d&amp;#x27;);
+function drawHeat(){hh.clearRect(0,0,hc.width,hc.height);hh.strokeStyle=&amp;#x27;#b9c8e5&amp;#x27;;hh.beginPath();hh.moveTo(45,20);hh.lineTo(45,hc.height-35);hh.lineTo(hc.width-20,hc.height-35);hh.stroke();if(history.length&amp;lt;2)return;function line(index){hh.beginPath();history.forEach((v,i)=&amp;gt;{let x=45+i*(hc.width-70)/90,y=20+(120-v[index])*1.5;if(i===0)hh.moveTo(x,y);else hh.lineTo(x,y)});hh.stroke()}line(0);line(1)}
+const qs=[
+[&amp;#x27;Temperatura nimani ifodalaydi?&amp;#x27;,[&amp;#x27;Jismning issiq-sovuqlik holatini&amp;#x27;,&amp;#x27;Jism massasini&amp;#x27;,&amp;#x27;Jism hajmini&amp;#x27;,&amp;#x27;Vaqtni&amp;#x27;],0],
+[&amp;#x27;Temperaturani o‘lchash asbobi nima?&amp;#x27;,[&amp;#x27;Barometr&amp;#x27;,&amp;#x27;Termometr&amp;#x27;,&amp;#x27;Ampermetr&amp;#x27;,&amp;#x27;Dinamometr&amp;#x27;],1],
+[&amp;#x27;0°C necha Kelvin?&amp;#x27;,[&amp;#x27;0 K&amp;#x27;,&amp;#x27;100 K&amp;#x27;,&amp;#x27;273 K&amp;#x27;,&amp;#x27;373 K&amp;#x27;],2],
+[&amp;#x27;100°C necha Kelvin?&amp;#x27;,[&amp;#x27;173 K&amp;#x27;,&amp;#x27;273 K&amp;#x27;,&amp;#x27;373 K&amp;#x27;,&amp;#x27;473 K&amp;#x27;],2],
+[&amp;#x27;Temperatura oshganda molekulalar harakati qanday o‘zgaradi?&amp;#x27;,[&amp;#x27;Sekinlashadi&amp;#x27;,&amp;#x27;Tezlashadi&amp;#x27;,&amp;#x27;To‘xtaydi&amp;#x27;,&amp;#x27;O‘zgarmaydi&amp;#x27;],1]
+];
+let answered=0,score=0;const qb=document.getElementById(&amp;#x27;quizBox&amp;#x27;);
+qs.forEach((q,qi)=&amp;gt;{let d=document.createElement(&amp;#x27;div&amp;#x27;);d.className=&amp;#x27;quiz&amp;#x27;;d.innerHTML=&amp;#x27;&amp;lt;b&amp;gt;&amp;#x27;+(qi+1)+&amp;#x27;. &amp;#x27;+q[0]+&amp;#x27;&amp;lt;/b&amp;gt;&amp;#x27;;q[1].forEach((a,ai)=&amp;gt;{let b=document.createElement(&amp;#x27;button&amp;#x27;);b.textContent=a;b.onclick=()=&amp;gt;{if(d.dataset.done)return;d.dataset.done=1;answered++;if(ai===q[2]){score++;d.insertAdjacentHTML(&amp;#x27;beforeend&amp;#x27;,&amp;#x27;&amp;lt;div class=&amp;quot;feedback ok&amp;quot;&amp;gt;✓ To‘g‘ri!&amp;lt;/div&amp;gt;&amp;#x27;)}else d.insertAdjacentHTML(&amp;#x27;beforeend&amp;#x27;,&amp;#x27;&amp;lt;div class=&amp;quot;feedback bad&amp;quot;&amp;gt;✗ Noto‘g‘ri. To‘g‘ri javob: &amp;#x27;+q[1][q[2]]+&amp;#x27;&amp;lt;/div&amp;gt;&amp;#x27;);document.getElementById(&amp;#x27;score&amp;#x27;).textContent=&amp;#x27;Natija: &amp;#x27;+score+&amp;#x27;/&amp;#x27;+answered};d.appendChild(b)});qb.appendChild(d)});
+updateThermo();convert();drawHeat();
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&quot;&gt;&lt;/iframe&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;lesson&quot; id=&quot;lesson-3&quot;&gt;
+      &lt;h2&gt;4. Ideal gaz va uning qonunlari&lt;/h2&gt;
+      &lt;iframe title=&quot;4. Ideal gaz va uning qonunlari&quot; srcdoc=&quot;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;uz&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width,initial-scale=1.0&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;9-sinf Fizika — Ideal gaz&amp;lt;/title&amp;gt;
+&amp;lt;style&amp;gt;
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#eef4ff;color:#172033;line-height:1.6}
+.container{max-width:1000px;margin:auto;padding:18px}
+header{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;text-align:center;padding:32px 20px;border-radius:20px;box-shadow:0 10px 30px #2563eb33;margin-bottom:22px}
+header h1{margin:0 0 8px;font-size:clamp(25px,5vw,38px)}
+.card{background:white;border-radius:18px;padding:24px;margin:20px 0;box-shadow:0 5px 20px #17203312}
+h2{color:#2563eb;margin-top:0;border-bottom:2px solid #e5e7eb;padding-bottom:10px}
+h3{color:#334155}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:5px 12px;border-radius:20px;font-weight:bold}
+.sim{background:#0f172a;color:white;padding:18px;border-radius:15px;margin-top:18px}
+canvas{display:block;width:100%;max-width:760px;height:auto;background:#172033;border-radius:10px;margin:12px auto}
+.controls{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+button{border:0;border-radius:9px;padding:10px 16px;background:#2563eb;color:white;font-weight:bold;cursor:pointer}
+button:hover{background:#1d4ed8}
+button.alt{background:#475569}
+input[type=range]{width:100%;accent-color:#60a5fa}
+.readout{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;text-align:center}
+.readout div{background:#1e293b;border-radius:10px;padding:10px 18px;min-width:130px}
+.value{color:#60a5fa;font-size:20px;font-weight:bold}
+.formula{font-family:Consolas,monospace;background:#eff6ff;border-left:5px solid #2563eb;padding:13px;margin:12px 0;font-size:18px}
+.note{background:#f0fdf4;border-left:5px solid #22c55e;padding:12px;border-radius:7px}
+.question{background:#fff7ed;border-left:5px solid #f97316;padding:15px;border-radius:8px}
+.answer{display:none;color:#166534;font-weight:bold}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:9px;border:1px solid #dbe2ea;text-align:left}
+th{background:#eff6ff}
+footer{text-align:center;color:#64748b;padding:25px}
+&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+
+&amp;lt;header&amp;gt;
+&amp;lt;h1&amp;gt;9-sinf Fizika&amp;lt;/h1&amp;gt;
+&amp;lt;h2 style=&amp;quot;color:white;border:0&amp;quot;&amp;gt;Ideal gaz va uning qonunlari&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Interaktiv HTML5 dars • 3 ta reja • Simulyatsiya va animatsiyalar&amp;lt;/p&amp;gt;
+&amp;lt;/header&amp;gt;
+
+&amp;lt;!-- 1-REJA --&amp;gt;
+&amp;lt;section class=&amp;quot;card&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;badge&amp;quot;&amp;gt;1-REJA&amp;lt;/span&amp;gt;
+&amp;lt;h2&amp;gt;Ideal gaz haqida tushuncha va uning asosiy xususiyatlari&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Ideal gaz&amp;lt;/b&amp;gt; — molekulalarining o‘lchami ular orasidagi masofaga nisbatan juda kichik bo‘lgan va molekulalar orasidagi o‘zaro ta’sir to‘qnashuvlardan tashqari hisobga olinmaydigan gaz modelidir.&amp;lt;/p&amp;gt;
+
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Molekulalar juda kichik moddiy nuqtalar deb qaraladi.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Molekulalar doimo tartibsiz harakatda bo‘ladi.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Molekulalar bir-biri va idish devori bilan to‘qnashadi.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;To‘qnashuvlar elastik deb hisoblanadi.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&amp;quot;sim&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color:#fff&amp;quot;&amp;gt;🔬 Simulyatsiya: gaz molekulalarining tartibsiz harakati&amp;lt;/h3&amp;gt;
+&amp;lt;p style=&amp;quot;text-align:center&amp;quot;&amp;gt;Harorat oshirilsa, molekulalar tezroq harakat qiladi.&amp;lt;/p&amp;gt;
+&amp;lt;canvas id=&amp;quot;gas&amp;quot; width=&amp;quot;760&amp;quot; height=&amp;quot;300&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;div class=&amp;quot;controls&amp;quot;&amp;gt;
+&amp;lt;button onclick=&amp;quot;heat()&amp;quot;&amp;gt;🔥 Haroratni oshirish&amp;lt;/button&amp;gt;
+&amp;lt;button onclick=&amp;quot;cool()&amp;quot;&amp;gt;❄️ Sovitish&amp;lt;/button&amp;gt;
+&amp;lt;button class=&amp;quot;alt&amp;quot; onclick=&amp;quot;resetGas()&amp;quot;&amp;gt;↻ Boshlang‘ich holat&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;readout&amp;quot;&amp;gt;
+&amp;lt;div&amp;gt;Harorat&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;t1&amp;quot;&amp;gt;20 °C&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;Tezlik&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;s1&amp;quot;&amp;gt;2.0&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;Molekulalar&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot;&amp;gt;40 ta&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;note&amp;quot;&amp;gt;&amp;lt;b&amp;gt;Xulosa:&amp;lt;/b&amp;gt; Harorat oshishi molekulalarning o‘rtacha kinetik energiyasi va harakat tezligining ortishi bilan bog‘liq.&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;!-- 2-REJA --&amp;gt;
+&amp;lt;section class=&amp;quot;card&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;badge&amp;quot;&amp;gt;2-REJA&amp;lt;/span&amp;gt;
+&amp;lt;h2&amp;gt;Ideal gazning holat tenglamasi va gaz qonunlari&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;Ideal gazning holati &amp;lt;b&amp;gt;bosim (p)&amp;lt;/b&amp;gt;, &amp;lt;b&amp;gt;hajm (V)&amp;lt;/b&amp;gt; va &amp;lt;b&amp;gt;absolyut harorat (T)&amp;lt;/b&amp;gt; bilan tavsiflanadi.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;formula&amp;quot;&amp;gt;pV = (m/M)RT&amp;lt;/div&amp;gt;
+
+&amp;lt;h3&amp;gt;Asosiy gaz qonunlari&amp;lt;/h3&amp;gt;
+&amp;lt;table&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;th&amp;gt;Qonun&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;O‘zgarmas kattalik&amp;lt;/th&amp;gt;&amp;lt;th&amp;gt;Tenglama&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;Boyl-Mariott&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;T = const&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;p₁V₁ = p₂V₂&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;Gey-Lyussak&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;p = const&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;V₁/T₁ = V₂/T₂&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;Sharl&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;V = const&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;p₁/T₁ = p₂/T₂&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+
+&amp;lt;div class=&amp;quot;sim&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color:#fff&amp;quot;&amp;gt;🎛 Simulyatsiya: Izotermik jarayon (T = const)&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Hajmni o‘zgartiring. Harorat o‘zgarmas bo‘lganda hajm kamayishi bilan bosim ortadi.&amp;lt;/p&amp;gt;
+&amp;lt;label&amp;gt;Hajm: &amp;lt;b id=&amp;quot;v2&amp;quot;&amp;gt;100%&amp;lt;/b&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;input id=&amp;quot;vol&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;50&amp;quot; max=&amp;quot;150&amp;quot; value=&amp;quot;100&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;readout&amp;quot;&amp;gt;
+&amp;lt;div&amp;gt;Bosim&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;p2&amp;quot;&amp;gt;1.00 atm&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;Harorat&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot;&amp;gt;const&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;canvas id=&amp;quot;piston&amp;quot; width=&amp;quot;760&amp;quot; height=&amp;quot;220&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;sim&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color:#fff&amp;quot;&amp;gt;🌡 Simulyatsiya: Harorat va bosim (V = const)&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Idish hajmi o‘zgarmaydi. Harorat oshirilganda bosim ortadi.&amp;lt;/p&amp;gt;
+&amp;lt;label&amp;gt;Harorat: &amp;lt;b id=&amp;quot;temp3&amp;quot;&amp;gt;300 K&amp;lt;/b&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;input id=&amp;quot;tempRange&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;200&amp;quot; max=&amp;quot;600&amp;quot; value=&amp;quot;300&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;readout&amp;quot;&amp;gt;
+&amp;lt;div&amp;gt;Temperatura&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;tk&amp;quot;&amp;gt;300 K&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div&amp;gt;Bosim&amp;lt;br&amp;gt;&amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;pk&amp;quot;&amp;gt;1.00 atm&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;canvas id=&amp;quot;pressureCanvas&amp;quot; width=&amp;quot;760&amp;quot; height=&amp;quot;220&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;!-- 3-REJA --&amp;gt;
+&amp;lt;section class=&amp;quot;card&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;badge&amp;quot;&amp;gt;3-REJA&amp;lt;/span&amp;gt;
+&amp;lt;h2&amp;gt;Ideal gaz qonunlarining amaliy qo‘llanilishi va masalalar&amp;lt;/h2&amp;gt;
+
+&amp;lt;p&amp;gt;Gaz qonunlari kundalik hayotda va texnikada ko‘p uchraydi:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;🚗 avtomobil shinalaridagi bosim;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;🔥 issiqlik dvigatellari;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;🧯 gaz ballonlari;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;☁️ meteorologik kuzatuvlar;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;❄️ sovutish qurilmalari va kompressorlar.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+&amp;lt;div class=&amp;quot;sim&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color:#fff&amp;quot;&amp;gt;🚗 Amaliy simulyatsiya: shina bosimi&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Harorat oshirilganda, hajm o‘zgarmas deb olsak, shina ichidagi bosim ham ortadi.&amp;lt;/p&amp;gt;
+&amp;lt;label&amp;gt;Harorat: &amp;lt;b id=&amp;quot;tireTemp&amp;quot;&amp;gt;20 °C&amp;lt;/b&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;input id=&amp;quot;tire&amp;quot; type=&amp;quot;range&amp;quot; min=&amp;quot;0&amp;quot; max=&amp;quot;60&amp;quot; value=&amp;quot;20&amp;quot;&amp;gt;
+&amp;lt;canvas id=&amp;quot;tireCanvas&amp;quot; width=&amp;quot;760&amp;quot; height=&amp;quot;230&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;p style=&amp;quot;text-align:center&amp;quot;&amp;gt;Bosim: &amp;lt;span class=&amp;quot;value&amp;quot; id=&amp;quot;tirePressure&amp;quot;&amp;gt;2.00 bar&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;question&amp;quot;&amp;gt;
+&amp;lt;b&amp;gt;🧮 Namuna masala&amp;lt;/b&amp;gt;
+&amp;lt;p&amp;gt;O‘zgarmas haroratda hajmi 4 litr bo‘lgan gazning bosimi 200 kPa. Hajm 2 litrgacha kamaytirilsa, yangi bosim qancha bo‘ladi?&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;formula&amp;quot;&amp;gt;p₁V₁ = p₂V₂&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;p₂ = (p₁V₁)/V₂ = (200 × 4)/2 = &amp;lt;b&amp;gt;400 kPa&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;question&amp;quot;&amp;gt;
+&amp;lt;b&amp;gt;💡 Interaktiv savol&amp;lt;/b&amp;gt;
+&amp;lt;p&amp;gt;Gaz hajmi 2 marta kamayib, harorat o‘zgarmasa, bosim qanday o‘zgaradi?&amp;lt;/p&amp;gt;
+&amp;lt;button onclick=&amp;quot;showAnswer()&amp;quot;&amp;gt;Javobni ko‘rsatish&amp;lt;/button&amp;gt;
+&amp;lt;p id=&amp;quot;answer&amp;quot; class=&amp;quot;answer&amp;quot;&amp;gt;Javob: bosim 2 marta ortadi, chunki pV = const.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/section&amp;gt;
+
+&amp;lt;footer&amp;gt;
+&amp;lt;b&amp;gt;9-sinf Fizika&amp;lt;/b&amp;gt; • Ideal gaz va uning qonunlari • Interaktiv HTML5 dars
+&amp;lt;/footer&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+/* 1-SIMULYATSIYA: MOLEKULALAR */
+const gas=document.getElementById(&amp;quot;gas&amp;quot;),gx=gas.getContext(&amp;quot;2d&amp;quot;);
+let particles=[],gasSpeed=2,gasTemp=20;
+function makeParticles(){
+ particles=[];
+ for(let i=0;i&amp;lt;40;i++){
+  let a=Math.random()*Math.PI*2;
+  particles.push({x:20+Math.random()*720,y:20+Math.random()*260,
+   vx:Math.cos(a)*gasSpeed*(.7+Math.random()*.7),
+   vy:Math.sin(a)*gasSpeed*(.7+Math.random()*.7),r:4});
+ }
+}
+makeParticles();
+function gasAnimation(){
+ gx.clearRect(0,0,760,300);
+ gx.strokeStyle=&amp;quot;#475569&amp;quot;;gx.strokeRect(1,1,758,298);
+ particles.forEach(p=&amp;gt;{
+  p.x+=p.vx;p.y+=p.vy;
+  if(p.x&amp;lt;5||p.x&amp;gt;755)p.vx*=-1;
+  if(p.y&amp;lt;5||p.y&amp;gt;295)p.vy*=-1;
+  gx.beginPath();gx.arc(p.x,p.y,p.r,0,Math.PI*2);
+  gx.fillStyle=gasTemp&amp;gt;50?&amp;quot;#fb7185&amp;quot;:&amp;quot;#38bdf8&amp;quot;;gx.fill();
+ });
+ requestAnimationFrame(gasAnimation);
+}
+gasAnimation();
+function changeGas(v,t){
+ gasSpeed=v;gasTemp=t;
+ particles.forEach(p=&amp;gt;{
+  let a=Math.atan2(p.vy,p.vx),m=v*(.7+Math.random()*.7);
+  p.vx=Math.cos(a)*m;p.vy=Math.sin(a)*m;
+ });
+ document.getElementById(&amp;quot;t1&amp;quot;).textContent=t+&amp;quot; °C&amp;quot;;
+ document.getElementById(&amp;quot;s1&amp;quot;).textContent=v.toFixed(1);
+}
+function heat(){changeGas(5,80)}
+function cool(){changeGas(1,0)}
+function resetGas(){gasTemp=20;gasSpeed=2;makeParticles();changeGas(2,20)}
+
+/* 2A: PISTON */
+const vol=document.getElementById(&amp;quot;vol&amp;quot;);
+function drawPiston(v){
+ document.getElementById(&amp;quot;v2&amp;quot;).textContent=v+&amp;quot;%&amp;quot;;
+ document.getElementById(&amp;quot;p2&amp;quot;).textContent=(100/v).toFixed(2)+&amp;quot; atm&amp;quot;;
+ const c=document.getElementById(&amp;quot;piston&amp;quot;),x=c.getContext(&amp;quot;2d&amp;quot;);
+ x.clearRect(0,0,760,220);
+ x.strokeStyle=&amp;quot;#94a3b8&amp;quot;;x.lineWidth=5;x.strokeRect(80,35,600,130);
+ let w=600*v/150,px=80+w;
+ x.fillStyle=&amp;quot;#38bdf8&amp;quot;;x.fillRect(80,40,w,120);
+ x.fillStyle=&amp;quot;#cbd5e1&amp;quot;;x.fillRect(px-6,25,12,150);
+ x.fillStyle=&amp;quot;#60a5fa&amp;quot;;x.font=&amp;quot;bold 18px Segoe UI&amp;quot;;x.fillText(&amp;quot;Gaz&amp;quot;,100,100);
+ x.fillStyle=&amp;quot;#e2e8f0&amp;quot;;x.font=&amp;quot;16px Segoe UI&amp;quot;;x.fillText(&amp;quot;Hajm o‘zgarmoqda&amp;quot;,280,200);
+}
+vol.oninput=()=&amp;gt;drawPiston(+vol.value);drawPiston(100);
+
+/* 2B: TEMPERATURE/PRESSURE */
+const tr=document.getElementById(&amp;quot;tempRange&amp;quot;);
+function drawPressure(T){
+ let p=T/300;
+ document.getElementById(&amp;quot;temp3&amp;quot;).textContent=T+&amp;quot; K&amp;quot;;
+ document.getElementById(&amp;quot;tk&amp;quot;).textContent=T+&amp;quot; K&amp;quot;;
+ document.getElementById(&amp;quot;pk&amp;quot;).textContent=p.toFixed(2)+&amp;quot; atm&amp;quot;;
+ const c=document.getElementById(&amp;quot;pressureCanvas&amp;quot;),x=c.getContext(&amp;quot;2d&amp;quot;);
+ x.clearRect(0,0,760,220);
+ x.fillStyle=&amp;quot;#334155&amp;quot;;x.fillRect(110,35,540,145);
+ let n=Math.min(45,Math.floor(20+T/15));
+ for(let i=0;i&amp;lt;n;i++){
+  let px=120+Math.random()*520,py=45+Math.random()*125;
+  x.beginPath();x.arc(px,py,4,0,Math.PI*2);
+  x.fillStyle=T&amp;gt;400?&amp;quot;#fb7185&amp;quot;:&amp;quot;#38bdf8&amp;quot;;x.fill();
+ }
+ x.fillStyle=&amp;quot;#e2e8f0&amp;quot;;x.font=&amp;quot;16px Segoe UI&amp;quot;;x.fillText(&amp;quot;V = const&amp;quot;,330,205);
+}
+tr.oninput=()=&amp;gt;drawPressure(+tr.value);drawPressure(300);
+
+/* 3: TIRE */
+const tire=document.getElementById(&amp;quot;tire&amp;quot;);
+function drawTire(T){
+ let p=2*(273+T)/(273+20);
+ document.getElementById(&amp;quot;tireTemp&amp;quot;).textContent=T+&amp;quot; °C&amp;quot;;
+ document.getElementById(&amp;quot;tirePressure&amp;quot;).textContent=p.toFixed(2)+&amp;quot; bar&amp;quot;;
+ const c=document.getElementById(&amp;quot;tireCanvas&amp;quot;),x=c.getContext(&amp;quot;2d&amp;quot;);
+ x.clearRect(0,0,760,230);
+ x.beginPath();x.ellipse(380,115,230,82,0,0,Math.PI*2);
+ x.lineWidth=30;x.strokeStyle=&amp;quot;#475569&amp;quot;;x.stroke();
+ x.beginPath();x.ellipse(380,115,165,45,0,0,Math.PI*2);
+ x.fillStyle=&amp;quot;#1e293b&amp;quot;;x.fill();
+ x.fillStyle=&amp;quot;#60a5fa&amp;quot;;x.font=&amp;quot;bold 20px Segoe UI&amp;quot;;x.fillText(T&amp;gt;40?&amp;quot;Bosim oshmoqda&amp;quot;:&amp;quot;Bosim me’yorida&amp;quot;,295,120);
+}
+tire.oninput=()=&amp;gt;drawTire(+tire.value);drawTire(20);
+
+function showAnswer(){document.getElementById(&amp;quot;answer&amp;quot;).style.display=&amp;quot;block&amp;quot;;}
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&quot;&gt;&lt;/iframe&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;lesson&quot; id=&quot;lesson-4&quot;&gt;
+      &lt;h2&gt;5. Modda miqdori va Avogadro doimiysi&lt;/h2&gt;
+      &lt;iframe title=&quot;5. Modda miqdori va Avogadro doimiysi&quot; srcdoc=&quot;&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;quot;uz&amp;quot;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, viewport-fit=cover&amp;quot;&amp;gt;&amp;lt;title&amp;gt;Modda miqdori — 9-sinf fizika&amp;lt;/title&amp;gt;
+&amp;lt;style&amp;gt;
+:root{--bg:#eef3f1;--fg:#10302e;--card:#fff;--acc:#0f766e;--hot:#d97706;--mut:#4f6665;--bd:#c7d6d3;--ok:#15803d;--bad:#b91c1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=&amp;quot;light&amp;quot;]){--bg:#0c1917;--fg:#e3f1ee;--card:#142826;--acc:#2dd4bf;--hot:#fbbf24;--mut:#9ab8b3;--bd:#2a4744;--ok:#4ade80;--bad:#f87171}}
+:root[data-theme=&amp;quot;dark&amp;quot;]{--bg:#0c1917;--fg:#e3f1ee;--card:#142826;--acc:#2dd4bf;--hot:#fbbf24;--mut:#9ab8b3;--bd:#2a4744;--ok:#4ade80;--bad:#f87171}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.55 Georgia,&amp;quot;Times New Roman&amp;quot;,serif}
+main{max-width:760px;margin:auto;padding:14px}
+h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.35rem;margin:.3em 0}h3{font-size:1.1rem;margin:1em 0 .3em}
+.tabs{display:flex;gap:6px;margin:10px 0}.tab{flex:1;padding:12px 6px;font:inherit;font-size:.9rem;border:2px solid var(--bd);background:var(--card);color:var(--fg);border-radius:10px;cursor:pointer}
+.tab[aria-selected=true]{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:12px 0}
+canvas{width:100%;height:auto;display:block;background:var(--bg);border:1px solid var(--bd);border-radius:10px}
+button,select,input{font:inherit;font-size:1rem;color:var(--fg)}
+.b{padding:10px 14px;margin:4px 4px 4px 0;border:2px solid var(--acc);background:var(--card);border-radius:10px;cursor:pointer}
+.b.on,.b:active{background:var(--acc);color:var(--bg)}
+.q button{display:block;width:100%;text-align:left;margin:5px 0;padding:10px;border:2px solid var(--bd);background:var(--card);border-radius:10px;cursor:pointer}
+.q button.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 22%,var(--card))}.q button.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 22%,var(--card))}
+input[type=range]{width:100%;accent-color:var(--acc)}input[type=text],select{padding:10px;border:2px solid var(--bd);border-radius:10px;background:var(--card);width:100%;margin:4px 0}
+.big{font-size:1.5rem;color:var(--acc);font-weight:bold}.mut{color:var(--mut);font-size:.9rem}.res{font-weight:bold}
+.step{padding:8px 10px;margin:6px 0;border-left:4px solid var(--acc);background:var(--bg);animation:in .5s}@keyframes in{from{opacity:0;transform:translateX(-14px)}}
+.msg{font-weight:bold;min-height:1.5em}[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){.step{animation:none}}
+&amp;lt;/style&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;main&amp;gt;
+&amp;lt;h1&amp;gt;Modda miqdori&amp;lt;/h1&amp;gt;&amp;lt;div class=&amp;quot;mut&amp;quot;&amp;gt;9-sinf fizika · molekulyar fizika asoslari&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;tabs&amp;quot; role=&amp;quot;tablist&amp;quot;&amp;gt;&amp;lt;button class=&amp;quot;tab&amp;quot; role=&amp;quot;tab&amp;quot; aria-selected=&amp;quot;true&amp;quot;&amp;gt;Modda tuzilishi&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;tab&amp;quot; role=&amp;quot;tab&amp;quot; aria-selected=&amp;quot;false&amp;quot;&amp;gt;Avogadro doimiysi&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;tab&amp;quot; role=&amp;quot;tab&amp;quot; aria-selected=&amp;quot;false&amp;quot;&amp;gt;Masalalar&amp;lt;/button&amp;gt;&amp;lt;/div&amp;gt;
+
+&amp;lt;section class=&amp;quot;sec&amp;quot; id=&amp;quot;s0&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Molekulyar-kinetik nazariya&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;1) Barcha moddalar molekulalardan (atomlardan) iborat. 2) Molekulalar to&amp;#x27;xtovsiz tartibsiz harakatlanadi. 3) Molekulalar bir-birini tortadi va itaradi.&amp;lt;/p&amp;gt;
+&amp;lt;div id=&amp;quot;st&amp;quot;&amp;gt;&amp;lt;button class=&amp;quot;b on&amp;quot; data-m=&amp;quot;0&amp;quot;&amp;gt;Qattiq jism&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; data-m=&amp;quot;1&amp;quot;&amp;gt;Suyuqlik&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; data-m=&amp;quot;2&amp;quot;&amp;gt;Gaz&amp;lt;/button&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;canvas id=&amp;quot;c1&amp;quot; width=&amp;quot;600&amp;quot; height=&amp;quot;300&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+&amp;lt;label&amp;gt;Harorat: &amp;lt;b id=&amp;quot;tv&amp;quot;&amp;gt;50&amp;lt;/b&amp;gt; °C&amp;lt;input type=&amp;quot;range&amp;quot; id=&amp;quot;T&amp;quot; min=&amp;quot;0&amp;quot; max=&amp;quot;100&amp;quot; value=&amp;quot;50&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;p class=&amp;quot;mut&amp;quot; id=&amp;quot;stx&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Broun harakati&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Katta zarracha (to&amp;#x27;q sariq) ko&amp;#x27;rinmas molekulalarning urilishidan tartibsiz siljiydi. Harorat oshsa, harakat kuchayadi.&amp;lt;/p&amp;gt;&amp;lt;canvas id=&amp;quot;c2&amp;quot; width=&amp;quot;600&amp;quot; height=&amp;quot;300&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Nega «modda miqdori» kerak?&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;1 sm³ suvda 3·10²² dan ortiq molekula bor. Ularni sanab bo&amp;#x27;lmaydi. Shuning uchun zarrachalar sonini «to&amp;#x27;plam» bilan o&amp;#x27;lchaymiz.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Modda miqdori&amp;lt;/b&amp;gt; ν — moddadagi zarrachalar soni bilan bog&amp;#x27;liq kattalik. Birligi: &amp;lt;b&amp;gt;mol&amp;lt;/b&amp;gt;. 1 mol — 6,02·10²³ ta zarracha.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card q&amp;quot; id=&amp;quot;q0&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section class=&amp;quot;sec&amp;quot; id=&amp;quot;s1&amp;quot; hidden&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Avogadro doimiysi&amp;lt;/h2&amp;gt;
+&amp;lt;p class=&amp;quot;big&amp;quot;&amp;gt;Nₐ = 6,02·10²³ mol⁻¹&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;1 mol istalgan moddada shuncha zarracha bor. Modda tanlang va mol sonini o&amp;#x27;zgartiring:&amp;lt;/p&amp;gt;
+&amp;lt;select id=&amp;quot;sub&amp;quot;&amp;gt;&amp;lt;/select&amp;gt;
+&amp;lt;label&amp;gt;Modda miqdori ν = &amp;lt;b id=&amp;quot;nv&amp;quot;&amp;gt;1&amp;lt;/b&amp;gt; mol&amp;lt;input type=&amp;quot;range&amp;quot; id=&amp;quot;nu&amp;quot; min=&amp;quot;0.1&amp;quot; max=&amp;quot;5&amp;quot; step=&amp;quot;0.1&amp;quot; value=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;canvas id=&amp;quot;c3&amp;quot; width=&amp;quot;600&amp;quot; height=&amp;quot;220&amp;quot;&amp;gt;&amp;lt;/canvas&amp;gt;&amp;lt;p class=&amp;quot;mut&amp;quot;&amp;gt;Har bir nuqta ≈ 10²³ ta zarracha.&amp;lt;/p&amp;gt;
+&amp;lt;div id=&amp;quot;o2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Teskari hisob: N → ν&amp;lt;/h3&amp;gt;&amp;lt;label&amp;gt;Zarrachalar soni (×10²³ birlikda):&amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;inv&amp;quot; inputmode=&amp;quot;decimal&amp;quot; value=&amp;quot;3,01&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;&amp;lt;div id=&amp;quot;o3&amp;quot; class=&amp;quot;big&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h3&amp;gt;Kattaliklarni his qiling&amp;lt;/h3&amp;gt;&amp;lt;div id=&amp;quot;cmp&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card q&amp;quot; id=&amp;quot;q1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+
+&amp;lt;section class=&amp;quot;sec&amp;quot; id=&amp;quot;s2&amp;quot; hidden&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Formulalar&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Formulani tanlang, uning shakllari ko&amp;#x27;rinadi:&amp;lt;/p&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; data-f=&amp;quot;ν = N / Nₐ|N = ν · Nₐ|Nₐ = N / ν&amp;quot;&amp;gt;ν = N/Nₐ&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; data-f=&amp;quot;ν = m / M|m = ν · M|M = m / ν&amp;quot;&amp;gt;ν = m/M&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; data-f=&amp;quot;m₀ = M / Nₐ|M = m₀ · Nₐ|Nₐ = M / m₀&amp;quot;&amp;gt;m₀ = M/Nₐ&amp;lt;/button&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;fo&amp;quot; class=&amp;quot;big&amp;quot; style=&amp;quot;line-height:1.8&amp;quot;&amp;gt;Formulani tanlang&amp;lt;/div&amp;gt;
+&amp;lt;p class=&amp;quot;mut&amp;quot;&amp;gt;Muhim: SI da m kg, M kg/mol da yoziladi. 18 g/mol = 0,018 kg/mol.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt;&amp;lt;h2&amp;gt;Masala yechish&amp;lt;/h2&amp;gt;
+&amp;lt;div&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; id=&amp;quot;pv&amp;quot;&amp;gt;◀&amp;lt;/button&amp;gt;&amp;lt;b id=&amp;quot;pn&amp;quot;&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; id=&amp;quot;nx&amp;quot;&amp;gt;▶&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; id=&amp;quot;rd&amp;quot;&amp;gt;🎲 Yangi masala&amp;lt;/button&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;p id=&amp;quot;pq&amp;quot; style=&amp;quot;font-weight:bold&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;label&amp;gt;Javobingiz (&amp;lt;span id=&amp;quot;pu&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;):&amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;pa&amp;quot; inputmode=&amp;quot;decimal&amp;quot; placeholder=&amp;quot;masalan: 1,2e24&amp;quot;&amp;gt;&amp;lt;/label&amp;gt;
+&amp;lt;button class=&amp;quot;b&amp;quot; id=&amp;quot;ck&amp;quot;&amp;gt;Tekshirish&amp;lt;/button&amp;gt;&amp;lt;button class=&amp;quot;b&amp;quot; id=&amp;quot;sv&amp;quot;&amp;gt;Yechimni ko&amp;#x27;rsat&amp;lt;/button&amp;gt;
+&amp;lt;div class=&amp;quot;msg&amp;quot; id=&amp;quot;pm&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div id=&amp;quot;ps&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;card q&amp;quot; id=&amp;quot;q2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/section&amp;gt;
+&amp;lt;/main&amp;gt;
+&amp;lt;script&amp;gt;
+const $=s=&amp;gt;document.querySelector(s),NA=6.02e23,col=n=&amp;gt;getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const sup=n=&amp;gt;String(n).replace(/-/g,&amp;#x27;⁻&amp;#x27;).replace(/\d/g,d=&amp;gt;&amp;#x27;⁰¹²³⁴⁵⁶⁷⁸⁹&amp;#x27;[d]);
+function f(x){if(!x)return&amp;#x27;0&amp;#x27;;const a=Math.abs(x);if(a&amp;gt;=1e4||a&amp;lt;1e-2){let e=Math.floor(Math.log10(a)),m=x/10**e;if(Math.abs(+m.toFixed(3))&amp;gt;=10){m/=10;e++}return(+m.toFixed(3)+&amp;#x27;&amp;#x27;).replace(&amp;#x27;.&amp;#x27;,&amp;#x27;,&amp;#x27;)+&amp;#x27;·10&amp;#x27;+sup(e)}return(+x.toFixed(3)+&amp;#x27;&amp;#x27;).replace(&amp;#x27;.&amp;#x27;,&amp;#x27;,&amp;#x27;)}
+let act=0;const tabs=document.querySelectorAll(&amp;#x27;.tab&amp;#x27;);
+tabs.forEach((b,i)=&amp;gt;b.onclick=()=&amp;gt;{act=i;tabs.forEach((t,j)=&amp;gt;t.setAttribute(&amp;#x27;aria-selected&amp;#x27;,i==j));document.querySelectorAll(&amp;#x27;.sec&amp;#x27;).forEach((s,j)=&amp;gt;s.hidden=i!=j)});
+function quiz(id,Q){const el=$(id);let sc=0,an=0;el.innerHTML=&amp;#x27;&amp;lt;h3&amp;gt;Test&amp;lt;/h3&amp;gt;&amp;#x27;;const r=document.createElement(&amp;#x27;p&amp;#x27;);r.className=&amp;#x27;res&amp;#x27;;
+Q.forEach((q,i)=&amp;gt;{const d=document.createElement(&amp;#x27;div&amp;#x27;);d.innerHTML=&amp;#x27;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;&amp;#x27;+(i+1)+&amp;#x27;. &amp;#x27;+q[0]+&amp;#x27;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;#x27;;
+q[1].forEach((o,j)=&amp;gt;{const b=document.createElement(&amp;#x27;button&amp;#x27;);b.textContent=o;b.onclick=()=&amp;gt;{if(d.done)return;d.done=1;an++;if(j==q[2]){sc++;b.classList.add(&amp;#x27;ok&amp;#x27;)}else{b.classList.add(&amp;#x27;bad&amp;#x27;);d.children[1+q[2]].classList.add(&amp;#x27;ok&amp;#x27;)}
+if(an==Q.length)r.textContent=&amp;#x27;Natija: &amp;#x27;+sc+&amp;#x27;/&amp;#x27;+Q.length+(sc==Q.length?&amp;#x27; — ajoyib!&amp;#x27;:&amp;#x27; — mavzuni qayta ko\&amp;#x27;rib chiqing&amp;#x27;)};d.appendChild(b)});el.appendChild(d)});el.appendChild(r)}
+quiz(&amp;#x27;#q0&amp;#x27;,[[&amp;#x27;Qaysi holatda molekulalar eng tartibli joylashgan?&amp;#x27;,[&amp;#x27;Gaz&amp;#x27;,&amp;#x27;Qattiq jism&amp;#x27;,&amp;#x27;Suyuqlik&amp;#x27;],1],[&amp;#x27;Harorat oshsa molekulalar tezligi…&amp;#x27;,[&amp;#x27;kamayadi&amp;#x27;,&amp;#x27;o\&amp;#x27;zgarmaydi&amp;#x27;,&amp;#x27;ortadi&amp;#x27;],2],[&amp;#x27;Modda miqdorining birligi?&amp;#x27;,[&amp;#x27;kg&amp;#x27;,&amp;#x27;mol&amp;#x27;,&amp;#x27;dona&amp;#x27;],1]]);
+quiz(&amp;#x27;#q1&amp;#x27;,[[&amp;#x27;Avogadro doimiysi nimaga teng?&amp;#x27;,[&amp;#x27;6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;6,02·10³² mol⁻¹&amp;#x27;,&amp;#x27;3,01·10²³ mol⁻¹&amp;#x27;],0],[&amp;#x27;3 mol moddada nechta zarracha bor?&amp;#x27;,[&amp;#x27;6,02·10²³&amp;#x27;,&amp;#x27;1,806·10²⁴&amp;#x27;,&amp;#x27;2,0·10²³&amp;#x27;],1],[&amp;#x27;Bitta molekula massasi formulasi?&amp;#x27;,[&amp;#x27;m₀ = M·Nₐ&amp;#x27;,&amp;#x27;m₀ = Nₐ/M&amp;#x27;,&amp;#x27;m₀ = M/Nₐ&amp;#x27;],2]]);
+quiz(&amp;#x27;#q2&amp;#x27;,[[&amp;#x27;0,9 kg suv (M = 0,018 kg/mol) necha mol?&amp;#x27;,[&amp;#x27;5&amp;#x27;,&amp;#x27;50&amp;#x27;,&amp;#x27;0,05&amp;#x27;],1],[&amp;#x27;ν = N/Nₐ dan N ni toping:&amp;#x27;,[&amp;#x27;N = ν·Nₐ&amp;#x27;,&amp;#x27;N = ν/Nₐ&amp;#x27;,&amp;#x27;N = Nₐ/ν&amp;#x27;],0],[&amp;#x27;1 mol CO₂ massasi?&amp;#x27;,[&amp;#x27;12 g&amp;#x27;,&amp;#x27;22 g&amp;#x27;,&amp;#x27;44 g&amp;#x27;],2],[&amp;#x27;Nₐ zarracha qancha modda miqdoriga mos?&amp;#x27;,[&amp;#x27;1 mol&amp;#x27;,&amp;#x27;1 kg&amp;#x27;,&amp;#x27;1 g&amp;#x27;],0]]);
+/* 1-bo&amp;#x27;lim animatsiya */
+const x1=$(&amp;#x27;#c1&amp;#x27;).getContext(&amp;#x27;2d&amp;#x27;),x2=$(&amp;#x27;#c2&amp;#x27;).getContext(&amp;#x27;2d&amp;#x27;);let mode=0,T=50;
+const txt=[&amp;#x27;Qattiq jism: molekulalar tartibli joylashgan va muvozanat nuqtasi atrofida tebranadi.&amp;#x27;,&amp;#x27;Suyuqlik: molekulalar yaqin, lekin bir-biri yonidan sirpanib o\&amp;#x27;tadi. Shakli yo\&amp;#x27;q, hajmi bor.&amp;#x27;,&amp;#x27;Gaz: molekulalar uzoq va tez uchadi. Idishni to\&amp;#x27;ldiradi.&amp;#x27;];$(&amp;#x27;#stx&amp;#x27;).textContent=txt[0];
+const P=[...Array(48)].map((_,i)=&amp;gt;({gx:45+i%8*72,gy:30+(i/8|0)*45,x:0,y:0,vx:Math.random()*2-1,vy:Math.random()*2-1,ph:Math.random()*6.3}));
+const B=[...Array(90)].map(()=&amp;gt;{const a=Math.random()*6.3;return{x:Math.random()*600,y:Math.random()*300,vx:Math.cos(a),vy:Math.sin(a)}}),big={x:300,y:150,vx:0,vy:0,tr:[]};
+document.querySelectorAll(&amp;#x27;#st .b&amp;#x27;).forEach(b=&amp;gt;b.onclick=()=&amp;gt;{mode=+b.dataset.m;document.querySelectorAll(&amp;#x27;#st .b&amp;#x27;).forEach(o=&amp;gt;o.classList.toggle(&amp;#x27;on&amp;#x27;,o==b));$(&amp;#x27;#stx&amp;#x27;).textContent=txt[mode]});
+$(&amp;#x27;#T&amp;#x27;).oninput=e=&amp;gt;{T=+e.target.value;$(&amp;#x27;#tv&amp;#x27;).textContent=T};
+function draw1(t){x1.clearRect(0,0,600,300);x1.fillStyle=col(&amp;#x27;--acc&amp;#x27;);const s=(mode==1?.6:1.2)+T/30;
+P.forEach(p=&amp;gt;{if(mode==0){const k=1+T/12,w=t*.004*(1+T/30);p.x=p.gx+Math.sin(w+p.ph)*k;p.y=p.gy+Math.cos(w*1.3+p.ph)*k}else{p.x+=p.vx*s;p.y+=p.vy*s;const y0=mode==1?110:0;if(p.x&amp;lt;8||p.x&amp;gt;592)p.vx*=-1;if(p.y&amp;lt;y0+8||p.y&amp;gt;292)p.vy*=-1;p.x=Math.min(592,Math.max(8,p.x));p.y=Math.min(292,Math.max(y0+8,p.y))}
+x1.beginPath();x1.arc(p.x,p.y,8,0,6.3);x1.fill()});if(mode==1){x1.strokeStyle=col(&amp;#x27;--hot&amp;#x27;);x1.beginPath();x1.moveTo(0,110);x1.lineTo(600,110);x1.stroke()}}
+function draw2(){x2.clearRect(0,0,600,300);const s=1.5+T/20;x2.fillStyle=col(&amp;#x27;--mut&amp;#x27;);
+B.forEach(p=&amp;gt;{p.x+=p.vx*s;p.y+=p.vy*s;if(p.x&amp;lt;3||p.x&amp;gt;597)p.vx*=-1;if(p.y&amp;lt;3||p.y&amp;gt;297)p.vy*=-1;const dx=big.x-p.x,dy=big.y-p.y,d=Math.hypot(dx,dy);
+if(d&amp;lt;19){const nx=dx/d,ny=dy/d;big.vx+=nx*.35;big.vy+=ny*.35;p.vx=-nx;p.vy=-ny;p.x=big.x-nx*20;p.y=big.y-ny*20}x2.beginPath();x2.arc(p.x,p.y,3,0,6.3);x2.fill()});
+big.vx*=.97;big.vy*=.97;big.x+=big.vx;big.y+=big.vy;if(big.x&amp;lt;20||big.x&amp;gt;580){big.vx*=-1;big.x=Math.min(580,Math.max(20,big.x))}if(big.y&amp;lt;20||big.y&amp;gt;280){big.vy*=-1;big.y=Math.min(280,Math.max(20,big.y))}
+big.tr.push([big.x,big.y]);if(big.tr.length&amp;gt;250)big.tr.shift();x2.strokeStyle=col(&amp;#x27;--hot&amp;#x27;);x2.beginPath();big.tr.forEach((q,i)=&amp;gt;i?x2.lineTo(q[0],q[1]):x2.moveTo(q[0],q[1]));x2.stroke();x2.fillStyle=col(&amp;#x27;--hot&amp;#x27;);x2.beginPath();x2.arc(big.x,big.y,16,0,6.3);x2.fill()}
+/* 2-bo&amp;#x27;lim */
+const S=[{n:&amp;#x27;suv&amp;#x27;,f:&amp;#x27;H₂O&amp;#x27;,M:18,u:&amp;#x27;molekula&amp;#x27;,c:&amp;#x27;#3b82f6&amp;#x27;},{n:&amp;#x27;temir&amp;#x27;,f:&amp;#x27;Fe&amp;#x27;,M:56,u:&amp;#x27;atom&amp;#x27;,c:&amp;#x27;#ef4444&amp;#x27;},{n:&amp;#x27;kislorod&amp;#x27;,f:&amp;#x27;O₂&amp;#x27;,M:32,u:&amp;#x27;molekula&amp;#x27;,c:&amp;#x27;#14b8a6&amp;#x27;},{n:&amp;#x27;alyuminiy&amp;#x27;,f:&amp;#x27;Al&amp;#x27;,M:27,u:&amp;#x27;atom&amp;#x27;,c:&amp;#x27;#a3a3a3&amp;#x27;}];
+S.forEach((s,i)=&amp;gt;$(&amp;#x27;#sub&amp;#x27;).add(new Option(s.n+&amp;#x27; (&amp;#x27;+s.f+&amp;#x27;, M = &amp;#x27;+s.M+&amp;#x27; g/mol)&amp;#x27;,i)));
+const x3=$(&amp;#x27;#c3&amp;#x27;).getContext(&amp;#x27;2d&amp;#x27;),D=[...Array(31)].map(()=&amp;gt;({x:Math.random()*560+20,y:Math.random()*180+20,ph:Math.random()*6.3}));
+function upd2(){const s=S[$(&amp;#x27;#sub&amp;#x27;).value],v=+$(&amp;#x27;#nu&amp;#x27;).value,N=v*NA;$(&amp;#x27;#nv&amp;#x27;).textContent=String(v).replace(&amp;#x27;.&amp;#x27;,&amp;#x27;,&amp;#x27;);
+$(&amp;#x27;#o2&amp;#x27;).innerHTML=&amp;#x27;&amp;lt;p&amp;gt;Zarrachalar soni: N = ν·Nₐ = &amp;lt;span class=&amp;quot;big&amp;quot;&amp;gt;&amp;#x27;+f(N)+&amp;#x27;&amp;lt;/span&amp;gt; ta &amp;#x27;+s.u+&amp;#x27;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Massa: m = ν·M = &amp;#x27;+f(v*s.M)+&amp;#x27; g = &amp;#x27;+f(v*s.M/1000)+&amp;#x27; kg&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Bitta &amp;#x27;+s.u+&amp;#x27; massasi: m₀ = M/Nₐ = &amp;#x27;+f(s.M/1000/NA)+&amp;#x27; kg&amp;lt;/p&amp;gt;&amp;#x27;;
+$(&amp;#x27;#cmp&amp;#x27;).innerHTML=&amp;#x27;&amp;lt;p&amp;gt;• Yer aholisi ≈ 8·10⁹. Bu &amp;#x27;+f(N)+&amp;#x27; sonidan &amp;lt;b&amp;gt;&amp;#x27;+f(N/8e9)+&amp;#x27;&amp;lt;/b&amp;gt; marta kichik.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Atom o\&amp;#x27;lchami ≈ 10⁻¹⁰ m. &amp;#x27;+f(N)+&amp;#x27; ta atomni qator qilsak, uzunligi &amp;#x27;+f(N*1e-10)+&amp;#x27; m bo\&amp;#x27;ladi. Quyoshgacha masofa 1,5·10¹¹ m.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;• Bitta &amp;#x27;+s.u+&amp;#x27; massasi &amp;#x27;+f(s.M/1000/NA)+&amp;#x27; kg. U qum donasidan (≈ 10⁻⁵ kg) juda yengil.&amp;lt;/p&amp;gt;&amp;#x27;}
+function inv(){const v=parseFloat($(&amp;#x27;#inv&amp;#x27;).value.replace(&amp;#x27;,&amp;#x27;,&amp;#x27;.&amp;#x27;));$(&amp;#x27;#o3&amp;#x27;).innerHTML=isNaN(v)?&amp;#x27;Son kiriting&amp;#x27;:&amp;#x27;ν = N/Nₐ = &amp;#x27;+f(v*1e23/NA)+&amp;#x27; mol&amp;#x27;}
+$(&amp;#x27;#sub&amp;#x27;).onchange=$(&amp;#x27;#nu&amp;#x27;).oninput=upd2;$(&amp;#x27;#inv&amp;#x27;).oninput=inv;upd2();inv();
+function draw3(t){x3.clearRect(0,0,600,220);x3.fillStyle=S[$(&amp;#x27;#sub&amp;#x27;).value].c;const k=Math.round(+$(&amp;#x27;#nu&amp;#x27;).value*6.02);for(let i=0;i&amp;lt;k;i++){const d=D[i];x3.beginPath();x3.arc(d.x+Math.sin(t*.002+d.ph)*6,d.y+Math.cos(t*.0025+d.ph)*6,9,0,6.3);x3.fill()}}
+/* 3-bo&amp;#x27;lim */
+document.querySelectorAll(&amp;#x27;[data-f]&amp;#x27;).forEach(b=&amp;gt;b.onclick=()=&amp;gt;{$(&amp;#x27;#fo&amp;#x27;).innerHTML=b.dataset.f.split(&amp;#x27;|&amp;#x27;).join(&amp;#x27;&amp;lt;br&amp;gt;&amp;#x27;)});
+function pr(q,g,fo,ca,a,u){return{q,a,u,st:[&amp;#x27;Berilgan: &amp;#x27;+g,&amp;#x27;Formula: &amp;#x27;+fo,&amp;#x27;Hisoblash: &amp;#x27;+ca,&amp;#x27;Javob: &amp;#x27;+f(a)+&amp;#x27; &amp;#x27;+u]}}
+const PR=[pr(&amp;#x27;2 mol suvda nechta molekula bor?&amp;#x27;,&amp;#x27;ν = 2 mol; Nₐ = 6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;N = ν·Nₐ&amp;#x27;,&amp;#x27;N = 2 · 6,02·10²³ = 1,204·10²⁴&amp;#x27;,2*NA,&amp;#x27;dona&amp;#x27;),
+pr(&amp;#x27;3,01·10²³ ta molekula necha mol moddani tashkil etadi?&amp;#x27;,&amp;#x27;N = 3,01·10²³; Nₐ = 6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;ν = N/Nₐ&amp;#x27;,&amp;#x27;ν = 3,01·10²³ / 6,02·10²³ = 0,5&amp;#x27;,.5,&amp;#x27;mol&amp;#x27;),
+pr(&amp;#x27;36 g suv (M = 18 g/mol) necha mol?&amp;#x27;,&amp;#x27;m = 36 g = 0,036 kg (SI ga o\&amp;#x27;tkazdik!); M = 0,018 kg/mol&amp;#x27;,&amp;#x27;ν = m/M&amp;#x27;,&amp;#x27;ν = 0,036 / 0,018 = 2&amp;#x27;,2,&amp;#x27;mol&amp;#x27;),
+pr(&amp;#x27;88 g CO₂ (M = 44 g/mol) necha mol?&amp;#x27;,&amp;#x27;m = 88 g = 0,088 kg (SI!); M = 0,044 kg/mol&amp;#x27;,&amp;#x27;ν = m/M&amp;#x27;,&amp;#x27;ν = 0,088 / 0,044 = 2&amp;#x27;,2,&amp;#x27;mol&amp;#x27;),
+pr(&amp;#x27;0,5 mol alyuminiy (M = 27 g/mol) massasi necha gramm?&amp;#x27;,&amp;#x27;ν = 0,5 mol; M = 27 g/mol = 0,027 kg/mol&amp;#x27;,&amp;#x27;m = ν·M&amp;#x27;,&amp;#x27;m = 0,5 · 0,027 = 0,0135 kg = 13,5 g&amp;#x27;,13.5,&amp;#x27;g&amp;#x27;),
+pr(&amp;#x27;0,5 kg temir (M = 56 g/mol) necha mol?&amp;#x27;,&amp;#x27;m = 0,5 kg; M = 56 g/mol = 0,056 kg/mol (SI!)&amp;#x27;,&amp;#x27;ν = m/M&amp;#x27;,&amp;#x27;ν = 0,5 / 0,056 ≈ 8,93&amp;#x27;,.5/.056,&amp;#x27;mol&amp;#x27;),
+pr(&amp;#x27;Kislorod (M = 32 g/mol) bitta molekulasining massasi necha kg?&amp;#x27;,&amp;#x27;M = 32 g/mol = 0,032 kg/mol; Nₐ = 6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;m₀ = M/Nₐ&amp;#x27;,&amp;#x27;m₀ = 0,032 / 6,02·10²³ ≈ 5,32·10⁻²⁶&amp;#x27;,.032/NA,&amp;#x27;kg&amp;#x27;),
+pr(&amp;#x27;54 g alyuminiyda (M = 27 g/mol) nechta atom bor?&amp;#x27;,&amp;#x27;m = 54 g = 0,054 kg; M = 0,027 kg/mol&amp;#x27;,&amp;#x27;ν = m/M = 2 mol, keyin N = ν·Nₐ&amp;#x27;,&amp;#x27;N = 2 · 6,02·10²³ = 1,204·10²⁴&amp;#x27;,2*NA,&amp;#x27;dona&amp;#x27;)];
+let pi=0,cur=PR[0];
+function show(p,label){cur=p;$(&amp;#x27;#pn&amp;#x27;).textContent=&amp;#x27; &amp;#x27;+label+&amp;#x27; &amp;#x27;;$(&amp;#x27;#pq&amp;#x27;).textContent=p.q;$(&amp;#x27;#pu&amp;#x27;).textContent=p.u;$(&amp;#x27;#pa&amp;#x27;).value=&amp;#x27;&amp;#x27;;$(&amp;#x27;#pm&amp;#x27;).textContent=&amp;#x27;&amp;#x27;;$(&amp;#x27;#ps&amp;#x27;).innerHTML=&amp;#x27;&amp;#x27;}
+function go(d){pi=(pi+d+PR.length)%PR.length;show(PR[pi],(pi+1)+&amp;#x27;/&amp;#x27;+PR.length)}
+$(&amp;#x27;#pv&amp;#x27;).onclick=()=&amp;gt;go(-1);$(&amp;#x27;#nx&amp;#x27;).onclick=()=&amp;gt;go(1);
+$(&amp;#x27;#rd&amp;#x27;).onclick=()=&amp;gt;{const s=S[Math.random()*4|0],t=Math.random()*3|0,k=1+Math.random()*5|0,h=k/2;let p;
+if(t==0)p=pr(k+&amp;#x27; mol &amp;#x27;+s.n+&amp;#x27;da (&amp;#x27;+s.f+&amp;#x27;) nechta &amp;#x27;+s.u+&amp;#x27; bor?&amp;#x27;,&amp;#x27;ν = &amp;#x27;+k+&amp;#x27; mol; Nₐ = 6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;N = ν·Nₐ&amp;#x27;,&amp;#x27;N = &amp;#x27;+k+&amp;#x27; · 6,02·10²³ = &amp;#x27;+f(k*NA),k*NA,&amp;#x27;dona&amp;#x27;);
+else if(t==1)p=pr(f(s.M*h)+&amp;#x27; g &amp;#x27;+s.n+&amp;#x27; (&amp;#x27;+s.f+&amp;#x27;, M = &amp;#x27;+s.M+&amp;#x27; g/mol) necha mol?&amp;#x27;,&amp;#x27;m = &amp;#x27;+f(s.M*h)+&amp;#x27; g = &amp;#x27;+f(s.M*h/1000)+&amp;#x27; kg (SI!); M = &amp;#x27;+f(s.M/1000)+&amp;#x27; kg/mol&amp;#x27;,&amp;#x27;ν = m/M&amp;#x27;,&amp;#x27;ν = &amp;#x27;+f(s.M*h/1000)+&amp;#x27; / &amp;#x27;+f(s.M/1000)+&amp;#x27; = &amp;#x27;+f(h),h,&amp;#x27;mol&amp;#x27;);
+else p=pr(f(h*NA)+&amp;#x27; ta &amp;#x27;+s.u+&amp;#x27; (&amp;#x27;+s.n+&amp;#x27;) necha mol?&amp;#x27;,&amp;#x27;N = &amp;#x27;+f(h*NA)+&amp;#x27;; Nₐ = 6,02·10²³ mol⁻¹&amp;#x27;,&amp;#x27;ν = N/Nₐ&amp;#x27;,&amp;#x27;ν = &amp;#x27;+f(h*NA)+&amp;#x27; / 6,02·10²³ = &amp;#x27;+f(h),h,&amp;#x27;mol&amp;#x27;);show(p,&amp;#x27;yangi&amp;#x27;)};
+$(&amp;#x27;#ck&amp;#x27;).onclick=()=&amp;gt;{const v=parseFloat($(&amp;#x27;#pa&amp;#x27;).value.replace(&amp;#x27;,&amp;#x27;,&amp;#x27;.&amp;#x27;).replace(/\s/g,&amp;#x27;&amp;#x27;).replace(/[·*x×]10\^?/,&amp;#x27;e&amp;#x27;));const m=$(&amp;#x27;#pm&amp;#x27;);
+if(isNaN(v)){m.style.color=col(&amp;#x27;--bad&amp;#x27;);m.textContent=&amp;#x27;Son kiriting (masalan 1,2e24)&amp;#x27;;return}
+if(Math.abs(v-cur.a)&amp;lt;=.02*Math.abs(cur.a)){m.style.color=col(&amp;#x27;--ok&amp;#x27;);m.textContent=&amp;#x27;To\&amp;#x27;g\&amp;#x27;ri! ✔&amp;#x27;}else{m.style.color=col(&amp;#x27;--bad&amp;#x27;);m.textContent=&amp;#x27;Xato. Birliklarni (g → kg) va formulani tekshiring.&amp;#x27;}};
+$(&amp;#x27;#sv&amp;#x27;).onclick=()=&amp;gt;{const box=$(&amp;#x27;#ps&amp;#x27;);box.innerHTML=&amp;#x27;&amp;#x27;;cur.st.forEach((s,i)=&amp;gt;setTimeout(()=&amp;gt;{const d=document.createElement(&amp;#x27;div&amp;#x27;);d.className=&amp;#x27;step&amp;#x27;;d.textContent=s;box.appendChild(d)},i*700))};
+go(0);pi=0;show(PR[0],&amp;#x27;1/&amp;#x27;+PR.length);
+(function loop(t){if(act==0){draw1(t);draw2()}else if(act==1)draw3(t);requestAnimationFrame(loop)})(0);
+&amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;
+&quot;&gt;&lt;/iframe&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  9-sinf fizika • Interaktiv HTML5 dars materiallari
+&lt;/footer&gt;
+
+&lt;script&gt;
+function go(i){
+  const el=document.getElementById(&#x27;lesson-&#x27;+i);
+  if(el) el.scrollIntoView({behavior:&#x27;smooth&#x27;,block:&#x27;start&#x27;});
+}
+const lessons=[...document.querySelectorAll(&#x27;.lesson&#x27;)];
+const buttons=[...document.querySelectorAll(&#x27;nav button&#x27;)];
+const obs=new IntersectionObserver(entries=&gt;{
+  entries.forEach(e=&gt;{
+    if(e.isIntersecting){
+      const i=lessons.indexOf(e.target);
+      buttons.forEach((b,j)=&gt;b.classList.toggle(&#x27;active&#x27;,j===i));
+    }
+  });
+},{rootMargin:&#x27;-20% 0px -65% 0px&#x27;,threshold:0});
+lessons.forEach(x=&gt;obs.observe(x));
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+
+<iframe id="p1" class="panel" title="5 ta interaktiv simulyatsiya"
+  srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;uz&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;9-sinf fizika — Barcha interaktiv simulyatsiyalar&lt;/title&gt;
+&lt;style&gt;
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;font-family:Arial,sans-serif;color:#172033}.top{position:sticky;top:0;z-index:10;background:#173b70;color:#fff;padding:12px;text-align:center;box-shadow:0 2px 8px #0003}.top h1{margin:0 0 10px;font-size:22px}.tabs{display:flex;gap:7px;justify-content:center;flex-wrap:wrap}.tabs button{border:0;border-radius:9px;padding:9px 12px;background:#e6edf7;color:#173b70;font-weight:bold;cursor:pointer}.tabs button.active{background:#50e3c2;color:#173b70}.frame{display:none;width:100%;height:calc(100vh - 118px);min-height:700px;border:0;background:#fff}.frame.active{display:block}@media(max-width:700px){.top h1{font-size:18px}.tabs button{font-size:12px;padding:8px}.frame{height:calc(100vh - 145px);min-height:650px}}
+&lt;/style&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;div class=&quot;top&quot;&gt;&lt;h1&gt;9-Sinf Fizika — Interaktiv simulyatsiyalar&lt;/h1&gt;&lt;div class=&quot;tabs&quot;&gt;&lt;button onclick=&quot;showFrame(0)&quot;&gt;1. Gaz molekulalari simulyatsiyasi&lt;/button&gt;&lt;button onclick=&quot;showFrame(1)&quot;&gt;2. Ideal gaz holatining tenglamalari&lt;/button&gt;&lt;button onclick=&quot;showFrame(2)&quot;&gt;3. Izotermik jarayon&lt;/button&gt;&lt;button onclick=&quot;showFrame(3)&quot;&gt;4. Izobarik jarayon&lt;/button&gt;&lt;button onclick=&quot;showFrame(4)&quot;&gt;5. Izoxorik jarayon&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;iframe id=&quot;frame0&quot; title=&quot;1. Gaz molekulalari simulyatsiyasi&quot; class=&quot;frame&quot; loading=&quot;eager&quot; data-b64=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InV6Ij4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgICA8dGl0bGU+OS1TaW5mIEZpemlrYTogR2F6IG1vbGVrdWxhbGFyaW5pbmcgaGFyYWthdCB0ZXpsaWdpIChNdWthbW1hbCBTaW11bHlhdHNpeWEpPC90aXRsZT4KICAgIDxzdHlsZT4KICAgICAgICAqIHsKICAgICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKICAgICAgICAgICAgbWFyZ2luOiAwOwogICAgICAgICAgICBwYWRkaW5nOiAwOwogICAgICAgICAgICBmb250LWZhbWlseTogJ1NlZ29lIFVJJywgVGFob21hLCBHZW5ldmEsIFZlcmRhbmEsIHNhbnMtc2VyaWY7CiAgICAgICAgfQoKICAgICAgICBib2R5IHsKICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzBmMTcyYTsKICAgICAgICAgICAgY29sb3I6ICNmOGZhZmM7CiAgICAgICAgICAgIHBhZGRpbmc6IDIwcHg7CiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7CiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47CiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgICAgfQoKICAgICAgICBoZWFkZXIgewogICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDI1cHg7CiAgICAgICAgICAgIG1heC13aWR0aDogMTIwMHB4OwogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICB9CgogICAgICAgIGhlYWRlciBoMSB7CiAgICAgICAgICAgIGNvbG9yOiAjMzhiZGY4OwogICAgICAgICAgICBmb250LXNpemU6IDJyZW07CiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDhweDsKICAgICAgICB9CgogICAgICAgIGhlYWRlciBwIHsKICAgICAgICAgICAgY29sb3I6ICM5NGEzYjg7CiAgICAgICAgICAgIGZvbnQtc2l6ZTogMXJlbTsKICAgICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNTsKICAgICAgICB9CgogICAgICAgIC5tYWluLWNvbnRhaW5lciB7CiAgICAgICAgICAgIGRpc3BsYXk6IGdyaWQ7CiAgICAgICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjsKICAgICAgICAgICAgZ2FwOiAyMHB4OwogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgbWF4LXdpZHRoOiAxMjAwcHg7CiAgICAgICAgfQoKICAgICAgICBAbWVkaWEgKG1heC13aWR0aDogOTAwcHgpIHsKICAgICAgICAgICAgLm1haW4tY29udGFpbmVyIHsKICAgICAgICAgICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAuY2FyZCB7CiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMxZTI5M2I7CiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDEycHg7CiAgICAgICAgICAgIHBhZGRpbmc6IDE4cHg7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMTBweCAyNXB4IC01cHggcmdiYSgwLCAwLCAwLCAwLjMpOwogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMzM0MTU1OwogICAgICAgIH0KCiAgICAgICAgLmNhcmQgaDIgewogICAgICAgICAgICBmb250LXNpemU6IDEuMTVyZW07CiAgICAgICAgICAgIGNvbG9yOiAjMzhiZGY4OwogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMnB4OwogICAgICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgIzMzNDE1NTsKICAgICAgICAgICAgcGFkZGluZy1ib3R0b206IDZweDsKICAgICAgICB9CgogICAgICAgIGNhbnZhcyB7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwMjA2MTc7CiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDsKICAgICAgICAgICAgd2lkdGg6IDEwMCU7CiAgICAgICAgICAgIGhlaWdodDogYXV0bzsKICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgICAgfQoKICAgICAgICAuY29udHJvbHMgewogICAgICAgICAgICBtYXJnaW4tdG9wOiAxNXB4OwogICAgICAgICAgICBkaXNwbGF5OiBmbGV4OwogICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOwogICAgICAgICAgICBnYXA6IDEycHg7CiAgICAgICAgfQoKICAgICAgICAuY29udHJvbC1ncm91cCB7CiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7CiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsKICAgICAgICB9CgogICAgICAgIC5jb250cm9sLWdyb3VwIGxhYmVsIHsKICAgICAgICAgICAgZm9udC1zaXplOiAwLjlyZW07CiAgICAgICAgICAgIGNvbG9yOiAjY2JkNWUxOwogICAgICAgICAgICBmbGV4OiAxOwogICAgICAgIH0KCiAgICAgICAgLmNvbnRyb2wtZ3JvdXAgaW5wdXRbdHlwZT0icmFuZ2UiXSB7CiAgICAgICAgICAgIGZsZXg6IDEuNTsKICAgICAgICAgICAgYWNjZW50LWNvbG9yOiAjMGVhNWU5OwogICAgICAgIH0KCiAgICAgICAgLmNvbnRyb2wtZ3JvdXAgc2VsZWN0IHsKICAgICAgICAgICAgZmxleDogMS41OwogICAgICAgICAgICBwYWRkaW5nOiA2cHg7CiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDZweDsKICAgICAgICAgICAgYmFja2dyb3VuZDogIzBmMTcyYTsKICAgICAgICAgICAgY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICMzMzQxNTU7CiAgICAgICAgfQoKICAgICAgICAudmFsLWRpc3BsYXkgewogICAgICAgICAgICB3aWR0aDogNzVweDsKICAgICAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7CiAgICAgICAgICAgIGZvbnQtc2l6ZTogMC45cmVtOwogICAgICAgICAgICBjb2xvcjogIzM4YmRmODsKICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgICAgICAgfQoKICAgICAgICAudGhlb3J5LXNlY3Rpb24gewogICAgICAgICAgICBncmlkLWNvbHVtbjogMSAvIC0xOwogICAgICAgICAgICBkaXNwbGF5OiBncmlkOwogICAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgbWlubWF4KDMyMHB4LCAxZnIpKTsKICAgICAgICAgICAgZ2FwOiAyMHB4OwogICAgICAgICAgICBtYXJnaW4tdG9wOiAxMHB4OwogICAgICAgIH0KCiAgICAgICAgLmZvcm11bGEtYm94IHsKICAgICAgICAgICAgYmFja2dyb3VuZDogIzBmMTcyYTsKICAgICAgICAgICAgcGFkZGluZzogMTZweDsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDsKICAgICAgICAgICAgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjMGVhNWU5OwogICAgICAgICAgICBmb250LXNpemU6IDAuOTJyZW07CiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjY7CiAgICAgICAgfQoKICAgICAgICAuZm9ybXVsYS1ib3ggaDMgewogICAgICAgICAgICBjb2xvcjogIzM4YmRmODsKICAgICAgICAgICAgZm9udC1zaXplOiAxLjA1cmVtOwogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiA4cHg7CiAgICAgICAgfQoKICAgICAgICAuZm9ybXVsYSB7CiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgVGltZXMsIHNlcmlmOwogICAgICAgICAgICBmb250LXN0eWxlOiBpdGFsaWM7CiAgICAgICAgICAgIGZvbnQtc2l6ZTogMS4xNXJlbTsKICAgICAgICAgICAgY29sb3I6ICNmNDNmNWU7CiAgICAgICAgICAgIG1hcmdpbjogOHB4IDA7CiAgICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsKICAgICAgICAgICAgYmFja2dyb3VuZDogIzFlMjkzYjsKICAgICAgICAgICAgcGFkZGluZzogNnB4OwogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA2cHg7CiAgICAgICAgfQoKICAgICAgICAuc3RhdC1ncmlkIHsKICAgICAgICAgICAgZGlzcGxheTogZ3JpZDsKICAgICAgICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgMWZyKTsKICAgICAgICAgICAgZ2FwOiAxMHB4OwogICAgICAgICAgICBtYXJnaW4tdG9wOiAxMnB4OwogICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMGYxNzJhOwogICAgICAgICAgICBwYWRkaW5nOiAxMnB4OwogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7CiAgICAgICAgfQoKICAgICAgICAuc3RhdC1pdGVtIHsKICAgICAgICAgICAgZm9udC1zaXplOiAwLjg1cmVtOwogICAgICAgICAgICBjb2xvcjogIzk0YTNiODsKICAgICAgICB9CgogICAgICAgIC5zdGF0LWl0ZW0gc3BhbiB7CiAgICAgICAgICAgIGNvbG9yOiAjMzhiZGY4OwogICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsKICAgICAgICAgICAgZm9udC1zaXplOiAwLjk1cmVtOwogICAgICAgIH0KCiAgICAgICAgdWwgewogICAgICAgICAgICBtYXJnaW4tbGVmdDogMThweDsKICAgICAgICAgICAgbWFyZ2luLXRvcDogNXB4OwogICAgICAgIH0KCiAgICAgICAgbGkgewogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiA0cHg7CiAgICAgICAgfQoKICAgICAgICAuZXhwZXJpbWVudC1ib3ggewogICAgICAgICAgICBncmlkLWNvbHVtbjogMSAvIC0xOwogICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMWUyOTNiOwogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMGVhNWU5OwogICAgICAgICAgICBwYWRkaW5nOiAxOHB4OwogICAgICAgICAgICBib3JkZXItcmFkaXVzOiAxMnB4OwogICAgICAgIH0KCiAgICAgICAgLmV4cGVyaW1lbnQtYm94IGgzIHsKICAgICAgICAgICAgY29sb3I6ICMzOGJkZjg7CiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7CiAgICAgICAgfQogICAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KCjxoZWFkZXI+CiAgICA8aDE+OS1TaW5mIEZpemlrYTogR2F6IG1vbGVrdWxhbGFyaW5pbmcgaGFyYWthdCB0ZXpsaWdpPC9oMT4KICAgIDxwPk1vbGVrdWx5YXIta2luZXRpayBuYXphcml5YSwgbydydGFjaGEga3ZhZHJhdGlrIHRlemxpayB2YSBNYWtzdmVsbCB0YXFzaW1vdGkgYm8neWljaGEga2VuZ2F5dGlyaWxnYW4gdmEgbXVrYW1tYWxsYXNodGlyaWxnYW4gaW50ZXJha3RpdiBvJ3F1diBkYXN0dXJpLjwvcD4KPC9oZWFkZXI+Cgo8ZGl2IGNsYXNzPSJtYWluLWNvbnRhaW5lciI+CiAgICA8IS0tIFNpbXVseWF0c2l5YSBveW5hc2kgLS0+CiAgICA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgICAgICA8aDI+MS4gTUtOIE1vZGVsbGFzaCB2YSBNb2xla3VsYWxhciBIYXJha2F0aTwvaDI+CiAgICAgICAgPGNhbnZhcyBpZD0ic2ltQ2FudmFzIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMyMCI+PC9jYW52YXM+CiAgICAgICAgCiAgICAgICAgPGRpdiBjbGFzcz0iY29udHJvbHMiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250cm9sLWdyb3VwIj4KICAgICAgICAgICAgICAgIDxsYWJlbCBmb3I9InRlbXBTbGlkZXIiPkFic29seXV0IEhhcm9yYXQgKFQpOjwvbGFiZWw+CiAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0icmFuZ2UiIGlkPSJ0ZW1wU2xpZGVyIiBtaW49IjEwMCIgbWF4PSIxMDAwIiB2YWx1ZT0iMzAwIiBzdGVwPSIxMCI+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0idmFsLWRpc3BsYXkiIGlkPSJ0ZW1wVmFsIj4zMDAgSzwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb250cm9sLWdyb3VwIj4KICAgICAgICAgICAgICAgIDxsYWJlbCBmb3I9Imdhc1NlbGVjdCI+R2F6IHR1cmkgKE1vbHlhciBtYXNzYSk6PC9sYWJlbD4KICAgICAgICAgICAgICAgIDxzZWxlY3QgaWQ9Imdhc1NlbGVjdCI+CiAgICAgICAgICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iMiI+Vm9kb3JvZCAoSOKCgikgLSBNID0gMiBnL21vbDwvb3B0aW9uPgogICAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjQiPkdlbGl5IChIZSkgLSBNID0gNCBnL21vbDwvb3B0aW9uPgogICAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjI4IiBzZWxlY3RlZD5Bem90IChO4oKCKSAtIE0gPSAyOCBnL21vbDwvb3B0aW9uPgogICAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjMyIj5LaXNsb3JvZCAoT+KCgikgLSBNID0gMzIgZy9tb2w8L29wdGlvbj4KICAgICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSI0NCI+S2FyYm9uYXQgYW5naWRyaWQgKENP4oKCKSAtIE0gPSA0NCBnL21vbDwvb3B0aW9uPgogICAgICAgICAgICAgICAgPC9zZWxlY3Q+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAKICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29udHJvbC1ncm91cCI+CiAgICAgICAgICAgICAgICA8bGFiZWwgZm9yPSJjb3VudFNsaWRlciI+TW9sZWt1bGFsYXIgc29uaSAoTik6PC9sYWJlbD4KICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJyYW5nZSIgaWQ9ImNvdW50U2xpZGVyIiBtaW49IjUwIiBtYXg9IjMwMCIgdmFsdWU9IjE1MCIgc3RlcD0iMTAiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InZhbC1kaXNwbGF5IiBpZD0iY291bnRWYWwiPjE1MCB0YTwvc3Bhbj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KCiAgICA8IS0tIEdyYWZpayB2YSBTdGF0aXN0aWsgT3luYSAtLT4KICAgIDxkaXYgY2xhc3M9ImNhcmQiPgogICAgICAgIDxoMj4yIHZhIDMuIE1ha3N2ZWxsIFRhcXNpbW90aSB2YSBYYXJha3RlcmxpIFRlemxpa2xhcjwvaDI+CiAgICAgICAgPGNhbnZhcyBpZD0iY2hhcnRDYW52YXMiIHdpZHRoPSI1MDAiIGhlaWdodD0iMjQwIj48L2NhbnZhcz4KICAgICAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzdGF0LWdyaWQiPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGF0LWl0ZW0iPkVuZyBlaHRpbW9sbGkgdGV6bGlrICh2PHN1Yj5lPC9zdWI+KTogPGJyPjxzcGFuIGlkPSJ2UHJvYlZhbCI+MCBtL3M8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0YXQtaXRlbSI+TydydGFjaGEga3ZhZHJhdGlrIHRlemxpayAodjxzdWI+bydydC5rdjwvc3ViPik6IDxicj48c3BhbiBpZD0idlJtc1ZhbCI+MCBtL3M8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0YXQtaXRlbSI+TydydGFjaGEgYXJpZm1ldGlrIHRlemxpayAodjxzdWI+bydydDwvc3ViPik6IDxicj48c3BhbiBpZD0idkF2Z1ZhbCI+MCBtL3M8L3NwYW4+PC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0YXQtaXRlbSI+TydydGFjaGEga2luZXRpayBlbmVyZ2l5YSAoRTxzdWI+azwvc3ViPik6IDxicj48c3BhbiBpZD0iZUtpblZhbCI+MCBKPC9zcGFuPjwvZGl2PgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CgogICAgPCEtLSBOYXphcml5IG1hJ2x1bW90IHZhIGtlbmdheXRpcmlsZ2FuIHR1c2h1bmNoYWxhciAtLT4KICAgIDxkaXYgY2xhc3M9InRoZW9yeS1zZWN0aW9uIj4KICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIGZvcm11bGEtYm94Ij4KICAgICAgICAgICAgPGgzPjEuIEtpcmlzaCB2YSBNS04gQXNvc2l5IFBvc3R1bGF0bGFyaTwvaDM+CiAgICAgICAgICAgIDxwPk1vbGVrdWx5YXItS2luZXRpayBOYXphcml5YSAoTUtOKSBtb2RkYWxhcm5pbmcgdHV6aWxpc2hpIHZhIHhvc3NhbGFyaW5pIHVsYXJuaW5nIHphcnJhY2hhbGFyaSAoYXRvbGFyIHZhIG1vbGVrdWxhbGFyKSBoYXJha2F0aSBvcnFhbGkgdHVzaHVudGlyYWRpLjwvcD4KICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgPGxpPkJhcmNoYSBtb2RkYWxhciB6YXJyYWNoYWxhcmRhbiAobW9sZWt1bGEsIGF0b20pIHRhc2hraWwgdG9wZ2FuLjwvbGk+CiAgICAgICAgICAgICAgICA8bGk+WmFycmFjaGFsYXIgdXpsdWtzaXosIHRhcnRpYnNpeiAoeGFvdGlrKSB2YSBoYXIgdG9tb25nYSB0ZW5nIGVodGltb2xsaWtkYSBoYXJha2F0IHFpbGFkaS48L2xpPgogICAgICAgICAgICAgICAgPGxpPlphcnJhY2hhbGFyIGJpci1iaXJpIHZhIGlkaXNoIGRldm9yaSBiaWxhbiBlbGFzdGlrIHRvJ3FuYXNoYWRpLjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3M9ImNhcmQgZm9ybXVsYS1ib3giPgogICAgICAgICAgICA8aDM+Mi4gR2F6IE1vbGVrdWxhbGFyaW5pbmcgVGV6bGlrbGFyaSB2YSBGb3JtdWxhbGFyaTwvaDM+CiAgICAgICAgICAgIDxwPklkZWFsIGdheiBtb2xla3VsYWxhcmkgdHVybGkgdGV6bGlrbGFyZ2EgZWdhIGJvJ2xhZGkuIFVsYXJuaW5nIGhhcmFrYXRpbmkgeGFyYWt0ZXJsb3ZjaGkgMyB0YSBhc29zaXkgdGV6bGlrIG1hdmp1ZDo8L3A+CiAgICAgICAgICAgIAogICAgICAgICAgICA8cD48Yj5BKSBPJ3J0YWNoYSBrdmFkcmF0aWsgdGV6bGlrICh2PHN1Yj5vJ3J0Lmt2PC9zdWI+KTo8L2I+PC9wPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmb3JtdWxhIj52PHN1Yj5vJ3J0Lmt2PC9zdWI+ID0g4oiaKDNSVCAvIE0pID0g4oiaKDNrVCAvIG08c3ViPjA8L3N1Yj4pPC9kaXY+CiAgICAgICAgICAgIAogICAgICAgICAgICA8cD48Yj5CKSBFbmcgZWh0aW1vbGxpIHRlemxpayAodjxzdWI+ZTwvc3ViPik6PC9iPjwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZm9ybXVsYSI+djxzdWI+ZTwvc3ViPiA9IOKImigyUlQgLyBNKTwvZGl2PgogICAgICAgICAgICAKICAgICAgICAgICAgPHA+PGI+QykgTydydGFjaGEgYXJpZm1ldGlrIHRlemxpayAodjxzdWI+bydydDwvc3ViPik6PC9iPjwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZm9ybXVsYSI+djxzdWI+bydydDwvc3ViPiA9IOKImig4UlQgLyAoz4BNKSk8L2Rpdj4KICAgICAgICAgICAgPHA+PGk+VXNoYnUgdGV6bGlrbGFyIG9yYXNpZGFnaSBuaXNiYXQgZG9pbW86IHY8c3ViPmU8L3N1Yj4gPCB2PHN1Yj5vJ3J0PC9zdWI+IDwgdjxzdWI+bydydC5rdjwvc3ViPiBrbydyaW5pc2hpZGEgYm8nbGFkaS48L2k+PC9wPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIGZvcm11bGEtYm94Ij4KICAgICAgICAgICAgPGgzPjMuIE1ha3N2ZWxsbmluZyBUZXpsaWtsYXIgQm8neWljaGEgVGFxc2ltb3RpPC9oMz4KICAgICAgICAgICAgPHA+Si5LLiBNYWtzdmVsbCAxODU5LXlpbGRhIGdheiBtb2xla3VsYWxhcmluaW5nIHRlemxpayBibyd5aWNoYSB0YXFzaW1sYW5pc2ggcW9udW5peWF0aW5pIG5hemFyaXkgYXNvc2xhYiBiZXJnYW46PC9wPgogICAgICAgICAgICA8dWw+CiAgICAgICAgICAgICAgICA8bGk+SnVkYSBraWNoaWsgdmEganVkYSBrYXR0YSB0ZXpsaWtrYSBlZ2EgbW9sZWt1bGFsYXIgdWx1c2hpIG96IGJvJ2xhZGkuPC9saT4KICAgICAgICAgICAgICAgIDxsaT5Ba3Nhcml5YXQgbW9sZWt1bGFsYXIgPGI+ZW5nIGVodGltb2xsaSB0ZXpsaWsgKHY8c3ViPmU8L3N1Yj4pPC9iPiBhdHJvZmlnYSB0bydwbGFuYWRpLjwvbGk+CiAgICAgICAgICAgICAgICA8bGk+PGI+SGFyb3JhdCBvcnRpc2hpIGJpbGFuOjwvYj4gR3JhZmlrIGNobydxcWlzaSBvJ25nZ2Egc3VyaWxhZGkgdmEgcGFzdGxheWRpICh0ZXpsaWtsYXIgZGlhcGF6b25pIGtlbmdheWFkaSkuPC9saT4KICAgICAgICAgICAgICAgIDxsaT48Yj5Nb2x5YXIgbWFzc2Ega2ljaGlrbGFzaGdhbmRhOjwvYj4gWWVuZ2lsIGdheiBtb2xla3VsYWxhcmkgb2cnaXJsYXJnYSBxYXJhZ2FuZGEgdGV6cm9xIGhhcmFrYXQgcWlsYWRpLjwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDwhLS0gQW1hbGl5IHRhanJpYmEgdmEgbydxdXYgdG9wc2hpcmlnJ2kgLS0+CiAgICAgICAgPGRpdiBjbGFzcz0iZXhwZXJpbWVudC1ib3giPgogICAgICAgICAgICA8aDM+NC4gSW50ZXJha3RpdiBPJ3F1diBUb3BzaGlyaXFsYXJpIHZhIFRhanJpYmFsYXI8L2gzPgogICAgICAgICAgICA8cD5TaW11bHlhdHNpeWFkYW4gZm95ZGFsYW5pYiBxdXlpZGFnaSBmaXppayBxb251bml5YXRsYXJuaSB0ZWtzaGlyaWIga28ncmluZzo8L3A+CiAgICAgICAgICAgIDxvbCBzdHlsZT0ibWFyZ2luLWxlZnQ6IDIwcHg7IG1hcmdpbi10b3A6IDhweDsgbGluZS1oZWlnaHQ6IDEuODsiPgogICAgICAgICAgICAgICAgPGxpPjxiPkhhcm9yYXRuaW5nIHRhJ3Npcmk6PC9iPiBIYXJvcmF0bmkgMTAwIEsgZGFuIDkwMCBLIGdhIG9zaGlyaW5nLiBNb2xla3VsYWxhcm5pbmcgcmFuZ2kgdmEgTWFrc3ZlbGwgZ3JhZmlnaW5pbmcgc2hha2xpIHFhbmRheSBvJ3pnYXJnYW5pZ2EgZSd0aWJvciBiZXJpbmcuPC9saT4KICAgICAgICAgICAgICAgIDxsaT48Yj5Nb2x5YXIgbWFzc2FuaW5nIHRhJ3Npcmk6PC9iPiBIYXJvcmF0bmkgYmlyIHhpbCAoMzAwIEspIHNhcWxhZ2FuIGhvbGRhIGdheiB0dXJpbmkgVm9kb3JvZCAoSOKCgikgdmEgS2FyYm9uYXQgYW5naWRyaWQgKENP4oKCKSBnYSBhbG1hc2h0aXJpbmcuIFFheXNpIGdheiBtb2xla3VsYWxhcmkgdGV6cm9xIGhhcmFrYXQgcWlsbW9xZGE/PC9saT4KICAgICAgICAgICAgICAgIDxsaT48Yj5LaW5ldGlrIEVuZXJnaXlhOjwvYj4gR2F6IHR1cmkgbyd6Z2FyZ2FuZGEgYmlyIHhpbCBoYXJvcmF0ZGEgbydydGFjaGEga2luZXRpayBlbmVyZ2l5YSAoJEVfayQpIG8nc2hhZGltaT8gKERpcXFhdDogJEVfayA9IAxyYWN7M317Mn1rVCQgZm9ybXVsYWdhIGtvJ3JhIHUgZmFxYXQgaGFyb3JhdGdhIGJvZydsaXEhKS48L2xpPgogICAgICAgICAgICA8L29sPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CjwvZGl2PgoKPHNjcmlwdD4KICAgIC8vIEtvbnN0YW50YWxhcgogICAgY29uc3QgUiA9IDguMzE0OyAvLyBKLyhtb2wqSykKICAgIGNvbnN0IGsgPSAxLjM4ZS0yMzsgLy8gSi9LCiAgICBjb25zdCBOYSA9IDYuMDIyZTIzOwoKICAgIC8vIEVsZW1lbnRsYXIKICAgIGNvbnN0IHNpbUNhbnZhcyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzaW1DYW52YXMnKTsKICAgIGNvbnN0IHNpbUN0eCA9IHNpbUNhbnZhcy5nZXRDb250ZXh0KCcyZCcpOwogICAgY29uc3QgY2hhcnRDYW52YXMgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2hhcnRDYW52YXMnKTsKICAgIGNvbnN0IGNoYXJ0Q3R4ID0gY2hhcnRDYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKCiAgICBjb25zdCB0ZW1wU2xpZGVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3RlbXBTbGlkZXInKTsKICAgIGNvbnN0IHRlbXBWYWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGVtcFZhbCcpOwogICAgY29uc3QgZ2FzU2VsZWN0ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dhc1NlbGVjdCcpOwogICAgY29uc3QgY291bnRTbGlkZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY291bnRTbGlkZXInKTsKICAgIGNvbnN0IGNvdW50VmFsID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2NvdW50VmFsJyk7CgogICAgY29uc3QgdlByb2JWYWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndlByb2JWYWwnKTsKICAgIGNvbnN0IHZSbXNWYWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndlJtc1ZhbCcpOwogICAgY29uc3QgdkF2Z1ZhbCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd2QXZnVmFsJyk7CiAgICBjb25zdCBlS2luVmFsID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2VLaW5WYWwnKTsKCiAgICAvLyBPJ3pnYXJ1dmNoaWxhcgogICAgbGV0IFQgPSBwYXJzZUZsb2F0KHRlbXBTbGlkZXIudmFsdWUpOwogICAgbGV0IE0gPSBwYXJzZUZsb2F0KGdhc1NlbGVjdC52YWx1ZSkgLyAxMDAwOyAvLyBrZy9tb2wKICAgIGxldCBudW1Nb2xlY3VsZXMgPSBwYXJzZUludChjb3VudFNsaWRlci52YWx1ZSk7CiAgICBsZXQgbW9sZWN1bGVzID0gW107CgogICAgLy8gTW9sZWt1bGEga2xhc2kKICAgIGNsYXNzIE1vbGVjdWxlIHsKICAgICAgICBjb25zdHJ1Y3Rvcih2Um1zKSB7CiAgICAgICAgICAgIHRoaXMuciA9IDQ7CiAgICAgICAgICAgIHRoaXMueCA9IE1hdGgucmFuZG9tKCkgKiAoc2ltQ2FudmFzLndpZHRoIC0gMiAqIHRoaXMucikgKyB0aGlzLnI7CiAgICAgICAgICAgIHRoaXMueSA9IE1hdGgucmFuZG9tKCkgKiAoc2ltQ2FudmFzLmhlaWdodCAtIDIgKiB0aGlzLnIpICsgdGhpcy5yOwogICAgICAgICAgICAKICAgICAgICAgICAgLy8gTWFrc3ZlbGwtQm9sdHNtYW4gYm8neWljaGEgdGFzb2RpZml5IHRlemxpayBiZXJpc2ggKEJveC1NdWxsZXIgdHJhbnNmb3JtYXNpeWFzaSkKICAgICAgICAgICAgbGV0IHNpZ21hID0gTWF0aC5zcXJ0KFIgKiBUIC8gTSk7CiAgICAgICAgICAgIGxldCB2eCA9IHRoaXMuZ2F1c3NpYW5SYW5kb20oMCwgc2lnbWEpOwogICAgICAgICAgICBsZXQgdnkgPSB0aGlzLmdhdXNzaWFuUmFuZG9tKDAsIHNpZ21hKTsKICAgICAgICAgICAgbGV0IHZ6ID0gdGhpcy5nYXVzc2lhblJhbmRvbSgwLCBzaWdtYSk7CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBWaXp1YWxpemF0c2l5YSBtYXNzaHRhYmkKICAgICAgICAgICAgdGhpcy5zY2FsZSA9IDAuMDE1OwogICAgICAgICAgICB0aGlzLnZ4ID0gdnggKiB0aGlzLnNjYWxlOwogICAgICAgICAgICB0aGlzLnZ5ID0gdnkgKiB0aGlzLnNjYWxlOwogICAgICAgICAgICB0aGlzLnNwZWVkID0gTWF0aC5zcXJ0KHZ4KnZ4ICsgdnkqdnkgKyB2eip2eik7CiAgICAgICAgfQoKICAgICAgICBnYXVzc2lhblJhbmRvbShtZWFuLCBzdGQpIHsKICAgICAgICAgICAgbGV0IHUxID0gTWF0aC5yYW5kb20oKTsKICAgICAgICAgICAgbGV0IHUyID0gTWF0aC5yYW5kb20oKTsKICAgICAgICAgICAgbGV0IHowID0gTWF0aC5zcXJ0KC0yLjAgKiBNYXRoLmxvZyh1MSkpICogTWF0aC5jb3MoMi4wICogTWF0aC5QSSAqIHUyKTsKICAgICAgICAgICAgcmV0dXJuIHowICogc3RkICsgbWVhbjsKICAgICAgICB9CgogICAgICAgIHVwZGF0ZSgpIHsKICAgICAgICAgICAgdGhpcy54ICs9IHRoaXMudng7CiAgICAgICAgICAgIHRoaXMueSArPSB0aGlzLnZ5OwoKICAgICAgICAgICAgLy8gRGV2b3IgYmlsYW4gZWxhc3RpayB0bydxbmFzaHV2CiAgICAgICAgICAgIGlmICh0aGlzLnggLSB0aGlzLnIgPCAwIHx8IHRoaXMueCArIHRoaXMuciA+IHNpbUNhbnZhcy53aWR0aCkgewogICAgICAgICAgICAgICAgdGhpcy52eCAqPSAtMTsKICAgICAgICAgICAgICAgIHRoaXMueCA9IE1hdGgubWF4KHRoaXMuciwgTWF0aC5taW4oc2ltQ2FudmFzLndpZHRoIC0gdGhpcy5yLCB0aGlzLngpKTsKICAgICAgICAgICAgfQogICAgICAgICAgICBpZiAodGhpcy55IC0gdGhpcy5yIDwgMCB8fCB0aGlzLnkgKyB0aGlzLnIgPiBzaW1DYW52YXMuaGVpZ2h0KSB7CiAgICAgICAgICAgICAgICB0aGlzLnZ5ICo9IC0xOwogICAgICAgICAgICAgICAgdGhpcy55ID0gTWF0aC5tYXgodGhpcy5yLCBNYXRoLm1pbihzaW1DYW52YXMuaGVpZ2h0IC0gdGhpcy5yLCB0aGlzLnkpKTsKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgZHJhdygpIHsKICAgICAgICAgICAgLy8gVGV6bGlra2EgcWFyYWIgcmFuZyBiZXJpc2ggKHNvdnVxOiBrbydrLCBpc3NpcTogcWl6aWwpCiAgICAgICAgICAgIGxldCB2TWF4RXN0aW1hdGUgPSBNYXRoLnNxcnQoMyAqIFIgKiAxMDAwIC8gMC4wMDIpICogdGhpcy5zY2FsZTsKICAgICAgICAgICAgbGV0IG5vcm1TcGVlZCA9IE1hdGgubWluKDEsIE1hdGguc3FydCh0aGlzLnZ4KnRoaXMudnggKyB0aGlzLnZ5KnRoaXMudnkpIC8gKHZNYXhFc3RpbWF0ZSAqIDAuNCkpOwogICAgICAgICAgICBsZXQgckNvbG9yID0gTWF0aC5mbG9vcihub3JtU3BlZWQgKiAyNTUpOwogICAgICAgICAgICBsZXQgYkNvbG9yID0gTWF0aC5mbG9vcigoMSAtIG5vcm1TcGVlZCkgKiAyNTUpOwoKICAgICAgICAgICAgc2ltQ3R4LmJlZ2luUGF0aCgpOwogICAgICAgICAgICBzaW1DdHguYXJjKHRoaXMueCwgdGhpcy55LCB0aGlzLnIsIDAsIE1hdGguUEkgKiAyKTsKICAgICAgICAgICAgc2ltQ3R4LmZpbGxTdHlsZSA9IGByZ2IoJHtyQ29sb3J9LCAxMDAsICR7YkNvbG9yfSlgOwogICAgICAgICAgICBzaW1DdHguZmlsbCgpOwogICAgICAgICAgICBzaW1DdHguY2xvc2VQYXRoKCk7CiAgICAgICAgfQogICAgfQoKICAgIGZ1bmN0aW9uIGluaXRNb2xlY3VsZXMoKSB7CiAgICAgICAgbW9sZWN1bGVzID0gW107CiAgICAgICAgbGV0IHZSbXMgPSBNYXRoLnNxcnQoMyAqIFIgKiBUIC8gTSk7CiAgICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCBudW1Nb2xlY3VsZXM7IGkrKykgewogICAgICAgICAgICBtb2xlY3VsZXMucHVzaChuZXcgTW9sZWN1bGUodlJtcykpOwogICAgICAgIH0KICAgIH0KCiAgICBmdW5jdGlvbiB1cGRhdGVQaHlzaWNzKCkgewogICAgICAgIC8vIE5hemFyaXkgdGV6bGlrbGFyCiAgICAgICAgbGV0IHZQcm9iID0gTWF0aC5zcXJ0KDIgKiBSICogVCAvIE0pOwogICAgICAgIGxldCB2QXZnID0gTWF0aC5zcXJ0KDggKiBSICogVCAvIChNYXRoLlBJICogTSkpOwogICAgICAgIGxldCB2Um1zID0gTWF0aC5zcXJ0KDMgKiBSICogVCAvIE0pOwogICAgICAgIGxldCBlS2luID0gMS41ICogayAqIFQ7CgogICAgICAgIHZQcm9iVmFsLmlubmVyVGV4dCA9IE1hdGgucm91bmQodlByb2IpICsgIiBtL3MiOwogICAgICAgIHZSbXNWYWwuaW5uZXJUZXh0ID0gTWF0aC5yb3VuZCh2Um1zKSArICIgbS9zIjsKICAgICAgICB2QXZnVmFsLmlubmVyVGV4dCA9IE1hdGgucm91bmQodkF2ZykgKyAiIG0vcyI7CiAgICAgICAgZUtpblZhbC5pbm5lclRleHQgPSBlS2luLnRvRXhwb25lbnRpYWwoMikgKyAiIEoiOwogICAgfQoKICAgIGZ1bmN0aW9uIGRyYXdNYXh3ZWxsQ2hhcnQoKSB7CiAgICAgICAgY2hhcnRDdHguY2xlYXJSZWN0KDAsIDAsIGNoYXJ0Q2FudmFzLndpZHRoLCBjaGFydENhbnZhcy5oZWlnaHQpOwogICAgICAgIAogICAgICAgIC8vIE9xbGFyCiAgICAgICAgY2hhcnRDdHguYmVnaW5QYXRoKCk7CiAgICAgICAgY2hhcnRDdHguc3Ryb2tlU3R5bGUgPSAiIzQ3NTU2OSI7CiAgICAgICAgY2hhcnRDdHgubGluZVdpZHRoID0gMTsKICAgICAgICBjaGFydEN0eC5tb3ZlVG8oNDAsIDEwKTsKICAgICAgICBjaGFydEN0eC5saW5lVG8oNDAsIDIxMCk7CiAgICAgICAgY2hhcnRDdHgubGluZVRvKDQ4MCwgMjEwKTsKICAgICAgICBjaGFydEN0eC5zdHJva2UoKTsKCiAgICAgICAgY2hhcnRDdHguZmlsbFN0eWxlID0gIiM5NGEzYjgiOwogICAgICAgIGNoYXJ0Q3R4LmZvbnQgPSAiMTFweCBzYW5zLXNlcmlmIjsKICAgICAgICBjaGFydEN0eC5maWxsVGV4dCgiZih2KSBUYXFzaW1vdCIsIDEwLCAxNSk7CiAgICAgICAgY2hhcnRDdHguZmlsbFRleHQoInYgKG0vcykiLCA0NDAsIDIzMCk7CgogICAgICAgIC8vIE1ha3N2ZWxsIGVncmkgY2hpemlnJ2kKICAgICAgICBjaGFydEN0eC5iZWdpblBhdGgoKTsKICAgICAgICBjaGFydEN0eC5zdHJva2VTdHlsZSA9ICIjMGVhNWU5IjsKICAgICAgICBjaGFydEN0eC5saW5lV2lkdGggPSAyLjU7CgogICAgICAgIGxldCBtYXhWID0gMzAwMDsKICAgICAgICBsZXQgdlByb2IgPSBNYXRoLnNxcnQoMiAqIFIgKiBUIC8gTSk7CiAgICAgICAgbGV0IHBQZWFrID0gKDQgKiBNYXRoLlBJICogTWF0aC5wb3coTSAvICgyICogTWF0aC5QSSAqIFIgKiBUKSwgMS41KSkgKiBNYXRoLnBvdyh2UHJvYiwgMikgKiBNYXRoLmV4cCgtTSAqIHZQcm9iICogdlByb2IgLyAoMiAqIFIgKiBUKSk7CgogICAgICAgIGZvciAobGV0IHggPSAwOyB4IDw9IDQ0MDsgeCsrKSB7CiAgICAgICAgICAgIGxldCB2ID0gKHggLyA0NDApICogbWF4VjsKICAgICAgICAgICAgbGV0IGZ2ID0gKDQgKiBNYXRoLlBJICogTWF0aC5wb3coTSAvICgyICogTWF0aC5QSSAqIFIgKiBUKSwgMS41KSkgKiBNYXRoLnBvdyh2LCAyKSAqIE1hdGguZXhwKC1NICogdiAqIHYgLyAoMiAqIFIgKiBUKSk7CiAgICAgICAgICAgIGxldCB5ID0gMjEwIC0gKGZ2IC8gcFBlYWspICogMTcwOwogICAgICAgICAgICAKICAgICAgICAgICAgaWYgKHggPT09IDApIGNoYXJ0Q3R4Lm1vdmVUbyg0MCArIHgsIHkpOwogICAgICAgICAgICBlbHNlIGNoYXJ0Q3R4LmxpbmVUbyg0MCArIHgsIHkpOwogICAgICAgIH0KICAgICAgICBjaGFydEN0eC5zdHJva2UoKTsKCiAgICAgICAgbGV0IHZSbXMgPSBNYXRoLnNxcnQoMyAqIFIgKiBUIC8gTSk7CiAgICAgICAgbGV0IHhQcm9iID0gNDAgKyAodlByb2IgLyBtYXhWKSAqIDQ0MDsKICAgICAgICBsZXQgeFJtcyA9IDQwICsgKHZSbXMgLyBtYXhWKSAqIDQ0MDsKCiAgICAgICAgZHJhd1NwZWVkTGluZSh4UHJvYiwgIiNlZjQ0NDQiLCAidl9lIik7CiAgICAgICAgZHJhd1NwZWVkTGluZSh4Um1zLCAiIzEwYjk4MSIsICJ2X28ncnQua3YiKTsKICAgIH0KCiAgICBmdW5jdGlvbiBkcmF3U3BlZWRMaW5lKHgsIGNvbG9yLCBsYWJlbCkgewogICAgICAgIGlmICh4ID4gNDgwKSByZXR1cm47CiAgICAgICAgY2hhcnRDdHguYmVnaW5QYXRoKCk7CiAgICAgICAgY2hhcnRDdHguc3Ryb2tlU3R5bGUgPSBjb2xvcjsKICAgICAgICBjaGFydEN0eC5zZXRMaW5lRGFzaChbNCwgNF0pOwogICAgICAgIGNoYXJ0Q3R4Lm1vdmVUbyh4LCAyMTApOwogICAgICAgIGNoYXJ0Q3R4LmxpbmVUbyh4LCAyNSk7CiAgICAgICAgY2hhcnRDdHguc3Ryb2tlKCk7CiAgICAgICAgY2hhcnRDdHguc2V0TGluZURhc2goW10pOwoKICAgICAgICBjaGFydEN0eC5maWxsU3R5bGUgPSBjb2xvcjsKICAgICAgICBjaGFydEN0eC5mb250ID0gIjExcHggc2Fucy1zZXJpZiI7CiAgICAgICAgY2hhcnRDdHguZmlsbFRleHQobGFiZWwsIHggLSAxMCwgMjApOwogICAgfQoKICAgIGZ1bmN0aW9uIGFuaW1hdGUoKSB7CiAgICAgICAgc2ltQ3R4LmNsZWFyUmVjdCgwLCAwLCBzaW1DYW52YXMud2lkdGgsIHNpbUNhbnZhcy5oZWlnaHQpOwogICAgICAgIAogICAgICAgIG1vbGVjdWxlcy5mb3JFYWNoKG0gPT4gewogICAgICAgICAgICBtLnVwZGF0ZSgpOwogICAgICAgICAgICBtLmRyYXcoKTsKICAgICAgICB9KTsKCiAgICAgICAgcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGFuaW1hdGUpOwogICAgfQoKICAgIC8vIEV2ZW50IExpc3RlbmVybGFyCiAgICB0ZW1wU2xpZGVyLmFkZEV2ZW50TGlzdGVuZXIoJ2lucHV0JywgKGUpID0+IHsKICAgICAgICBUID0gcGFyc2VGbG9hdChlLnRhcmdldC52YWx1ZSk7CiAgICAgICAgdGVtcFZhbC5pbm5lclRleHQgPSBUICsgIiBLIjsKICAgICAgICBpbml0TW9sZWN1bGVzKCk7CiAgICAgICAgdXBkYXRlUGh5c2ljcygpOwogICAgICAgIGRyYXdNYXh3ZWxsQ2hhcnQoKTsKICAgIH0pOwoKICAgIGdhc1NlbGVjdC5hZGRFdmVudExpc3RlbmVyKCdjaGFuZ2UnLCAoZSkgPT4gewogICAgICAgIE0gPSBwYXJzZUZsb2F0KGUudGFyZ2V0LnZhbHVlKSAvIDEwMDA7CiAgICAgICAgaW5pdE1vbGVjdWxlcygpOwogICAgICAgIHVwZGF0ZVBoeXNpY3MoKTsKICAgICAgICBkcmF3TWF4d2VsbENoYXJ0KCk7CiAgICB9KTsKCiAgICBjb3VudFNsaWRlci5hZGRFdmVudExpc3RlbmVyKCdpbnB1dCcsIChlKSA9PiB7CiAgICAgICAgbnVtTW9sZWN1bGVzID0gcGFyc2VJbnQoZS50YXJnZXQudmFsdWUpOwogICAgICAgIGNvdW50VmFsLmlubmVyVGV4dCA9IG51bU1vbGVjdWxlcyArICIgdGEiOwogICAgICAgIGluaXRNb2xlY3VsZXMoKTsKICAgIH0pOwoKICAgIC8vIERhc3RsYWJraSBpc2hnYSB0dXNoaXJpc2gKICAgIGluaXRNb2xlY3VsZXMoKTsKICAgIHVwZGF0ZVBoeXNpY3MoKTsKICAgIGRyYXdNYXh3ZWxsQ2hhcnQoKTsKICAgIGFuaW1hdGUoKTsKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPgo=&quot;&gt;&lt;/iframe&gt;&lt;iframe id=&quot;frame1&quot; title=&quot;2. Ideal gaz holatining tenglamalari&quot; class=&quot;frame&quot; loading=&quot;eager&quot; data-b64=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InV6Ij4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgo8dGl0bGU+SWRlYWwgZ2F6IGhvbGF0aW5pbmcgdGVuZ2xhbWFsYXJpIOKAlCBJbnRlcmFrdGl2IHNpbXVseWF0c2l5YTwvdGl0bGU+CjxzdHlsZT4KKntib3gtc2l6aW5nOmJvcmRlci1ib3h9IGJvZHl7bWFyZ2luOjA7Zm9udC1mYW1pbHk6QXJpYWwsc2Fucy1zZXJpZjtiYWNrZ3JvdW5kOiNmNGY3ZmI7Y29sb3I6IzE3MjAzM30KaGVhZGVye2JhY2tncm91bmQ6IzE3M2I3MDtjb2xvcjp3aGl0ZTtwYWRkaW5nOjIycHggMTZweDt0ZXh0LWFsaWduOmNlbnRlcn0KaDF7bWFyZ2luOjAgMCA4cHg7Zm9udC1zaXplOjI2cHh9IGgye2NvbG9yOiMxNzNiNzA7bWFyZ2luLXRvcDowfQouY29udGFpbmVye21heC13aWR0aDoxMTAwcHg7bWFyZ2luOmF1dG87cGFkZGluZzoxNnB4fQouY2FyZHtiYWNrZ3JvdW5kOndoaXRlO2JvcmRlci1yYWRpdXM6MTZweDtwYWRkaW5nOjE4cHg7bWFyZ2luOjE1cHggMDtib3gtc2hhZG93OjAgM3B4IDEycHggIzAwMDAwMDEyfQoudGFic3tkaXNwbGF5OmZsZXg7Z2FwOjhweDtmbGV4LXdyYXA6d3JhcDttYXJnaW4tYm90dG9tOjE1cHh9CmJ1dHRvbntib3JkZXI6MDtib3JkZXItcmFkaXVzOjEwcHg7cGFkZGluZzoxMXB4IDE1cHg7YmFja2dyb3VuZDojZTNlYmY4O2NvbG9yOiMxNzNiNzA7Zm9udC13ZWlnaHQ6Ym9sZDtjdXJzb3I6cG9pbnRlcn0KYnV0dG9uLmFjdGl2ZSxidXR0b246aG92ZXJ7YmFja2dyb3VuZDojMTczYjcwO2NvbG9yOndoaXRlfQouY29udHJvbHN7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoYXV0by1maXQsbWlubWF4KDE5MHB4LDFmcikpO2dhcDoxMnB4fQpsYWJlbHtmb250LXdlaWdodDpib2xkO2Rpc3BsYXk6YmxvY2s7bWFyZ2luLWJvdHRvbTo1cHh9CmlucHV0W3R5cGU9cmFuZ2Vde3dpZHRoOjEwMCV9Ci52YWx1ZXtmb250LXNpemU6MjBweDtmb250LXdlaWdodDpib2xkO2NvbG9yOiMxNzNiNzB9Ci5zaW17ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczoxLjJmciAuOGZyO2dhcDoxOHB4fQpAbWVkaWEobWF4LXdpZHRoOjc1MHB4KXsuc2lte2dyaWQtdGVtcGxhdGUtY29sdW1uczoxZnJ9fQpjYW52YXN7d2lkdGg6MTAwJTtoZWlnaHQ6MzYwcHg7Ym9yZGVyOjFweCBzb2xpZCAjZDVkZGViO2JvcmRlci1yYWRpdXM6MTJweDtiYWNrZ3JvdW5kOiNmYmZkZmZ9Ci5mb3JtdWxhe2ZvbnQtc2l6ZToyNXB4O3RleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6MTVweDtiYWNrZ3JvdW5kOiNlZWY0ZmY7Ym9yZGVyLXJhZGl1czoxMnB4O2ZvbnQtd2VpZ2h0OmJvbGR9CnRhYmxle3dpZHRoOjEwMCU7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO21hcmdpbi10b3A6MTBweH0KdGgsdGR7Ym9yZGVyOjFweCBzb2xpZCAjY2NkNWUzO3BhZGRpbmc6OXB4O3RleHQtYWxpZ246Y2VudGVyfQp0aHtiYWNrZ3JvdW5kOiNlYWYxZmJ9Ci5ub3Rle2JhY2tncm91bmQ6I2ZmZjhkZjtwYWRkaW5nOjEycHg7Ym9yZGVyLWxlZnQ6NXB4IHNvbGlkICNlMGE5MDA7Ym9yZGVyLXJhZGl1czo4cHh9Ci5xdWl6IGxhYmVse2ZvbnQtd2VpZ2h0Om5vcm1hbDttYXJnaW46OHB4IDB9Ci5zbWFsbHtmb250LXNpemU6MTRweDtjb2xvcjojNTM2MjdhfQo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5Pgo8aGVhZGVyPgo8aDE+SWRlYWwgZ2F6IGhvbGF0aW5pbmcgdGVuZ2xhbWFsYXJpPC9oMT4KPGRpdj45LXNpbmYgZml6aWthIOKAoiBJbnRlcmFrdGl2IHNpbXVseWF0c2l5YSB2YSBhbmltYXRzaXlhPC9kaXY+CjwvaGVhZGVyPgoKPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KPGRpdiBjbGFzcz0iY2FyZCI+CjxoMj4xLiBJZGVhbCBnYXogbW9kZWxpPC9oMj4KPHA+SWRlYWwgZ2F6IOKAlCBtb2xla3VsYWxhcmkganVkYSBraWNoaWsgZGViIHFhcmFsYWRpZ2FuLCB1bGFyIG9yYXNpZGFnaSBv4oCYemFybyB0YeKAmXNpciBoaXNvYmdhIG9saW5tYXlkaWdhbiB2YSBtb2xla3VsYWxhciBpZGlzaCBkZXZvcmlnYSBlbGFzdGlrIHVyaWxhZGkgZGViIHFhYnVsIHFpbGluYWRpZ2FuIGdheiBtb2RlbGlkaXIuPC9wPgo8ZGl2IGNsYXNzPSJmb3JtdWxhIj5wViA9IM69UlQ8L2Rpdj4KPHA+PGI+cDwvYj4g4oCUIGJvc2ltIChQYSksIDxiPlY8L2I+IOKAlCBoYWptIChtwrMpLCA8Yj7OvTwvYj4g4oCUIG1vZGRhIG1pcWRvcmkgKG1vbCksIDxiPlIgPSA4LjMxIEovKG1vbMK3Syk8L2I+LCA8Yj5UPC9iPiDigJQgbXV0bGFxIHRlbXBlcmF0dXJhIChLKS48L3A+CjwvZGl2PgoKPGRpdiBjbGFzcz0iY2FyZCI+CjxoMj5JbnRlcmFrdGl2IHNpbXVseWF0c2l5YTwvaDI+CjxkaXYgY2xhc3M9InRhYnMiPgo8YnV0dG9uIGNsYXNzPSJ0YWIgYWN0aXZlIiBvbmNsaWNrPSJzZXRNb2RlKCdnZW5lcmFsJyx0aGlzKSI+VW11bWl5PC9idXR0b24+CjxidXR0b24gY2xhc3M9InRhYiIgb25jbGljaz0ic2V0TW9kZSgnYm95bGUnLHRoaXMpIj5Cb3ls4oCTTWFyaW90dDwvYnV0dG9uPgo8YnV0dG9uIGNsYXNzPSJ0YWIiIG9uY2xpY2s9InNldE1vZGUoJ2dheScsdGhpcykiPkdleS1MeXVzc2FrPC9idXR0b24+CjxidXR0b24gY2xhc3M9InRhYiIgb25jbGljaz0ic2V0TW9kZSgnY2hhcmxlcycsdGhpcykiPlNoYXJsPC9idXR0b24+CjwvZGl2PgoKPGRpdiBjbGFzcz0ic2ltIj4KPGRpdj4KPGNhbnZhcyBpZD0iZ2FzQ2FudmFzIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjM2MCI+PC9jYW52YXM+CjwvZGl2Pgo8ZGl2Pgo8ZGl2IGNsYXNzPSJjb250cm9scyI+CjxkaXY+CjxsYWJlbD5UZW1wZXJhdHVyYSBUIChLKTwvbGFiZWw+CjxpbnB1dCBpZD0idGVtcCIgdHlwZT0icmFuZ2UiIG1pbj0iMjAwIiBtYXg9IjYwMCIgdmFsdWU9IjMwMCI+CjxkaXYgY2xhc3M9InZhbHVlIj48c3BhbiBpZD0idGVtcFYiPjMwMDwvc3Bhbj4gSzwvZGl2Pgo8L2Rpdj4KPGRpdj4KPGxhYmVsPkhham0gViAoTCk8L2xhYmVsPgo8aW5wdXQgaWQ9InZvbCIgdHlwZT0icmFuZ2UiIG1pbj0iMSIgbWF4PSIxMCIgdmFsdWU9IjUiPgo8ZGl2IGNsYXNzPSJ2YWx1ZSI+PHNwYW4gaWQ9InZvbFYiPjU8L3NwYW4+IEw8L2Rpdj4KPC9kaXY+CjxkaXY+CjxsYWJlbD5Nb2RkYSBtaXFkb3JpIM69IChtb2wpPC9sYWJlbD4KPGlucHV0IGlkPSJtb2wiIHR5cGU9InJhbmdlIiBtaW49IjAuMDUiIG1heD0iMSIgc3RlcD0iMC4wNSIgdmFsdWU9IjAuMjAiPgo8ZGl2IGNsYXNzPSJ2YWx1ZSI+PHNwYW4gaWQ9Im1vbFYiPjAuMjA8L3NwYW4+IG1vbDwvZGl2Pgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9ImZvcm11bGEiIHN0eWxlPSJtYXJnaW4tdG9wOjE1cHg7Zm9udC1zaXplOjIwcHgiPnAgPSDOvVJUIC8gVjwvZGl2Pgo8ZGl2IGNsYXNzPSJub3RlIj4KPGI+TmF0aWphOjwvYj48YnI+CkJvc2ltOiA8c3BhbiBpZD0icHJlc3N1cmUiPjA8L3NwYW4+IGtQYTxicj4KTW9sZWt1bGFsYXIgdGV6bGlnaTogPHNwYW4gaWQ9InNwZWVkIj4wPC9zcGFuPiBzaGFydGxpIGJpcmxpawo8L2Rpdj4KPHAgY2xhc3M9InNtYWxsIj5TbGF5ZGVybGFybmkgb+KAmHpnYXJ0aXJpbmcuIE1vbGVrdWxhbGFyIGhhcmFrYXRpIHZhIGJvc2ltbmluZyBv4oCYemdhcmlzaGluaSBrdXphdGluZy48L3A+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGNsYXNzPSJjYXJkIj4KPGgyPjIuIE1lbmRlbGV5ZXbigJNLbGFwZXlyb24gdGVuZ2xhbWFzaTwvaDI+CjxkaXYgY2xhc3M9ImZvcm11bGEiPnBWID0gzr1SVDwvZGl2Pgo8cD5CdSB0ZW5nbGFtYSBpZGVhbCBnYXpuaW5nIGJvc2ltaSwgaGFqbWksIHRlbXBlcmF0dXJhc2kgdmEgbW9kZGEgbWlxZG9yaW5pIGJpci1iaXJpIGJpbGFuIGJvZ+KAmGxheWRpLjwvcD4KPHRhYmxlPgo8dHI+PHRoPkthdHRhbGlrPC90aD48dGg+QmVsZ2lzaTwvdGg+PHRoPlNJIGJpcmxpZ2k8L3RoPjwvdHI+Cjx0cj48dGQ+Qm9zaW08L3RkPjx0ZD5wPC90ZD48dGQ+UGE8L3RkPjwvdHI+Cjx0cj48dGQ+SGFqbTwvdGQ+PHRkPlY8L3RkPjx0ZD5twrM8L3RkPjwvdHI+Cjx0cj48dGQ+VGVtcGVyYXR1cmE8L3RkPjx0ZD5UPC90ZD48dGQ+SzwvdGQ+PC90cj4KPHRyPjx0ZD5Nb2RkYSBtaXFkb3JpPC90ZD48dGQ+zr08L3RkPjx0ZD5tb2w8L3RkPjwvdHI+Cjx0cj48dGQ+R2F6IGRvaW1peXNpPC90ZD48dGQ+UjwvdGQ+PHRkPjguMzEgSi8obW9swrdLKTwvdGQ+PC90cj4KPC90YWJsZT4KPHA+PGI+S2VsdmluOjwvYj4gVCA9IHQgKyAyNzM8L3A+CjwvZGl2PgoKPGRpdiBjbGFzcz0iY2FyZCI+CjxoMj4zLiBJZGVhbCBnYXpuaW5nIHh1c3VzaXkgcW9udW5sYXJpPC9oMj4KPHRhYmxlPgo8dHI+PHRoPlFvbnVuPC90aD48dGg+T+KAmHpnYXJtYXMga2F0dGFsaWs8L3RoPjx0aD5UZW5nbGFtYTwvdGg+PHRoPkJvZ+KAmGxhbmlzaDwvdGg+PC90cj4KPHRyPjx0ZD5Cb3ls4oCTTWFyaW90dDwvdGQ+PHRkPlQgPSBjb25zdDwvdGQ+PHRkPnBWID0gY29uc3Q8L3RkPjx0ZD5wIHZhIFYgdGVza2FyaTwvdGQ+PC90cj4KPHRyPjx0ZD5HZXktTHl1c3NhazwvdGQ+PHRkPlYgPSBjb25zdDwvdGQ+PHRkPnAvVCA9IGNvbnN0PC90ZD48dGQ+cCB2YSBUIHRv4oCYZ+KAmHJpPC90ZD48L3RyPgo8dHI+PHRkPlNoYXJsPC90ZD48dGQ+cCA9IGNvbnN0PC90ZD48dGQ+Vi9UID0gY29uc3Q8L3RkPjx0ZD5WIHZhIFQgdG/igJhn4oCYcmk8L3RkPjwvdHI+CjwvdGFibGU+CjwvZGl2PgoKPGRpdiBjbGFzcz0iY2FyZCI+CjxoMj5HcmFmaWtsYXJuaSBrdXphdGlzaDwvaDI+CjxjYW52YXMgaWQ9ImdyYXBoIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjM2MCI+PC9jYW52YXM+CjxwIGlkPSJncmFwaFRleHQiIGNsYXNzPSJzbWFsbCI+UW9udW4gdGFubGFuZyB2YSBncmFmaWtuaSBrdXphdGluZy48L3A+CjwvZGl2PgoKPGRpdiBjbGFzcz0iY2FyZCI+CjxoMj5BbWFsaXkgbWFzYWxhbGFyPC9oMj4KPG9sPgo8bGk+MC4yIG1vbCBpZGVhbCBnYXogMzAwIEsgdGVtcGVyYXR1cmFkYSA1IEwgaGFqbSBlZ2FsbGF5ZGkuIFVuaW5nIGJvc2ltaW5pIHRvcGluZy48L2xpPgo8bGk+R2F6IDMwMCBLIGRhIDQgTCBoYWptIGVnYWxsYXlkaS4gQm9zaW0gb+KAmHpnYXJtYXNhLCA0NTAgSyBkYSBoYWptIHFhbmNoYSBib+KAmGxhZGk/PC9saT4KPGxpPlRlbXBlcmF0dXJhIG/igJh6Z2FybWFnYW5kYSBnYXogaGFqbWkgNiBMIGRhbiAzIEwgZ2FjaGEga2FtYXlkaS4gQm9zaW0gcWFuZGF5IG/igJh6Z2FyYWRpPzwvbGk+Cjwvb2w+CjxkaXYgY2xhc3M9Im5vdGUiPk1hc2FsYWxhcm5pIHllY2hpc2hkYSBhdnZhbCBiZXJpbGdhbmxhcm5pIFNJIGJpcmxpa2xhcmlnYSBv4oCYdGthemluZywga2V5aW4gbW9zIGZvcm11bGFuaSB0YW5sYW5nLjwvZGl2Pgo8L2Rpdj4KCjxkaXYgY2xhc3M9ImNhcmQgcXVpeiI+CjxoMj5NaW5pLXRlc3Q8L2gyPgo8cD48Yj4xLjwvYj4gSWRlYWwgZ2F6IGhvbGF0IHRlbmdsYW1hc2kgcWF5c2k/PC9wPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMSIgdmFsdWU9IjEiPiBwViA9IM69UlQ8L2xhYmVsPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMSI+IEYgPSBtYTwvbGFiZWw+CjxsYWJlbD48aW5wdXQgdHlwZT0icmFkaW8iIG5hbWU9InExIj4gUSA9IGNtzpRUPC9sYWJlbD4KCjxwPjxiPjIuPC9iPiBCb3ls4oCTTWFyaW90dCBxb251bmlkYSBuaW1hIG/igJh6Z2FybWF5ZGk/PC9wPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMiI+IFRlbXBlcmF0dXJhPC9sYWJlbD4KPGxhYmVsPjxpbnB1dCB0eXBlPSJyYWRpbyIgbmFtZT0icTIiIHZhbHVlPSIxIj4gVGVtcGVyYXR1cmE8L2xhYmVsPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMiI+IEhham08L2xhYmVsPgoKPHA+PGI+My48L2I+IFNoYXJsIHFvbnVuaSBxYXlzaSBib2figJhsYW5pc2huaSBpZm9kYWxheWRpPzwvcD4KPGxhYmVsPjxpbnB1dCB0eXBlPSJyYWRpbyIgbmFtZT0icTMiIHZhbHVlPSIxIj4gVi9UID0gY29uc3Q8L2xhYmVsPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMyI+IHBWID0gY29uc3Q8L2xhYmVsPgo8bGFiZWw+PGlucHV0IHR5cGU9InJhZGlvIiBuYW1lPSJxMyI+IHAvVCA9IGNvbnN0PC9sYWJlbD4KPGJyPjxidXR0b24gb25jbGljaz0iY2hlY2tRdWl6KCkiPlRlc3RuaSB0ZWtzaGlyaXNoPC9idXR0b24+CjxwIGlkPSJzY29yZSI+PC9wPgo8L2Rpdj4KCjxkaXYgY2xhc3M9ImNhcmQiPgo8aDI+QnVndW4gbmltYW5pIG/igJhyZ2FuZGlrPzwvaDI+Cjx1bD4KPGxpPklkZWFsIGdheiDigJQgc29kZGFsYXNodGlyaWxnYW4gZml6aWsgbW9kZWwuPC9saT4KPGxpPkdheiBob2xhdGkgcCwgViwgVCB2YSDOvSBrYXR0YWxpa2xhcmkgYmlsYW4gdGF2c2lmbGFuYWRpLjwvbGk+CjxsaT5NZW5kZWxleWV24oCTS2xhcGV5cm9uIHRlbmdsYW1hc2k6IDxiPnBWID0gzr1SVDwvYj4uPC9saT4KPGxpPkJveWzigJNNYXJpb3R0OiA8Yj5wViA9IGNvbnN0PC9iPi48L2xpPgo8bGk+R2V5LUx5dXNzYWs6IDxiPnAvVCA9IGNvbnN0PC9iPi48L2xpPgo8bGk+U2hhcmw6IDxiPlYvVCA9IGNvbnN0PC9iPi48L2xpPgo8L3VsPgo8L2Rpdj4KPC9kaXY+Cgo8c2NyaXB0Pgpjb25zdCBjYW52YXM9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImdhc0NhbnZhcyIpLGN0eD1jYW52YXMuZ2V0Q29udGV4dCgiMmQiKTsKY29uc3QgZ3JhcGg9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImdyYXBoIiksZ2N0eD1ncmFwaC5nZXRDb250ZXh0KCIyZCIpOwpsZXQgbW9kZT0iZ2VuZXJhbCI7CmxldCBwYXJ0aWNsZXM9W107CmZvcihsZXQgaT0wO2k8NTU7aSsrKSBwYXJ0aWNsZXMucHVzaCh7eDpNYXRoLnJhbmRvbSgpLHk6TWF0aC5yYW5kb20oKSx2eDooTWF0aC5yYW5kb20oKS0uNSksdnk6KE1hdGgucmFuZG9tKCktLjUpfSk7CgpmdW5jdGlvbiBzZXRNb2RlKG0sYil7CiBtb2RlPW07CiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCIudGFiIikuZm9yRWFjaCh4PT54LmNsYXNzTGlzdC5yZW1vdmUoImFjdGl2ZSIpKTsKIGIuY2xhc3NMaXN0LmFkZCgiYWN0aXZlIik7CiBkcmF3R3JhcGgoKTsKfQpmdW5jdGlvbiB1cGRhdGUoKXsKIGxldCBUPStkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidGVtcCIpLnZhbHVlOwogbGV0IFY9K2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ2b2wiKS52YWx1ZTsKIGxldCBuPStkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibW9sIikudmFsdWU7CiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidGVtcFYiKS50ZXh0Q29udGVudD1UOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInZvbFYiKS50ZXh0Q29udGVudD1WOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm1vbFYiKS50ZXh0Q29udGVudD1uLnRvRml4ZWQoMik7CiBsZXQgcD1uKjguMzEqVC8oVi8xMDAwKS8xMDAwOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInByZXNzdXJlIikudGV4dENvbnRlbnQ9cC50b0ZpeGVkKDEpOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwZWVkIikudGV4dENvbnRlbnQ9TWF0aC5zcXJ0KFQvMzAwKS50b0ZpeGVkKDIpOwp9ClsidGVtcCIsInZvbCIsIm1vbCJdLmZvckVhY2goaWQ9PmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKS5hZGRFdmVudExpc3RlbmVyKCJpbnB1dCIsKCk9Pnt1cGRhdGUoKTtkcmF3R3JhcGgoKX0pKTsKCmZ1bmN0aW9uIGFuaW1hdGUoKXsKIGN0eC5jbGVhclJlY3QoMCwwLGNhbnZhcy53aWR0aCxjYW52YXMuaGVpZ2h0KTsKIGxldCBWPStkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidm9sIikudmFsdWU7CiBsZXQgVD0rZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInRlbXAiKS52YWx1ZTsKIGxldCBib3hXPTI1MCtWKjM1LCBib3hIPTI4MCwgb3g9KGNhbnZhcy53aWR0aC1ib3hXKS8yLCBveT00MDsKIGN0eC5zdHJva2VTdHlsZT0iIzE3M2I3MCI7Y3R4LmxpbmVXaWR0aD00O2N0eC5zdHJva2VSZWN0KG94LG95LGJveFcsYm94SCk7CiBsZXQgc2NhbGU9TWF0aC5zcXJ0KFQvMzAwKTsKIHBhcnRpY2xlcy5mb3JFYWNoKHA9PnsKICAgcC54Kz1wLnZ4KjAuMDA0KnNjYWxlO3AueSs9cC52eSowLjAwNCpzY2FsZTsKICAgaWYocC54PDB8fHAueD4xKXAudngqPS0xOwogICBpZihwLnk8MHx8cC55PjEpcC52eSo9LTE7CiAgIGxldCB4PW94KzEwK3AueCooYm94Vy0yMCkseT1veSsxMCtwLnkqKGJveEgtMjApOwogICBjdHguYmVnaW5QYXRoKCk7Y3R4LmFyYyh4LHksNCwwLE1hdGguUEkqMik7Y3R4LmZpbGxTdHlsZT0iI2Q5NDg0OCI7Y3R4LmZpbGwoKTsKIH0pOwogY3R4LmZpbGxTdHlsZT0iIzE3M2I3MCI7Y3R4LmZvbnQ9IjE2cHggQXJpYWwiOwogY3R4LmZpbGxUZXh0KCJHYXogbW9sZWt1bGFsYXJpIGhhcmFrYXRpIixveCwyNSk7CiByZXF1ZXN0QW5pbWF0aW9uRnJhbWUoYW5pbWF0ZSk7Cn0KCmZ1bmN0aW9uIGRyYXdHcmFwaCgpewogZ2N0eC5jbGVhclJlY3QoMCwwLGdyYXBoLndpZHRoLGdyYXBoLmhlaWdodCk7CiBnY3R4LnN0cm9rZVN0eWxlPSIjNzc3IjtnY3R4LmxpbmVXaWR0aD0xOwogZ2N0eC5iZWdpblBhdGgoKTtnY3R4Lm1vdmVUbyg3MCwyMCk7Z2N0eC5saW5lVG8oNzAsMzEwKTtnY3R4LmxpbmVUbyg4NTAsMzEwKTtnY3R4LnN0cm9rZSgpOwogbGV0IHRpdGxlPSIiOwogZ2N0eC5zdHJva2VTdHlsZT0iIzE3M2I3MCI7Z2N0eC5saW5lV2lkdGg9MztnY3R4LmJlZ2luUGF0aCgpOwogZm9yKGxldCBpPTA7aTw9MTAwO2krKyl7CiAgIGxldCB4PTcwK2kqNy44LCB5OwogICBsZXQgej1pLzEwMDsKICAgaWYobW9kZT09PSJib3lsZSIpe3RpdGxlPSJCb3ls4oCTTWFyaW90dDogcOKAk1YgKFQgPSBjb25zdCkiO3k9NDUrMjIwLyh6KjkrMC4xNSk7fQogICBlbHNlIGlmKG1vZGU9PT0iZ2F5Iil7dGl0bGU9IkdleS1MeXVzc2FrOiBw4oCTVCAoViA9IGNvbnN0KSI7eT0yOTAtMjEwKno7fQogICBlbHNlIGlmKG1vZGU9PT0iY2hhcmxlcyIpe3RpdGxlPSJTaGFybDogVuKAk1QgKHAgPSBjb25zdCkiO3k9MjkwLTIxMCp6O30KICAgZWxzZSB7dGl0bGU9IklkZWFsIGdhejogdW11bWl5IG1vZGVsIjt5PTE4MC04MCpNYXRoLnNpbih6Kk1hdGguUEkpO30KICAgaWYoaT09PTApZ2N0eC5tb3ZlVG8oeCx5KTtlbHNlIGdjdHgubGluZVRvKHgseSk7CiB9CiBnY3R4LnN0cm9rZSgpOwogZ2N0eC5maWxsU3R5bGU9IiMxNzIwMzMiO2djdHguZm9udD0iMThweCBBcmlhbCI7Z2N0eC5maWxsVGV4dCh0aXRsZSw5MCwyNSk7CiBnY3R4LmZvbnQ9IjE0cHggQXJpYWwiO2djdHguZmlsbFRleHQoIlggb+KAmHFpIOKAlCBv4oCYemdhcnV2Y2hpIGthdHRhbGlrIiw1MDAsMzQ1KTsKfQpmdW5jdGlvbiBjaGVja1F1aXooKXsKIGxldCBzPTA7CiBbInExIiwicTIiLCJxMyJdLmZvckVhY2gocT0+e2xldCB4PWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ2lucHV0W25hbWU9IicrcSsnIl06Y2hlY2tlZCcpO2lmKHgmJngudmFsdWU9PT0iMSIpcysrfSk7CiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic2NvcmUiKS50ZXh0Q29udGVudD0iTmF0aWphOiAiK3MrIi8zIHRhIHRv4oCYZ+KAmHJpLiI7Cn0KdXBkYXRlKCk7ZHJhd0dyYXBoKCk7YW5pbWF0ZSgpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+&quot;&gt;&lt;/iframe&gt;&lt;iframe id=&quot;frame2&quot; title=&quot;3. Izotermik jarayon&quot; class=&quot;frame&quot; loading=&quot;eager&quot; data-b64=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InV6Ij4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgo8dGl0bGU+OS1zaW5mOiBJem90ZXJtaWsgamFyYXlvbiB2YSBpbnRlcmFrdGl2IHNpbXVseWF0c2l5YTwvdGl0bGU+CjxzdHlsZT4KOnJvb3R7LS1wcmltYXJ5OiMyYzNlNTA7LS1zZWNvbmRhcnk6IzI5ODBiOTstLWFjY2VudDojZTc0YzNjOy0tYmc6I2Y0ZjdmNjstLWNhcmQtYmc6I2ZmZn0KYm9keXtmb250LWZhbWlseTonU2Vnb2UgVUknLFRhaG9tYSxHZW5ldmEsVmVyZGFuYSxzYW5zLXNlcmlmO2xpbmUtaGVpZ2h0OjEuNjtiYWNrZ3JvdW5kOnZhcigtLWJnKTtjb2xvcjojMzMzO21hcmdpbjowO3BhZGRpbmc6MjBweH0KLmNvbnRhaW5lcnttYXgtd2lkdGg6MTAwMHB4O21hcmdpbjowIGF1dG99Cmgxe3RleHQtYWxpZ246Y2VudGVyO2NvbG9yOnZhcigtLXByaW1hcnkpO2JvcmRlci1ib3R0b206M3B4IHNvbGlkIHZhcigtLXNlY29uZGFyeSk7cGFkZGluZy1ib3R0b206MTBweH0KaDJ7Y29sb3I6dmFyKC0tcHJpbWFyeSl9Ci5zZWN0aW9ue2JhY2tncm91bmQ6dmFyKC0tY2FyZC1iZyk7cGFkZGluZzoyNXB4O21hcmdpbi1ib3R0b206MjVweDtib3JkZXItcmFkaXVzOjEwcHg7Ym94LXNoYWRvdzowIDRweCA2cHggcmdiYSgwLDAsMCwuMSl9Ci5zaW11bGF0aW9uLWNvbnRhaW5lcntkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjIwcHg7anVzdGlmeS1jb250ZW50OmNlbnRlcjthbGlnbi1pdGVtczpjZW50ZXI7YmFja2dyb3VuZDojZWVmMmY1O3BhZGRpbmc6MjBweDtib3JkZXItcmFkaXVzOjEwcHh9CmNhbnZhc3tiYWNrZ3JvdW5kOiNmZmY7Ym9yZGVyOjJweCBzb2xpZCB2YXIoLS1wcmltYXJ5KTtib3JkZXItcmFkaXVzOjhweDttYXgtd2lkdGg6MTAwJTtoZWlnaHQ6YXV0b30KLmNvbnRyb2xze2ZsZXg6MTttaW4td2lkdGg6MjYwcHg7ZGlzcGxheTpmbGV4O2ZsZXgtZGlyZWN0aW9uOmNvbHVtbjtnYXA6MTVweH0KLmNvbnRyb2wtZ3JvdXB7ZGlzcGxheTpmbGV4O2ZsZXgtZGlyZWN0aW9uOmNvbHVtbn0KbGFiZWx7Zm9udC13ZWlnaHQ6Ym9sZDttYXJnaW4tYm90dG9tOjVweH0KaW5wdXRbdHlwZT1yYW5nZV17d2lkdGg6MTAwJTtjdXJzb3I6cG9pbnRlcn0KLmRhdGEtZGlzcGxheXtiYWNrZ3JvdW5kOnZhcigtLXByaW1hcnkpO2NvbG9yOiNmZmY7cGFkZGluZzoxNXB4O2JvcmRlci1yYWRpdXM6OHB4O2ZvbnQtZmFtaWx5OidDb3VyaWVyIE5ldycsbW9ub3NwYWNlO2ZvbnQtc2l6ZToxLjA1ZW19Ci5mb3JtdWxhe2JhY2tncm91bmQ6I2U4ZjRmODtib3JkZXItbGVmdDo1cHggc29saWQgdmFyKC0tc2Vjb25kYXJ5KTtwYWRkaW5nOjEwcHggMTVweDtmb250LXNpemU6MS4xZW07bWFyZ2luOjEwcHggMH0KdGFibGV7d2lkdGg6MTAwJTtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7bWFyZ2luLXRvcDoxNXB4fQp0aCx0ZHtib3JkZXI6MXB4IHNvbGlkICNkZGQ7cGFkZGluZzoxMHB4O3RleHQtYWxpZ246bGVmdH0KdGh7YmFja2dyb3VuZDp2YXIoLS1zZWNvbmRhcnkpO2NvbG9yOndoaXRlfQp0cjpudGgtY2hpbGQoZXZlbil7YmFja2dyb3VuZDojZjlmOWY5fQpAbWVkaWEobWF4LXdpZHRoOjcwMHB4KXtib2R5e3BhZGRpbmc6MTBweH0uc2VjdGlvbntwYWRkaW5nOjE1cHh9LnNpbXVsYXRpb24tY29udGFpbmVye3BhZGRpbmc6MTBweH19Cgouc2ltLWdyaWR7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoYXV0by1maXQsbWlubWF4KDI4MHB4LDFmcikpO2dhcDoxOHB4fQouc2ltLWNhcmR7YmFja2dyb3VuZDojZmZmO2JvcmRlcjoxcHggc29saWQgI2Q4ZTFlODtib3JkZXItcmFkaXVzOjEycHg7cGFkZGluZzoxNnB4O2JveC1zaGFkb3c6MCAzcHggOHB4IHJnYmEoMCwwLDAsLjA3KX0KLnNpbS1jYXJkIGgze21hcmdpbi10b3A6MDtjb2xvcjojMmMzZTUwfQouc2ltLWNhcmQgY2FudmFze3dpZHRoOjEwMCU7bWF4LXdpZHRoOjM2MHB4O2Rpc3BsYXk6YmxvY2s7bWFyZ2luOmF1dG99Ci5zaW0tYnRue2JvcmRlcjowO2JvcmRlci1yYWRpdXM6OHB4O3BhZGRpbmc6MTBweCAxNHB4O2JhY2tncm91bmQ6IzI5ODBiOTtjb2xvcjojZmZmO2ZvbnQtd2VpZ2h0OjYwMDtjdXJzb3I6cG9pbnRlcjttYXJnaW46NHB4fQouc2ltLWJ0bjpob3ZlcntmaWx0ZXI6YnJpZ2h0bmVzcyguOTUpfQouc2ltLXJlYWRvdXR7YmFja2dyb3VuZDojZjNmN2ZhO2JvcmRlci1sZWZ0OjRweCBzb2xpZCAjMjk4MGI5O3BhZGRpbmc6MTBweDtib3JkZXItcmFkaXVzOjZweDttYXJnaW4tdG9wOjEwcHh9Ci5zaW0tbm90ZXtiYWNrZ3JvdW5kOiNmZmY4ZTY7Ym9yZGVyLWxlZnQ6NHB4IHNvbGlkICNmMzljMTI7cGFkZGluZzoxMHB4O2JvcmRlci1yYWRpdXM6NnB4fQoKPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KPGgxPjktU2luZiBGaXppa2E6IEl6b3Rlcm1payBKYXJheW9uPC9oMT4KCjxkaXYgY2xhc3M9InNlY3Rpb24iPgo8aDI+MS4gSXpvdGVybWlrIGphcmF5b24gaGFxaWRhPC9oMj4KPHA+PHN0cm9uZz5Jem90ZXJtaWsgamFyYXlvbjwvc3Ryb25nPiDigJQgYmVyaWxnYW4gbWFzc2FsaSBpZGVhbCBnYXpkYSBoYXJvcmF0IG/igJh6Z2FybWFzIGJv4oCYbGdhbiBob2xkYSAoVCA9IGNvbnN0KSBrZWNoYWRpZ2FuIGdheiBob2xhdGluaW5nIG/igJh6Z2FyaXNoIGphcmF5b25pZGlyLjwvcD4KPGRpdiBjbGFzcz0iZm9ybXVsYSI+PHN0cm9uZz5Cb3lsLU1hcmlvdHQgcW9udW5pOjwvc3Ryb25nPiBQIMK3IFYgPSBjb25zdCAmbmJzcDt5b2tpJm5ic3A7IFDigoEgwrcgVuKCgSA9IFDigoIgwrcgVuKCgjwvZGl2Pgo8cD48c3Ryb25nPkFzb3NpeSB4dXN1c2l5YXRsYXJpOjwvc3Ryb25nPjwvcD4KPHVsPgo8bGk+R2F6IGhham1pIChWKSBvcnRnYW5kYSwgdW5pbmcgYm9zaW1pIChQKSBrYW1heWFkaSB2YSBha3NpbmNoYS48L2xpPgo8bGk+SGFyb3JhdCBv4oCYemdhcm1hcyBxb2xpc2hpIHVjaHVuIGlzc2lxbGlrIGFsbWFzaGludXZpIHlldGFybGljaGEgc2VraW4gYW1hbGdhIG9zaGlzaGkga2VyYWsuPC9saT4KPGxpPkl6b3Rlcm1payBqYXJheW9uIFAtViBrb29yZGluYXRhIHRla2lzbGlnaWRhIDxzdHJvbmc+aXpvdGVybWE8L3N0cm9uZz4gZGViIGF0YWx1dmNoaSBnaXBlcmJvbGFkaXIuPC9saT4KPC91bD4KPC9kaXY+Cgo8ZGl2IGNsYXNzPSJzZWN0aW9uIj4KPGgyPkludGVyYWt0aXYgU2ltdWx5YXRzaXlhOiBCb3lsLU1hcmlvdHQgUW9udW5pPC9oMj4KPGRpdiBjbGFzcz0ic2ltdWxhdGlvbi1jb250YWluZXIiPgo8ZGl2PjxjYW52YXMgaWQ9InBpc3RvbkNhbnZhcyIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiPjwvY2FudmFzPjwvZGl2Pgo8ZGl2PjxjYW52YXMgaWQ9ImdyYXBoQ2FudmFzIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCI+PC9jYW52YXM+PC9kaXY+CjxkaXYgY2xhc3M9ImNvbnRyb2xzIj4KPGRpdiBjbGFzcz0iY29udHJvbC1ncm91cCI+CjxsYWJlbCBmb3I9InZvbHVtZVNsaWRlciI+R2F6IGhham1pIChWKTogPHNwYW4gaWQ9InZWYWwiPjUwPC9zcGFuPiBuaXNiaXkgYmlybGlrPC9sYWJlbD4KPGlucHV0IHR5cGU9InJhbmdlIiBpZD0idm9sdW1lU2xpZGVyIiBtaW49IjI1IiBtYXg9IjkwIiB2YWx1ZT0iNTAiPgo8L2Rpdj4KPGRpdiBjbGFzcz0iZGF0YS1kaXNwbGF5Ij4KPGRpdj5IYXJvcmF0IChUKTogPHNwYW4gc3R5bGU9ImNvbG9yOiMyZWNjNzE7Ij4zMDAgSyAob+KAmHpnYXJtYXMpPC9zcGFuPjwvZGl2Pgo8ZGl2Pkhham0gKFYpOiA8c3BhbiBpZD0iZGlzcFYiPjUwPC9zcGFuPjwvZGl2Pgo8ZGl2PkJvc2ltIChQKTogPHNwYW4gaWQ9ImRpc3BQIj4yLjAwPC9zcGFuPiBhdG08L2Rpdj4KPGRpdj5QIMK3IFYga2/igJhwYXl0bWE6IDxzcGFuIGlkPSJkaXNwUFYiPjEwMDwvc3Bhbj48L2Rpdj4KPC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGNsYXNzPSJzZWN0aW9uIj4KPGgyPjIuIEdhemxhcm5pbmcgdW11bWl5IGl6b2phcmF5b25sYXJpPC9oMj4KPHA+SWRlYWwgZ2F6IGhvbGF0IHRlbmdsYW1hc2kgKFAgwrcgViAvIFQgPSBjb25zdCkgYXNvc2lkYSB1Y2h0YSBhc29zaXkgaXpvamFyYXlvbiBmYXJxbGFuYWRpOjwvcD4KPHRhYmxlPgo8dGhlYWQ+PHRyPjx0aD5KYXJheW9uIG5vbWk8L3RoPjx0aD5P4oCYemdhcm1hcyBrYXR0YWxpazwvdGg+PHRoPk1hdGVtYXRpayBpZm9kYXNpPC90aD48dGg+UW9udW4gbm9taTwvdGg+PC90cj48L3RoZWFkPgo8dGJvZHk+Cjx0cj48dGQ+PHN0cm9uZz5Jem90ZXJtaWs8L3N0cm9uZz48L3RkPjx0ZD5IYXJvcmF0IChUID0gY29uc3QpPC90ZD48dGQ+UCDCtyBWID0gY29uc3Q8L3RkPjx0ZD5Cb3lsLU1hcmlvdHQgcW9udW5pPC90ZD48L3RyPgo8dHI+PHRkPjxzdHJvbmc+SXpvYmFyaWs8L3N0cm9uZz48L3RkPjx0ZD5Cb3NpbSAoUCA9IGNvbnN0KTwvdGQ+PHRkPlYgLyBUID0gY29uc3Q8L3RkPjx0ZD5HZXktTHVzc2FrIHFvbnVuaTwvdGQ+PC90cj4KPHRyPjx0ZD48c3Ryb25nPkl6b3hvcmlrPC9zdHJvbmc+PC90ZD48dGQ+SGFqbSAoViA9IGNvbnN0KTwvdGQ+PHRkPlAgLyBUID0gY29uc3Q8L3RkPjx0ZD5TaGFybCBxb251bmk8L3RkPjwvdHI+CjwvdGJvZHk+CjwvdGFibGU+CjwvZGl2PgoKPGRpdiBjbGFzcz0ic2VjdGlvbiI+CjxoMj4zLiBRb+KAmHNoaW1jaGEgaW50ZXJha3RpdiBzaW11bHlhdHNpeWFsYXI8L2gyPgo8cD5RdXlpZGFnaSB1Y2h0YSBzaW11bHlhdHNpeWEgZ2F6bGFybmluZyBhc29zaXkgaXpvamFyYXlvbmxhcmluaSBrb+KAmHJnYXptYWxpIHJhdmlzaGRhIHRla3NoaXJpc2hnYSB5b3JkYW0gYmVyYWRpLjwvcD4KCjxkaXYgY2xhc3M9InNpbS1ncmlkIj4KCjxkaXYgY2xhc3M9InNpbS1jYXJkIj4KPGgzPjEpIEl6b3Rlcm1payBqYXJheW9uIOKAlCBUID0gY29uc3Q8L2gzPgo8cD5IYWptbmkgb+KAmHpnYXJ0aXJpbmcuIEJvc2ltIGF2dG9tYXRpayByYXZpc2hkYSBCb3ls4oCTTWFyaW90dCBxb251bmkgYm/igJh5aWNoYSBv4oCYemdhcmFkaS48L3A+CjxjYW52YXMgaWQ9Imlzb1RDYW52YXMiIHdpZHRoPSIzNjAiIGhlaWdodD0iMjMwIj48L2NhbnZhcz4KPGxhYmVsIGZvcj0iaXNvVFZvbCI+PHN0cm9uZz5WOjwvc3Ryb25nPiA8c3BhbiBpZD0iaXNvVFZvbFZhbCI+NTA8L3NwYW4+IGJpcmxpazwvbGFiZWw+CjxpbnB1dCBpZD0iaXNvVFZvbCIgdHlwZT0icmFuZ2UiIG1pbj0iMjAiIG1heD0iMTAwIiB2YWx1ZT0iNTAiIHN0eWxlPSJ3aWR0aDoxMDAlIj4KPGRpdiBjbGFzcz0ic2ltLXJlYWRvdXQiPgpQID0gPHN0cm9uZyBpZD0iaXNvVFAiPjIuMDA8L3N0cm9uZz4gYmlybGlrPGJyPgpQIMK3IFYgPSA8c3Ryb25nIGlkPSJpc29UUFYiPjEwMC4wMDwvc3Ryb25nPiDigJQgZG9pbWl5CjwvZGl2Pgo8L2Rpdj4KCjxkaXYgY2xhc3M9InNpbS1jYXJkIj4KPGgzPjIpIEl6b2JhcmlrIGphcmF5b24g4oCUIFAgPSBjb25zdDwvaDM+CjxwPkhhcm9yYXQgb3NoaXJpbGdhbmRhIGhham0gcWFuZGF5IG/igJh6Z2FyaXNoaW5pIGt1emF0aW5nLjwvcD4KPGNhbnZhcyBpZD0iaXNvUENhbnZhcyIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyMzAiPjwvY2FudmFzPgo8bGFiZWwgZm9yPSJpc29QVCI+PHN0cm9uZz5UOjwvc3Ryb25nPiA8c3BhbiBpZD0iaXNvUFRWYWwiPjMwMDwvc3Bhbj4gSzwvbGFiZWw+CjxpbnB1dCBpZD0iaXNvUFQiIHR5cGU9InJhbmdlIiBtaW49IjIwMCIgbWF4PSI2MDAiIHZhbHVlPSIzMDAiIHN0eWxlPSJ3aWR0aDoxMDAlIj4KPGRpdiBjbGFzcz0ic2ltLXJlYWRvdXQiPgpQID0gPHN0cm9uZz4xLjAwPC9zdHJvbmc+IGJpcmxpazxicj4KViA9IDxzdHJvbmcgaWQ9Imlzb1BWIj41MC4wMDwvc3Ryb25nPiBiaXJsaWs8YnI+ClYgLyBUID0gPHN0cm9uZyBpZD0iaXNvUFZUIj4wLjE2Njc8L3N0cm9uZz4KPC9kaXY+CjwvZGl2PgoKPGRpdiBjbGFzcz0ic2ltLWNhcmQiPgo8aDM+MykgSXpveG9yaWsgamFyYXlvbiDigJQgViA9IGNvbnN0PC9oMz4KPHA+SGFqbSBv4oCYemdhcm1hcyBib+KAmGxnYW5kYSBoYXJvcmF0IG9zaGlzaGkgYmlsYW4gYm9zaW1uaW5nIG/igJh6Z2FyaXNoaW5pIGt1emF0aW5nLjwvcD4KPGNhbnZhcyBpZD0iaXNvVkNhbnZhcyIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyMzAiPjwvY2FudmFzPgo8bGFiZWwgZm9yPSJpc29WVCI+PHN0cm9uZz5UOjwvc3Ryb25nPiA8c3BhbiBpZD0iaXNvVlRWYWwiPjMwMDwvc3Bhbj4gSzwvbGFiZWw+CjxpbnB1dCBpZD0iaXNvVlQiIHR5cGU9InJhbmdlIiBtaW49IjIwMCIgbWF4PSI2MDAiIHZhbHVlPSIzMDAiIHN0eWxlPSJ3aWR0aDoxMDAlIj4KPGRpdiBjbGFzcz0ic2ltLXJlYWRvdXQiPgpWID0gPHN0cm9uZz41MC4wMDwvc3Ryb25nPiBiaXJsaWs8YnI+ClAgPSA8c3Ryb25nIGlkPSJpc29WUCI+MS4wMDwvc3Ryb25nPiBiaXJsaWs8YnI+ClAgLyBUID0gPHN0cm9uZyBpZD0iaXNvVlBUIj4wLjAwMzMzPC9zdHJvbmc+CjwvZGl2Pgo8L2Rpdj4KCjwvZGl2PgoKPGRpdiBjbGFzcz0ic2ltLW5vdGUiIHN0eWxlPSJtYXJnaW4tdG9wOjE4cHgiPgo8c3Ryb25nPlRla3NoaXJpc2g6PC9zdHJvbmc+IEl6b3Rlcm1pa2RhIFQgb+KAmHpnYXJtYXlkaTsgaXpvYmFyaWtkYSBQIG/igJh6Z2FybWF5ZGk7IGl6b3hvcmlrZGEgViBv4oCYemdhcm1heWRpLgpP4oCYcXV2Y2hpbGFyIHNsYXlkZXJsYXJuaSBzdXJpYiwgZm9ybXVsYWxhcmRhZ2kgYm9n4oCYbGFuaXNobGFybmkgbXVzdGFxaWwga3V6YXRpc2hsYXJpIG11bWtpbi4KPC9kaXY+CjwvZGl2PgoKPGRpdiBjbGFzcz0ic2VjdGlvbiI+CjxoMj40LiBEYXJzZGEgcW/igJhsbGFuaWxpc2hpIHZhIG1ldG9kaWsgdGF2c2l5YWxhcjwvaDI+CjxwPlVzaGJ1IGludGVyYWt0aXYgbWF0ZXJpYWxkYW4gOS1zaW5mIGZpemlrYSBkYXJzbGFyaWRhIHF1eWlkYWdpIGJvc3FpY2hsYXJkYSBmb3lkYWxhbmlzaCB0YXZzaXlhIGV0aWxhZGk6PC9wPgo8b2w+CjxsaT48c3Ryb25nPllhbmdpIG1hdnp1bmkgdHVzaHVudGlyaXNoZGE6PC9zdHJvbmc+Cjx1bD48bGk+T+KAmHF1dmNoaWxhcmdhIHBvcnNoZW4gcGFzdGdhIHR1c2hpcmlsZ2FuZGEgbW9sZWt1bGFsYXIgemljaGxpZ2kgb3J0aXNoaSB2YSBkZXZvcmdhIHVyaWxpc2hsYXIga2/igJhwYXlpYiBib3NpbSBvc2hpc2hpbmkga2/igJhyc2F0aXNoLjwvbGk+PC91bD48L2xpPgo8bGk+PHN0cm9uZz5NYXZ6dW5pIG11c3RhaGthbWxhc2hkYTo8L3N0cm9uZz4KPHVsPjxsaT5TbGF5ZGVybmkgc3VyaXNoIG9ycWFsaSBQIMK3IFYga2/igJhwYXl0bWEgaGFyIGRvaW0gMTAwIGdhIHRlbmcgYm/igJhsaWIgcW9saXNoaW5pIG/igJhxdXZjaGlsYXIgYmlsYW4gaGlzb2JsYWIgY2hpcWlzaC48L2xpPjwvdWw+PC9saT4KPGxpPjxzdHJvbmc+TXVhbW1vbGkgdG9wc2hpcmlxOjwvc3Ryb25nPgo8dWw+PGxpPjxlbT7igJxIYWptIDIgYmFyb2JhciBrYW1heXNhLCBib3NpbSBuZWNoYSBiYXJvYmFyIG9ydGFkaT/igJ08L2VtPiBzYXZvbGkgYmVyaWxpYiwgc2ltdWx5YXRzaXlhZGEgdGVrc2hpcmlsYWRpLjwvbGk+PC91bD48L2xpPgo8L29sPgo8L2Rpdj4KPC9kaXY+Cgo8c2NyaXB0Pgpjb25zdCBwQ2FudmFzPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwaXN0b25DYW52YXMnKSxwQ3R4PXBDYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKY29uc3QgZ0NhbnZhcz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZ3JhcGhDYW52YXMnKSxnQ3R4PWdDYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKY29uc3Qgdm9sdW1lU2xpZGVyPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd2b2x1bWVTbGlkZXInKTsKY29uc3QgdlZhbFNwYW49ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3ZWYWwnKSxkaXNwVj1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZGlzcFYnKTsKY29uc3QgZGlzcFA9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2Rpc3BQJyksZGlzcFBWPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdkaXNwUFYnKTsKY29uc3QgQ09OU1RfUFY9MTAwLG51bVBhcnRpY2xlcz01MDsKbGV0IHBhcnRpY2xlcz1bXTsKZm9yKGxldCBpPTA7aTxudW1QYXJ0aWNsZXM7aSsrKXsKcGFydGljbGVzLnB1c2goe3g6TWF0aC5yYW5kb20oKSoyMDArNTAseTpNYXRoLnJhbmRvbSgpKjEwMCsxNTAsCnZ4OihNYXRoLnJhbmRvbSgpLS41KSozLHZ5OihNYXRoLnJhbmRvbSgpLS41KSozfSk7Cn0KZnVuY3Rpb24gYW5pbWF0ZSgpewpjb25zdCB2PXBhcnNlRmxvYXQodm9sdW1lU2xpZGVyLnZhbHVlKSxwPUNPTlNUX1BWL3Y7CnZWYWxTcGFuLnRleHRDb250ZW50PXY7ZGlzcFYudGV4dENvbnRlbnQ9djtkaXNwUC50ZXh0Q29udGVudD1wLnRvRml4ZWQoMik7ZGlzcFBWLnRleHRDb250ZW50PSh2KnApLnRvRml4ZWQoMCk7CnBDdHguY2xlYXJSZWN0KDAsMCxwQ2FudmFzLndpZHRoLHBDYW52YXMuaGVpZ2h0KTsKY29uc3QgbGVmdD00MCxyaWdodD0yNjAsYm90dG9tPTI2MCxjeWxpbmRlckhlaWdodD12KjIuMix0b3A9Ym90dG9tLWN5bGluZGVySGVpZ2h0OwpwQ3R4LnN0cm9rZVN0eWxlPScjMmMzZTUwJztwQ3R4LmxpbmVXaWR0aD00O3BDdHguYmVnaW5QYXRoKCk7CnBDdHgubW92ZVRvKGxlZnQsMzApO3BDdHgubGluZVRvKGxlZnQsYm90dG9tKTtwQ3R4LmxpbmVUbyhyaWdodCxib3R0b20pO3BDdHgubGluZVRvKHJpZ2h0LDMwKTtwQ3R4LnN0cm9rZSgpOwpwQ3R4LmZpbGxTdHlsZT0nIzdmOGM4ZCc7cEN0eC5maWxsUmVjdChsZWZ0KzIsdG9wLTEwLHJpZ2h0LWxlZnQtNCwxMik7CnBDdHguYmVnaW5QYXRoKCk7cEN0eC5tb3ZlVG8oKGxlZnQrcmlnaHQpLzIsdG9wLTEwKTtwQ3R4LmxpbmVUbygobGVmdCtyaWdodCkvMiwxMCk7cEN0eC5zdHJva2UoKTsKcEN0eC5maWxsU3R5bGU9JyNlNzRjM2MnOwpwYXJ0aWNsZXMuZm9yRWFjaChwdD0+ewpwdC54Kz1wdC52eDtwdC55Kz1wdC52eTsKaWYocHQueDw9bGVmdCs2KXtwdC54PWxlZnQrNjtwdC52eCo9LTF9CmlmKHB0Lng+PXJpZ2h0LTYpe3B0Lng9cmlnaHQtNjtwdC52eCo9LTF9CmlmKHB0Lnk+PWJvdHRvbS02KXtwdC55PWJvdHRvbS02O3B0LnZ5Kj0tMX0KaWYocHQueTw9dG9wKzYpe3B0Lnk9dG9wKzY7cHQudnkqPS0xfQpwQ3R4LmJlZ2luUGF0aCgpO3BDdHguYXJjKHB0LngscHQueSw0LDAsTWF0aC5QSSoyKTtwQ3R4LmZpbGwoKTsKfSk7CnBDdHguZmlsbFN0eWxlPScjMzMzJztwQ3R4LmZvbnQ9JzE0cHggQXJpYWwnO3BDdHguZmlsbFRleHQoJ1BvcnNoZW5saSBzaWxpbmRyJyw5NSwyODgpOwpnQ3R4LmNsZWFyUmVjdCgwLDAsZ0NhbnZhcy53aWR0aCxnQ2FudmFzLmhlaWdodCk7CmdDdHguc3Ryb2tlU3R5bGU9JyMzMzMnO2dDdHgubGluZVdpZHRoPTI7Z0N0eC5iZWdpblBhdGgoKTsKZ0N0eC5tb3ZlVG8oNDAsMjApO2dDdHgubGluZVRvKDQwLDI2MCk7Z0N0eC5saW5lVG8oMjgwLDI2MCk7Z0N0eC5zdHJva2UoKTsKZ0N0eC5maWxsU3R5bGU9JyMzMzMnO2dDdHguZm9udD0nMTJweCBBcmlhbCc7Z0N0eC5maWxsVGV4dCgnUCAoQm9zaW0pJywxMCwyMCk7Z0N0eC5maWxsVGV4dCgnViAoSGFqbSknLDIzMCwyODApOwpnQ3R4LnN0cm9rZVN0eWxlPScjMjk4MGI5JztnQ3R4LmxpbmVXaWR0aD0zO2dDdHguYmVnaW5QYXRoKCk7CmZvcihsZXQgdm9sPTI1O3ZvbDw9OTA7dm9sKz0xKXsKbGV0IHByZXNzPUNPTlNUX1BWL3ZvbCx4PTQwKyh2b2wtMjUpKigyMjAvNjUpLHk9MjYwLShwcmVzcy0xLjEpKigyMjAvMyk7CmlmKHZvbD09PTI1KWdDdHgubW92ZVRvKHgseSk7ZWxzZSBnQ3R4LmxpbmVUbyh4LHkpOwp9CmdDdHguc3Ryb2tlKCk7CmxldCBjdXJyZW50WD00MCsodi0yNSkqKDIyMC82NSksY3VycmVudFk9MjYwLShwLTEuMSkqKDIyMC8zKTsKZ0N0eC5maWxsU3R5bGU9JyNlNzRjM2MnO2dDdHguYmVnaW5QYXRoKCk7Z0N0eC5hcmMoY3VycmVudFgsY3VycmVudFksNiwwLE1hdGguUEkqMik7Z0N0eC5maWxsKCk7CnJlcXVlc3RBbmltYXRpb25GcmFtZShhbmltYXRlKTsKfQphbmltYXRlKCk7Ci8vIFFv4oCYc2hpbWNoYSBpem9qYXJheW9ubGFyIHNpbXVseWF0c2l5YWxhcmkKKGZ1bmN0aW9uKCl7CiAgY29uc3QgZ2V0ID0gaWQgPT4gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaWQpOwogIGNvbnN0IGRyYXdBeGVzID0gKGN0eCwgdywgaCwgeExhYmVsLCB5TGFiZWwpID0+IHsKICAgIGN0eC5jbGVhclJlY3QoMCwwLHcsaCk7CiAgICBjdHguc3Ryb2tlU3R5bGU9IiMzMzMiOyBjdHgubGluZVdpZHRoPTI7CiAgICBjdHguYmVnaW5QYXRoKCk7IGN0eC5tb3ZlVG8oNDIsMTgpOyBjdHgubGluZVRvKDQyLGgtMzUpOyBjdHgubGluZVRvKHctMTgsaC0zNSk7IGN0eC5zdHJva2UoKTsKICAgIGN0eC5maWxsU3R5bGU9IiMzMzMiOyBjdHguZm9udD0iMTJweCBBcmlhbCI7CiAgICBjdHguZmlsbFRleHQoeUxhYmVsLDYsMTgpOyBjdHguZmlsbFRleHQoeExhYmVsLHctNDUsaC0xMik7CiAgfTsKCiAgLy8gSXpvdGVybWlrCiAgY29uc3QgdENhbnZhcz1nZXQoImlzb1RDYW52YXMiKSwgdEN0eD10Q2FudmFzLmdldENvbnRleHQoIjJkIiksIHRTbGlkZXI9Z2V0KCJpc29UVm9sIik7CiAgZnVuY3Rpb24gZHJhd0lzb1QoKXsKICAgIGNvbnN0IFY9K3RTbGlkZXIudmFsdWUsIFA9MTAwL1Y7CiAgICBnZXQoImlzb1RWb2xWYWwiKS50ZXh0Q29udGVudD1WOwogICAgZ2V0KCJpc29UUCIpLnRleHRDb250ZW50PVAudG9GaXhlZCgyKTsKICAgIGdldCgiaXNvVFBWIikudGV4dENvbnRlbnQ9KFAqVikudG9GaXhlZCgyKTsKICAgIGRyYXdBeGVzKHRDdHgsMzYwLDIzMCwiViIsIlAiKTsKICAgIHRDdHguc3Ryb2tlU3R5bGU9IiMyOTgwYjkiOyB0Q3R4LmxpbmVXaWR0aD0zOyB0Q3R4LmJlZ2luUGF0aCgpOwogICAgZm9yKGxldCB2PTIwO3Y8PTEwMDt2KyspewogICAgICBjb25zdCBwPTEwMC92LCB4PTQ1Kyh2LTIwKSoyLjksIHk9MTk1LShwLTEpKjIyOwogICAgICBpZih2PT09MjApdEN0eC5tb3ZlVG8oeCx5KTsgZWxzZSB0Q3R4LmxpbmVUbyh4LHkpOwogICAgfQogICAgdEN0eC5zdHJva2UoKTsKICAgIGNvbnN0IHg9NDUrKFYtMjApKjIuOSwgeT0xOTUtKFAtMSkqMjI7CiAgICB0Q3R4LmZpbGxTdHlsZT0iI2U3NGMzYyI7IHRDdHguYmVnaW5QYXRoKCk7IHRDdHguYXJjKHgseSw2LDAsTWF0aC5QSSoyKTsgdEN0eC5maWxsKCk7CiAgfQogIHRTbGlkZXIuYWRkRXZlbnRMaXN0ZW5lcigiaW5wdXQiLGRyYXdJc29UKTsgZHJhd0lzb1QoKTsKCiAgLy8gSXpvYmFyaWsKICBjb25zdCBwQ2FudmFzPWdldCgiaXNvUENhbnZhcyIpLCBwQ3R4Mj1wQ2FudmFzLmdldENvbnRleHQoIjJkIiksIHBTbGlkZXI9Z2V0KCJpc29QVCIpOwogIGZ1bmN0aW9uIGRyYXdJc29QKCl7CiAgICBjb25zdCBUPStwU2xpZGVyLnZhbHVlLCBWPTUwKlQvMzAwOwogICAgZ2V0KCJpc29QVFZhbCIpLnRleHRDb250ZW50PVQ7CiAgICBnZXQoImlzb1BWIikudGV4dENvbnRlbnQ9Vi50b0ZpeGVkKDIpOwogICAgZ2V0KCJpc29QVlQiKS50ZXh0Q29udGVudD0oVi9UKS50b0ZpeGVkKDQpOwogICAgZHJhd0F4ZXMocEN0eDIsMzYwLDIzMCwiVCIsIlYiKTsKICAgIHBDdHgyLnN0cm9rZVN0eWxlPSIjMjdhZTYwIjsgcEN0eDIubGluZVdpZHRoPTM7IHBDdHgyLmJlZ2luUGF0aCgpOwogICAgZm9yKGxldCB0ZW1wPTIwMDt0ZW1wPD02MDA7dGVtcCs9NSl7CiAgICAgIGNvbnN0IHZvbD01MCp0ZW1wLzMwMCwgeD00NSsodGVtcC0yMDApKigyOTAvNDAwKSwgeT0xOTUtKHZvbC0zMCkqMS43OwogICAgICBpZih0ZW1wPT09MjAwKXBDdHgyLm1vdmVUbyh4LHkpOyBlbHNlIHBDdHgyLmxpbmVUbyh4LHkpOwogICAgfQogICAgcEN0eDIuc3Ryb2tlKCk7CiAgICBjb25zdCB4PTQ1KyhULTIwMCkqKDI5MC80MDApLCB5PTE5NS0oVi0zMCkqMS43OwogICAgcEN0eDIuZmlsbFN0eWxlPSIjZTc0YzNjIjsgcEN0eDIuYmVnaW5QYXRoKCk7IHBDdHgyLmFyYyh4LHksNiwwLE1hdGguUEkqMik7IHBDdHgyLmZpbGwoKTsKICB9CiAgcFNsaWRlci5hZGRFdmVudExpc3RlbmVyKCJpbnB1dCIsZHJhd0lzb1ApOyBkcmF3SXNvUCgpOwoKICAvLyBJem94b3JpawogIGNvbnN0IHZDYW52YXM9Z2V0KCJpc29WQ2FudmFzIiksIHZDdHg9dkNhbnZhcy5nZXRDb250ZXh0KCIyZCIpLCB2U2xpZGVyPWdldCgiaXNvVlQiKTsKICBmdW5jdGlvbiBkcmF3SXNvVigpewogICAgY29uc3QgVD0rdlNsaWRlci52YWx1ZSwgUD1ULzMwMDsKICAgIGdldCgiaXNvVlRWYWwiKS50ZXh0Q29udGVudD1UOwogICAgZ2V0KCJpc29WUCIpLnRleHRDb250ZW50PVAudG9GaXhlZCgyKTsKICAgIGdldCgiaXNvVlBUIikudGV4dENvbnRlbnQ9KFAvVCkudG9GaXhlZCg1KTsKICAgIGRyYXdBeGVzKHZDdHgsMzYwLDIzMCwiVCIsIlAiKTsKICAgIHZDdHguc3Ryb2tlU3R5bGU9IiM4ZTQ0YWQiOyB2Q3R4LmxpbmVXaWR0aD0zOyB2Q3R4LmJlZ2luUGF0aCgpOwogICAgZm9yKGxldCB0ZW1wPTIwMDt0ZW1wPD02MDA7dGVtcCs9NSl7CiAgICAgIGNvbnN0IHByZXNzPXRlbXAvMzAwLCB4PTQ1Kyh0ZW1wLTIwMCkqKDI5MC80MDApLCB5PTE5NS0ocHJlc3MtLjUpKjk1OwogICAgICBpZih0ZW1wPT09MjAwKXZDdHgubW92ZVRvKHgseSk7IGVsc2UgdkN0eC5saW5lVG8oeCx5KTsKICAgIH0KICAgIHZDdHguc3Ryb2tlKCk7CiAgICBjb25zdCB4PTQ1KyhULTIwMCkqKDI5MC80MDApLCB5PTE5NS0oUC0uNSkqOTU7CiAgICB2Q3R4LmZpbGxTdHlsZT0iI2U3NGMzYyI7IHZDdHguYmVnaW5QYXRoKCk7IHZDdHguYXJjKHgseSw2LDAsTWF0aC5QSSoyKTsgdkN0eC5maWxsKCk7CiAgfQogIHZTbGlkZXIuYWRkRXZlbnRMaXN0ZW5lcigiaW5wdXQiLGRyYXdJc29WKTsgZHJhd0lzb1YoKTsKfSkoKTsKCjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=&quot;&gt;&lt;/iframe&gt;&lt;iframe id=&quot;frame3&quot; title=&quot;4. Izobarik jarayon&quot; class=&quot;frame&quot; loading=&quot;eager&quot; data-b64=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InV6Ij4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgo8dGl0bGU+OS1TaW5mIEZpemlrYTogSXpvYmFyaWsgSmFyYXlvbiBTaW11bHlhdHNpeWFzaTwvdGl0bGU+CjxzdHlsZT4KOnJvb3R7LS1iZzojZjRmN2Y5Oy0tY2FyZDojZmZmOy0tcHJpbWFyeTojNGE5MGUyOy0tZGFyazojMzU3YWJkOy0tYWNjZW50OiNlNzRjM2M7LS10ZXh0OiMyYzNlNTA7LS1tdXRlZDojNmM3YTg5Oy0tcmFkaXVzOjEycHg7LS1zaGFkb3c6MCA4cHggMjRweCByZ2JhKDAsMCwwLC4wOCl9Cip7Ym94LXNpemluZzpib3JkZXItYm94O21hcmdpbjowO3BhZGRpbmc6MDtmb250LWZhbWlseTonU2Vnb2UgVUknLHN5c3RlbS11aSxzYW5zLXNlcmlmfQpib2R5e2JhY2tncm91bmQ6dmFyKC0tYmcpO2NvbG9yOnZhcigtLXRleHQpO2xpbmUtaGVpZ2h0OjEuNjtwYWRkaW5nOjIwcHg7bWF4LXdpZHRoOjE0MDBweDttYXJnaW46YXV0b30KaGVhZGVye3RleHQtYWxpZ246Y2VudGVyO21hcmdpbi1ib3R0b206MjVweDtwYWRkaW5nOjIwcHg7YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCM0YTkwZTIsIzUwZTNjMik7Y29sb3I6I2ZmZjtib3JkZXItcmFkaXVzOnZhcigtLXJhZGl1cyk7Ym94LXNoYWRvdzp2YXIoLS1zaGFkb3cpfQpoZWFkZXIgaDF7Zm9udC1zaXplOjIuMnJlbTttYXJnaW4tYm90dG9tOjhweH0gaGVhZGVyIHB7Zm9udC1zaXplOjEuMXJlbX0KLm1haW4tbGF5b3V0e2Rpc3BsYXk6Z3JpZDtncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyO2dhcDoyNXB4fQpAbWVkaWEobWluLXdpZHRoOjk5MnB4KXsubWFpbi1sYXlvdXR7Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciAxZnJ9fQouY2FyZHtiYWNrZ3JvdW5kOnJnYmEoMjU1LDI1NSwyNTUsLjk2KTtwYWRkaW5nOjI1cHg7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMpO2JveC1zaGFkb3c6dmFyKC0tc2hhZG93KTtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMCwwLDAsLjA1KX0KLnNpbXVsYXRpb24tY29udGFpbmVyLC50aGVvcnktc2VjdGlvbntkaXNwbGF5OmZsZXg7ZmxleC1kaXJlY3Rpb246Y29sdW1uO2dhcDoyMHB4fQouY2FudmFzZXMtd3JhcHBlcntkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjE1cHg7anVzdGlmeS1jb250ZW50OmNlbnRlcn0KY2FudmFze2JhY2tncm91bmQ6I2ZmZjtib3JkZXItcmFkaXVzOjhweDtib3JkZXI6MXB4IHNvbGlkICNlMWU4ZWQ7bWF4LXdpZHRoOjEwMCV9Ci5jb250cm9sc3tiYWNrZ3JvdW5kOiNmOGZhZmM7cGFkZGluZzoyMHB4O2JvcmRlci1yYWRpdXM6OHB4O2JvcmRlcjoxcHggc29saWQgI2UyZThmMH0KLmNvbnRyb2wtZ3JvdXB7bWFyZ2luLWJvdHRvbToxNXB4fS5jb250cm9sLWdyb3VwIGxhYmVse2Rpc3BsYXk6YmxvY2s7Zm9udC13ZWlnaHQ6NjAwO21hcmdpbi1ib3R0b206OHB4fQouc2xpZGVyLWNvbnRhaW5lcntkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2dhcDoxNXB4fQppbnB1dFt0eXBlPXJhbmdlXXtmbGV4OjE7aGVpZ2h0OjhweDthY2NlbnQtY29sb3I6dmFyKC0tYWNjZW50KX0KLnRlbXAtdmFsdWV7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LXNpemU6MS4xcmVtO21pbi13aWR0aDo3MHB4O2NvbG9yOnZhcigtLWFjY2VudCl9Ci5tZXRyaWNzLWdyaWR7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoMiwxZnIpO2dhcDoxMnB4O21hcmdpbi10b3A6MTVweH0KLm1ldHJpYy1jYXJke2JhY2tncm91bmQ6I2ZmZjtwYWRkaW5nOjEycHg7Ym9yZGVyLXJhZGl1czo2cHg7Ym9yZGVyLWxlZnQ6NHB4IHNvbGlkIHZhcigtLXByaW1hcnkpO2JveC1zaGFkb3c6MCAycHggNHB4IHJnYmEoMCwwLDAsLjA0KX0KLm1ldHJpYy1jYXJkLndvcmt7Ym9yZGVyLWxlZnQtY29sb3I6IzJlY2M3MX0ubWV0cmljLWNhcmQgLnRpdGxle2ZvbnQtc2l6ZTouODVyZW07Y29sb3I6dmFyKC0tbXV0ZWQpO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZX0KLm1ldHJpYy1jYXJkIC52YWx1ZXtmb250LXNpemU6MS4ycmVtO2ZvbnQtd2VpZ2h0OmJvbGQ7bWFyZ2luLXRvcDo0cHh9Ci5wbGFuLWl0ZW17Ym9yZGVyLWJvdHRvbToxcHggc29saWQgI2VkZjJmNztwYWRkaW5nLWJvdHRvbToxNXB4fS5wbGFuLWl0ZW06bGFzdC1jaGlsZHtib3JkZXItYm90dG9tOm5vbmV9Ci5wbGFuLWl0ZW0gaDJ7Y29sb3I6dmFyKC0tZGFyayk7Zm9udC1zaXplOjEuM3JlbTttYXJnaW4tYm90dG9tOjEwcHg7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTBweH0KLnBsYW4taXRlbSBoMiBzcGFue2JhY2tncm91bmQ6dmFyKC0tcHJpbWFyeSk7Y29sb3I6I2ZmZjt3aWR0aDoyOHB4O2hlaWdodDoyOHB4O2JvcmRlci1yYWRpdXM6NTAlO2Rpc3BsYXk6aW5saW5lLWZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXI7Zm9udC1zaXplOi45cmVtO2ZsZXgtc2hyaW5rOjB9Ci5mb3JtdWxhLWJveHtiYWNrZ3JvdW5kOiNmMWY1Zjk7cGFkZGluZzoxMnB4O2JvcmRlci1yYWRpdXM6NnB4O3RleHQtYWxpZ246Y2VudGVyO2ZvbnQtZmFtaWx5OidUaW1lcyBOZXcgUm9tYW4nLHNlcmlmO2ZvbnQtc2l6ZToxLjI1cmVtO2ZvbnQtc3R5bGU6aXRhbGljO21hcmdpbjoxMHB4IDA7Ym9yZGVyOjFweCBkYXNoZWQgI2NiZDVlMX0KLmhpZ2hsaWdodHtiYWNrZ3JvdW5kOiNlMGYyZmU7Y29sb3I6IzAzNjlhMTtwYWRkaW5nOjJweCA2cHg7Ym9yZGVyLXJhZGl1czo0cHg7Zm9udC13ZWlnaHQ6NTAwfQp1bHttYXJnaW4tbGVmdDoyMHB4O21hcmdpbi10b3A6OHB4fWxpe21hcmdpbi1ib3R0b206NnB4fQpAbWVkaWEobWF4LXdpZHRoOjYwMHB4KXtib2R5e3BhZGRpbmc6MTBweH1oZWFkZXIgaDF7Zm9udC1zaXplOjEuNXJlbX0uY2FyZHtwYWRkaW5nOjE1cHh9Lm1ldHJpY3MtZ3JpZHtncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyIDFmcn1jYW52YXN7d2lkdGg6MTAwJTtoZWlnaHQ6YXV0b319Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CjxoZWFkZXI+CjxoMT45LVNpbmYgRml6aWthOiBJem9iYXJpayBKYXJheW9uPC9oMT4KPHA+SW50ZXJha3RpdiBzaW11bHlhdHNpeWEgdmEgZGFycyBrb25zcGVrdGk8L3A+CjwvaGVhZGVyPgoKPGRpdiBjbGFzcz0ibWFpbi1sYXlvdXQiPgo8ZGl2IGNsYXNzPSJjYXJkIHNpbXVsYXRpb24tY29udGFpbmVyIj4KPGgyPkludGVyYWt0aXYgc2ltdWx5YXRzaXlhPC9oMj4KPGRpdiBjbGFzcz0iY2FudmFzZXMtd3JhcHBlciI+CjxkaXY+CjxwIHN0eWxlPSJ0ZXh0LWFsaWduOmNlbnRlcjtmb250LXdlaWdodDo2MDA7Zm9udC1zaXplOi45cmVtO21hcmdpbi1ib3R0b206NHB4Ij5HYXogc2lsaW5kcmkgdmEgcG9yc2hlbjwvcD4KPGNhbnZhcyBpZD0icGlzdG9uQ2FudmFzIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCI+PC9jYW52YXM+CjwvZGl2Pgo8ZGl2Pgo8cCBzdHlsZT0idGV4dC1hbGlnbjpjZW50ZXI7Zm9udC13ZWlnaHQ6NjAwO2ZvbnQtc2l6ZTouOXJlbTttYXJnaW4tYm90dG9tOjRweCI+VuKAk1QgZ3JhZmlnaSAoaXpvYmFyYSk8L3A+CjxjYW52YXMgaWQ9ImdyYXBoQ2FudmFzIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjMyMCI+PC9jYW52YXM+CjwvZGl2Pgo8L2Rpdj4KPGRpdiBjbGFzcz0iY29udHJvbHMiPgo8ZGl2IGNsYXNzPSJjb250cm9sLWdyb3VwIj4KPGxhYmVsIGZvcj0idGVtcFNsaWRlciI+QWJzb2x5dXQgaGFyb3JhdCAoVCk6PC9sYWJlbD4KPGRpdiBjbGFzcz0ic2xpZGVyLWNvbnRhaW5lciI+CjxpbnB1dCB0eXBlPSJyYW5nZSIgaWQ9InRlbXBTbGlkZXIiIG1pbj0iMjAwIiBtYXg9IjUwMCIgdmFsdWU9IjMwMCIgc3RlcD0iMSI+CjxzcGFuIGNsYXNzPSJ0ZW1wLXZhbHVlIiBpZD0idGVtcERpc3BsYXkiPjMwMCBLPC9zcGFuPgo8L2Rpdj4KPC9kaXY+CjxkaXYgY2xhc3M9Im1ldHJpY3MtZ3JpZCI+CjxkaXYgY2xhc3M9Im1ldHJpYy1jYXJkIj48ZGl2IGNsYXNzPSJ0aXRsZSI+Qm9zaW0gKFApPC9kaXY+PGRpdiBjbGFzcz0idmFsdWUiPjEwMCBrUGEgPHNtYWxsIHN0eWxlPSJmb250LXNpemU6LjdyZW07Y29sb3I6Z3JlZW4iPihDT05TVCk8L3NtYWxsPjwvZGl2PjwvZGl2Pgo8ZGl2IGNsYXNzPSJtZXRyaWMtY2FyZCI+PGRpdiBjbGFzcz0idGl0bGUiPkhham0gKFYpPC9kaXY+PGRpdiBjbGFzcz0idmFsdWUiIGlkPSJ2b2xEaXNwbGF5Ij4yNC45IEw8L2Rpdj48L2Rpdj4KPGRpdiBjbGFzcz0ibWV0cmljLWNhcmQiPjxkaXYgY2xhc3M9InRpdGxlIj5IYXJvcmF0IG8nemdhcmlzaGkgKM6UVCk8L2Rpdj48ZGl2IGNsYXNzPSJ2YWx1ZSIgaWQ9ImRlbHRhVERpc3BsYXkiPjAgSzwvZGl2PjwvZGl2Pgo8ZGl2IGNsYXNzPSJtZXRyaWMtY2FyZCB3b3JrIj48ZGl2IGNsYXNzPSJ0aXRsZSI+QmFqYXJpbGdhbiBpc2ggKEEpPC9kaXY+PGRpdiBjbGFzcz0idmFsdWUiIGlkPSJ3b3JrRGlzcGxheSI+MCBKPC9kaXY+PC9kaXY+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGNsYXNzPSJjYXJkIHRoZW9yeS1zZWN0aW9uIj4KPGRpdiBjbGFzcz0icGxhbi1pdGVtIj4KPGgyPjxzcGFuPjE8L3NwYW4+SXpvamFyYXlvbmxhciB0dXNodW5jaGFzaTwvaDI+CjxwPk8nemdhcm1hcyBtYXNzYWxpIGlkZWFsIGdheiBob2xhdGluaSBpZm9kYWxvdmNoaSB1Y2h0YSBhc29zaXkgcGFyYW1ldHIgbWF2anVkOiA8c3BhbiBjbGFzcz0iaGlnaGxpZ2h0Ij5ib3NpbSAoUCk8L3NwYW4+LCA8c3BhbiBjbGFzcz0iaGlnaGxpZ2h0Ij5oYWptIChWKTwvc3Bhbj4gdmEgPHNwYW4gY2xhc3M9ImhpZ2hsaWdodCI+aGFyb3JhdCAoVCk8L3NwYW4+LjwvcD4KPHAgc3R5bGU9Im1hcmdpbi10b3A6OHB4Ij5HYXpuaW5nIG1hc3Nhc2kgKDxpPm08L2k+ID0gY29uc3QpIG8nemdhcm1hcyBibydsZ2FuZGEsIHBhcmFtZXRybGFyZGFuIGJpcmkgbyd6Z2FybWFzIHVzaGxhbmliLCBxb2xnYW4gaWtraXRhc2luaW5nIG8nemdhcmlzaGkgYmlsYW4ga2VjaGFkaWdhbiBqYXJheW9ubGFyIDxzdHJvbmc+aXpvamFyYXlvbmxhcjwvc3Ryb25nPiBkZXlpbGFkaS48L3A+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJwbGFuLWl0ZW0iPgo8aDI+PHNwYW4+Mjwvc3Bhbj5Jem9iYXJpayBqYXJheW9uIHZhIEdleS1MdXNzYWsgcW9udW5pPC9oMj4KPHA+PHN0cm9uZz5Jem9iYXJpayBqYXJheW9uPC9zdHJvbmc+IOKAlCBvJ3pnYXJtYXMgYm9zaW1kYSAoPGk+UDwvaT4gPSBjb25zdCkga2VjaGFkaWdhbiB0ZXJtb2RpbmFtaWsgamFyYXlvbmRpci48L3A+CjxwIHN0eWxlPSJtYXJnaW4tdG9wOjZweCI+R2V5LUx1c3NhayBxb251bmlnYSBrbydyYSwgbyd6Z2FybWFzIGJvc2ltZGEgYmVyaWxnYW4gbWFzc2FsaSBnYXpuaW5nIGhham1pIHVuaW5nIGFic29seXV0IGhhcm9yYXRpZ2EgdG8nZydyaSBtdXRhbm9zaWI6PC9wPgo8ZGl2IGNsYXNzPSJmb3JtdWxhLWJveCI+ViAvIFQgPSBjb25zdCAmbmJzcDsmbmJzcDsgeW9raSAmbmJzcDsmbmJzcDsgVuKCgSAvIFTigoEgPSBW4oKCIC8gVOKCgjwvZGl2Pgo8cD5IYXJvcmF0IG9ydGlzaGkgYmlsYW4gZ2F6IG1vbGVrdWxhbGFyaW5pbmcgaGFyYWthdGkga3VjaGF5YWRpLiBCb3NpbSBvJ3pnYXJtYXMgcW9saXNoaSB1Y2h1biBwb3JzaGVuIHl1cW9yaWdhIHNpbGppeWRpIHZhIGdheiBoYWptaSBvcnRhZGkuPC9wPgo8L2Rpdj4KPGRpdiBjbGFzcz0icGxhbi1pdGVtIj4KPGgyPjxzcGFuPjM8L3NwYW4+SXpvYmFyaWsgamFyYXlvbmRhIGJhamFyaWxnYW4gaXNoPC9oMj4KPHA+R2F6IHFpemRpcmlsZ2FuZGEga2VuZ2F5YWRpIHZhIHBvcnNoZW5uaSB5dXFvcmlnYSBzdXJhZGkuIEJ1bmRhIGdheiB0YXNocWkga3VjaGxhcmdhIHFhcnNoaSA8c3BhbiBjbGFzcz0iaGlnaGxpZ2h0Ij5tZXhhbmlrIGlzaDwvc3Bhbj4gYmFqYXJhZGkuPC9wPgo8ZGl2IGNsYXNzPSJmb3JtdWxhLWJveCI+QSA9IFAgwrcgzpRWID0gUCDCtyAoVuKCgiDiiJIgVuKCgSk8L2Rpdj4KPHA+TWVuZGVsZXllduKAk0tsYXBleXJvbiB0ZW5nbGFtYXNpZGFuIGZveWRhbGFuaWI6PC9wPgo8ZGl2IGNsYXNzPSJmb3JtdWxhLWJveCI+QSA9IM69IMK3IFIgwrcgzpRUPC9kaXY+Cjx1bD4KPGxpPjxzdHJvbmc+QTwvc3Ryb25nPiDigJQgZ2F6IGJhamFyZ2FuIGlzaCAoSik8L2xpPgo8bGk+PHN0cm9uZz5QPC9zdHJvbmc+IOKAlCBvJ3pnYXJtYXMgYm9zaW0gKFBhKTwvbGk+CjxsaT48c3Ryb25nPs6UVjwvc3Ryb25nPiDigJQgaGFqbSBvJ3pnYXJpc2hpIChtwrMpPC9saT4KPGxpPjxzdHJvbmc+zr08L3N0cm9uZz4g4oCUIG1vZGRhIG1pcWRvcmkgKG1vbCk8L2xpPgo8bGk+PHN0cm9uZz5SPC9zdHJvbmc+ID0gOC4zMTQgSi8obW9swrdLKTwvbGk+CjwvdWw+CjwvZGl2Pgo8L2Rpdj4KPC9kaXY+Cgo8c2NyaXB0Pgpjb25zdCBwaXN0b25DYW52YXM9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Bpc3RvbkNhbnZhcycpLHBDdHg9cGlzdG9uQ2FudmFzLmdldENvbnRleHQoJzJkJyk7CmNvbnN0IGdyYXBoQ2FudmFzPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdncmFwaENhbnZhcycpLGdDdHg9Z3JhcGhDYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKY29uc3Qgc2xpZGVyPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0ZW1wU2xpZGVyJyk7CmNvbnN0IHRlbXBEaXNwbGF5PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0ZW1wRGlzcGxheScpLHZvbERpc3BsYXk9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3ZvbERpc3BsYXknKTsKY29uc3QgZGVsdGFURGlzcGxheT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZGVsdGFURGlzcGxheScpLHdvcmtEaXNwbGF5PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd3b3JrRGlzcGxheScpOwpjb25zdCBUMD0zMDAsUD0xMDAwMDAsbj0xLFI9OC4zMTQ7bGV0IFQ9MzAwOwpsZXQgbW9sZWN1bGVzPVtdOwpmb3IobGV0IGk9MDtpPDM1O2krKykgbW9sZWN1bGVzLnB1c2goe3g6TWF0aC5yYW5kb20oKSoxNTArNjUseTpNYXRoLnJhbmRvbSgpKjcwKzE2MCx2eDooTWF0aC5yYW5kb20oKS0uNSkqMS44LHZ5OihNYXRoLnJhbmRvbSgpLS41KSoxLjh9KTsKCmZ1bmN0aW9uIHZvbHVtZSh0KXtyZXR1cm4gbipSKnQvUH0KZnVuY3Rpb24gZHJhd1Bpc3RvbigpewpwQ3R4LmNsZWFyUmVjdCgwLDAsMjgwLDMyMCk7CmNvbnN0IHg9NTAsdz0xODAsYm90dG9tPTI2MCxtaW5IPTgwLG1heEg9MjAwOwpjb25zdCBoPW1pbkgrKChULTIwMCkvMzAwKSoobWF4SC1taW5IKSxweT1ib3R0b20taDsKcEN0eC5maWxsU3R5bGU9J3JnYmEoMjMxLDc2LDYwLC4xNSknO3BDdHguZmlsbFJlY3QoeCxweSx3LGgpOwpwQ3R4LnN0cm9rZVN0eWxlPScjNDc1NTY5JztwQ3R4LmxpbmVXaWR0aD00OwpwQ3R4LmJlZ2luUGF0aCgpO3BDdHgubW92ZVRvKHgsNDApO3BDdHgubGluZVRvKHgsYm90dG9tKTtwQ3R4LmxpbmVUbyh4K3csYm90dG9tKTtwQ3R4LmxpbmVUbyh4K3csNDApO3BDdHguc3Ryb2tlKCk7CnBDdHguZmlsbFN0eWxlPScjOTRhM2I4JztwQ3R4LmZpbGxSZWN0KHgtNSxweS04LHcrMTAsMTYpOwpwQ3R4LmZpbGxTdHlsZT0nIzQ3NTU2OSc7cEN0eC5maWxsUmVjdCh4K3cvMi00LDI1LDgscHktMjUpOwppZihUPjIwMCl7CmxldCBmPShULTIwMCkvMzAwOwpwQ3R4LmZpbGxTdHlsZT0nI2YzOWMxMic7cEN0eC5iZWdpblBhdGgoKTtwQ3R4Lm1vdmVUbyg5MCwyNjcpO3BDdHgucXVhZHJhdGljQ3VydmVUbygxNDAsMjY3KzI4KmYsMTkwLDI2Nyk7cEN0eC5xdWFkcmF0aWNDdXJ2ZVRvKDE0MCwyNTAtMTgqZiw5MCwyNjcpO3BDdHguZmlsbCgpOwpwQ3R4LmZpbGxTdHlsZT0nI2U3NGMzYyc7cEN0eC5iZWdpblBhdGgoKTtwQ3R4Lm1vdmVUbygxMTAsMjY3KTtwQ3R4LnF1YWRyYXRpY0N1cnZlVG8oMTQwLDI2NysxOCpmLDE3MCwyNjcpO3BDdHgucXVhZHJhdGljQ3VydmVUbygxNDAsMjU3LTEwKmYsMTEwLDI2Nyk7cEN0eC5maWxsKCk7Cn0KY29uc3Qgc3BlZWQ9LjcrVC8zMDA7Cm1vbGVjdWxlcy5mb3JFYWNoKG09PnsKbS54Kz1tLnZ4KnNwZWVkO20ueSs9bS52eSpzcGVlZDsKaWYobS54PHgrN3x8bS54Pngrdy03KW0udngqPS0xOwppZihtLnk8cHkrOHx8bS55PmJvdHRvbS04KW0udnkqPS0xOwptLng9TWF0aC5tYXgoeCs3LE1hdGgubWluKHgrdy03LG0ueCkpO20ueT1NYXRoLm1heChweSs4LE1hdGgubWluKGJvdHRvbS04LG0ueSkpOwpwQ3R4LmZpbGxTdHlsZT0nIzM0OThkYic7cEN0eC5iZWdpblBhdGgoKTtwQ3R4LmFyYyhtLngsbS55LDMsMCxNYXRoLlBJKjIpO3BDdHguZmlsbCgpOwp9KTsKcEN0eC5maWxsU3R5bGU9JyMyYzNlNTAnO3BDdHguZm9udD0nMTNweCBBcmlhbCc7cEN0eC5maWxsVGV4dCgnUCA9IGNvbnN0Jyw4OCwxOCk7cEN0eC5maWxsVGV4dCgnVCA9ICcrVCsnIEsnLDkyLDMwNSk7Cn0KZnVuY3Rpb24gZHJhd0dyYXBoKCl7CmdDdHguY2xlYXJSZWN0KDAsMCwyODAsMzIwKTtjb25zdCBMPTQ1LEI9Mjc1LFJnPTI2MCxUb3A9MzU7CmdDdHguc3Ryb2tlU3R5bGU9JyMzMzQxNTUnO2dDdHgubGluZVdpZHRoPTI7Z0N0eC5iZWdpblBhdGgoKTtnQ3R4Lm1vdmVUbyhMLFRvcCk7Z0N0eC5saW5lVG8oTCxCKTtnQ3R4LmxpbmVUbyhSZyxCKTtnQ3R4LnN0cm9rZSgpOwpnQ3R4LmZpbGxTdHlsZT0nIzMzNDE1NSc7Z0N0eC5mb250PScxMnB4IEFyaWFsJztnQ3R4LmZpbGxUZXh0KCdWIChMKScsOCw0OCk7Z0N0eC5maWxsVGV4dCgnVCAoSyknLDIyNSwyOTgpOwpnQ3R4LmZpbGxUZXh0KCcwJywzMSwyNzkpO2dDdHguZmlsbFRleHQoJzIwMCcsNjgsMjk0KTtnQ3R4LmZpbGxUZXh0KCczMDAnLDEyOCwyOTQpO2dDdHguZmlsbFRleHQoJzUwMCcsMjMyLDI5NCk7CmdDdHguc3Ryb2tlU3R5bGU9JyNlNzRjM2MnO2dDdHgubGluZVdpZHRoPTM7Z0N0eC5iZWdpblBhdGgoKTsKZm9yKGxldCB0PTIwMDt0PD01MDA7dCsrKXtsZXQgeD1MKyh0LTIwMCkvKDMwMCkqKFJnLUwpLHY9dm9sdW1lKHQpKjEwMDA7bGV0IHk9Qi0odi81MCkqKEItVG9wKTtpZih0PT09MjAwKWdDdHgubW92ZVRvKHgseSk7ZWxzZSBnQ3R4LmxpbmVUbyh4LHkpfWdDdHguc3Ryb2tlKCk7CmxldCB4PUwrKFQtMjAwKS8zMDAqKFJnLUwpLHk9Qi0odm9sdW1lKFQpKjEwMDAvNTApKihCLVRvcCk7CmdDdHguZmlsbFN0eWxlPScjMjk4MGI5JztnQ3R4LmJlZ2luUGF0aCgpO2dDdHguYXJjKHgseSw2LDAsTWF0aC5QSSoyKTtnQ3R4LmZpbGwoKTsKZ0N0eC5maWxsU3R5bGU9JyMzMzQxNTUnO2dDdHguZmlsbFRleHQoJ1YvVCA9IGNvbnN0Jyw5MCwyNSk7Cn0KZnVuY3Rpb24gdXBkYXRlKCl7ClQ9K3NsaWRlci52YWx1ZTtsZXQgVj12b2x1bWUoVCksVjA9dm9sdW1lKFQwKSxkVD1ULVQwLEE9UCooVi1WMCk7CnRlbXBEaXNwbGF5LnRleHRDb250ZW50PVQrJyBLJzt2b2xEaXNwbGF5LnRleHRDb250ZW50PShWKjEwMDApLnRvRml4ZWQoMSkrJyBMJzsKZGVsdGFURGlzcGxheS50ZXh0Q29udGVudD0oZFQ+PTA/JysnOicnKStkVCsnIEsnO3dvcmtEaXNwbGF5LnRleHRDb250ZW50PShBPj0wPycrJzonJykrQS50b0ZpeGVkKDEpKycgSic7CmRyYXdQaXN0b24oKTtkcmF3R3JhcGgoKTsKfQpzbGlkZXIuYWRkRXZlbnRMaXN0ZW5lcignaW5wdXQnLHVwZGF0ZSk7CnVwZGF0ZSgpOwpzZXRJbnRlcnZhbChkcmF3UGlzdG9uLDQwKTsKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg==&quot;&gt;&lt;/iframe&gt;&lt;iframe id=&quot;frame4&quot; title=&quot;5. Izoxorik jarayon&quot; class=&quot;frame&quot; loading=&quot;eager&quot; data-b64=&quot;PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InV6Ij4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgo8dGl0bGU+OS1zaW5mIGZpemlrYSDigJQgSXpveG9yaWsgamFyYXlvbjwvdGl0bGU+CjxzdHlsZT4KKntib3gtc2l6aW5nOmJvcmRlci1ib3h9Ym9keXttYXJnaW46MDtmb250LWZhbWlseTpBcmlhbCxzYW5zLXNlcmlmO2JhY2tncm91bmQ6I2VlZjNmODtjb2xvcjojMTcyMTJifQouY29udGFpbmVye21heC13aWR0aDoxMTAwcHg7bWFyZ2luOmF1dG87cGFkZGluZzoyMHB4fQpoZWFkZXJ7YmFja2dyb3VuZDojMTczMjRkO2NvbG9yOndoaXRlO2JvcmRlci1yYWRpdXM6MThweDtwYWRkaW5nOjI0cHg7bWFyZ2luLWJvdHRvbToxOHB4fQpoMSxoMixoM3ttYXJnaW4tdG9wOjB9LmNhcmR7YmFja2dyb3VuZDp3aGl0ZTtib3JkZXItcmFkaXVzOjE2cHg7cGFkZGluZzoyMHB4O21hcmdpbjoxOHB4IDA7Ym94LXNoYWRvdzowIDVweCAxOHB4ICMwMDAwMDAxMn0KLmdyaWR7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczoxZnIgMWZyO2dhcDoxOHB4fS5jb250cm9sc3tkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjEwcHg7YWxpZ24taXRlbXM6Y2VudGVyfQpidXR0b257Ym9yZGVyOjA7Ym9yZGVyLXJhZGl1czoxMHB4O3BhZGRpbmc6MTFweCAxNnB4O2JhY2tncm91bmQ6IzI1NjNlYjtjb2xvcjp3aGl0ZTtmb250LXdlaWdodDpib2xkO2N1cnNvcjpwb2ludGVyfQpidXR0b24uc2Vjb25kYXJ5e2JhY2tncm91bmQ6IzY0NzQ4Yn1pbnB1dFt0eXBlPXJhbmdlXXt3aWR0aDoyMjBweH0KLnN0YXR7ZGlzcGxheTppbmxpbmUtYmxvY2s7YmFja2dyb3VuZDojZWRmMmY3O3BhZGRpbmc6MTBweCAxNHB4O2JvcmRlci1yYWRpdXM6MTBweDttYXJnaW46NHB4fQpjYW52YXN7d2lkdGg6MTAwJTtoZWlnaHQ6MzYwcHg7Ym9yZGVyOjFweCBzb2xpZCAjZDdkZWU3O2JvcmRlci1yYWRpdXM6MTJweDtiYWNrZ3JvdW5kOiNmYmZkZmZ9Ci5mb3JtdWxhe2ZvbnQtc2l6ZToxLjI1cmVtO2JhY2tncm91bmQ6I2YxZjVmOTtwYWRkaW5nOjE0cHg7Ym9yZGVyLWxlZnQ6NXB4IHNvbGlkICMyNTYzZWI7Ym9yZGVyLXJhZGl1czo4cHg7bWFyZ2luOjEycHggMH0KLm5vdGV7YmFja2dyb3VuZDojZmZmN2Q2O3BhZGRpbmc6MTNweDtib3JkZXItcmFkaXVzOjEwcHh9LmFuc3dlcntiYWNrZ3JvdW5kOiNlOGY3ZWU7cGFkZGluZzoxM3B4O2JvcmRlci1yYWRpdXM6MTBweH0KdGFibGV7d2lkdGg6MTAwJTtib3JkZXItY29sbGFwc2U6Y29sbGFwc2V9dGgsdGR7Ym9yZGVyOjFweCBzb2xpZCAjZDdkZWU3O3BhZGRpbmc6OXB4O3RleHQtYWxpZ246bGVmdH0KQG1lZGlhKG1heC13aWR0aDo3MDBweCl7LmdyaWR7Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmcn0uY29udGFpbmVye3BhZGRpbmc6MTBweH1jYW52YXN7aGVpZ2h0OjMwMHB4fX0KPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KPGRpdiBjbGFzcz0iY29udGFpbmVyIj4KPGhlYWRlcj4KPGgxPjktc2luZiBmaXppa2E6IEl6b3hvcmlrIGphcmF5b248L2gxPgo8cD4zIHRhIHJlamEgYm/igJh5aWNoYSBuYXphcml5YSwgYW5pbWF0c2l5YSwgc2ltdWx5YXRzaXlhIHZhIG1hc2FsYWxhci48L3A+CjwvaGVhZGVyPgoKPHNlY3Rpb24gY2xhc3M9ImNhcmQiPgo8aDI+MS4gSXpveG9yaWsgamFyYXlvbmRhIGhvbGF0IHRlbmdsYW1hbGFyaTwvaDI+CjxwPkl6b3hvcmlrIGphcmF5b25kYSBnYXpuaW5nIG1hc3Nhc2kgdmEgaGFqbWkgb+KAmHpnYXJtYXlkaTogPGI+bSA9IGNvbnN0LCBWID0gY29uc3Q8L2I+LjwvcD4KPGRpdiBjbGFzcz0iZm9ybXVsYSI+cFYgPSAobS9NKVJUICZuYnNwOyDihpIgJm5ic3A7IHAvVCA9IGNvbnN0ICZuYnNwOyDihpIgJm5ic3A7IHDigoEvVOKCgSA9IHDigoIvVOKCgjwvZGl2Pgo8cD5IYXJvcmF0IG9zaGdhbmRhIG1vbGVrdWxhbGFyIHRlenJvcSBoYXJha2F0IHFpbGFkaSB2YSBxYXR0aXEgaWRpc2ggZGV2b3JsYXJpZ2Ega3VjaGxpcm9xIGhhbWRhIHRlei10ZXogdXJpbGFkaS4gSGFqbSBv4oCYemdhcm1hZ2FuaSB1Y2h1biBib3NpbSBvcnRhZGkuPC9wPgoKPGRpdiBjbGFzcz0iZ3JpZCI+CjxkaXY+CjxoMz5HYXogbW9sZWt1bGFsYXJpIGFuaW1hdHNpeWFzaTwvaDM+CjxjYW52YXMgaWQ9Imdhc0NhbnZhcyIgd2lkdGg9IjUyMCIgaGVpZ2h0PSIzNjAiPjwvY2FudmFzPgo8ZGl2IGNsYXNzPSJjb250cm9scyI+CjxsYWJlbD5UID0gPGIgaWQ9InRlbXBUZXh0Ij4zMDA8L2I+IEs8L2xhYmVsPgo8aW5wdXQgaWQ9InRlbXAiIHR5cGU9InJhbmdlIiBtaW49IjE1MCIgbWF4PSI3MDAiIHZhbHVlPSIzMDAiPgo8YnV0dG9uIGlkPSJwYXVzZUdhcyIgY2xhc3M9InNlY29uZGFyeSI+UGF1emE8L2J1dHRvbj4KPC9kaXY+CjxkaXY+CjxzcGFuIGNsYXNzPSJzdGF0Ij5Cb3NpbTogPGIgaWQ9InByZXNzdXJlVGV4dCI+MTAwLjA8L2I+IGtQYTwvc3Bhbj4KPHNwYW4gY2xhc3M9InN0YXQiPlRlemxpazogPGIgaWQ9InNwZWVkVGV4dCI+MS4wMDwvYj54PC9zcGFuPgo8L2Rpdj4KPC9kaXY+CjxkaXY+CjxoMz5Jem94b3JpayBib2figJhsYW5pc2g8L2gzPgo8Y2FudmFzIGlkPSJncmFwaDEiIHdpZHRoPSI1MjAiIGhlaWdodD0iMzYwIj48L2NhbnZhcz4KPHAgY2xhc3M9Im5vdGUiPjxiPlNpbXVseWF0c2l5YTo8L2I+IFQgbmkgb+KAmHpnYXJ0aXJpbmcuIEJvc2ltIFQgZ2EgdG/igJhn4oCYcmkgcHJvcG9yc2lvbmFsIHJhdmlzaGRhIG/igJh6Z2FyYWRpLjwvcD4KPC9kaXY+CjwvZGl2Pgo8L3NlY3Rpb24+Cgo8c2VjdGlvbiBjbGFzcz0iY2FyZCI+CjxoMj4yLiBTaGFybCBxb251bmk8L2gyPgo8cD5P4oCYemdhcm1hcyBoYWptZGEgYmVyaWxnYW4gbWFzc2FsaSBnYXpuaW5nIGJvc2ltaSBhYnNvbHl1dCBoYXJvcmF0Z2EgdG/igJhn4oCYcmkgcHJvcG9yc2lvbmFsLjwvcD4KPGRpdiBjbGFzcz0iZm9ybXVsYSI+cC9UID0gY29uc3QgJm5ic3A7Jm5ic3A7IHlva2kgJm5ic3A7Jm5ic3A7IHDigoEvVOKCgSA9IHDigoIvVOKCgjwvZGl2Pgo8cD48Yj5LZWx2aW4gc2hrYWxhc2k6PC9iPiBUKEspID0gdCjCsEMpICsgMjczLjwvcD4KPHA+TWFzYWxhbiwgeW9waXEgaWRpc2ggcWl6ZGlyaWxzYSwgbW9sZWt1bGFsYXIgdGV6bGFzaGFkaSB2YSBib3NpbSBvcnRhZGkuIEF2dG9tb2JpbCBzaGluYWxhcmlkYSBoYW0gaGFyb3JhdCBv4oCYemdhcmlzaGkgYm9zaW1nYSB0YeKAmXNpciBxaWxhZGkuPC9wPgo8aDM+RGluYW1payBw4oCTVCBncmFmaWs8L2gzPgo8Y2FudmFzIGlkPSJncmFwaDIiIHdpZHRoPSI5MDAiIGhlaWdodD0iNDAwIj48L2NhbnZhcz4KPGRpdiBjbGFzcz0iY29udHJvbHMiPgo8bGFiZWw+VCA9IDxiIGlkPSJ0MiI+MzAwPC9iPiBLPC9sYWJlbD4KPGlucHV0IGlkPSJ0ZW1wMiIgdHlwZT0icmFuZ2UiIG1pbj0iMjAwIiBtYXg9IjcwMCIgdmFsdWU9IjMwMCI+CjxidXR0b24gaWQ9InJlc2V0MiIgY2xhc3M9InNlY29uZGFyeSI+UWF5dGEgYm9zaGxhc2g8L2J1dHRvbj4KPC9kaXY+CjxkaXYgY2xhc3M9InN0YXQiPnAgPSA8YiBpZD0icDIiPjEwMC4wPC9iPiBrUGE8L2Rpdj4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gY2xhc3M9ImNhcmQiPgo8aDI+My4gSXpveG9yYSBjaGl6aWfigJhpPC9oMj4KPHA+cOKAk1Qga29vcmRpbmF0YWxhcmlkYSBpem94b3JpayBqYXJheW9uIHRv4oCYZ+KAmHJpIGNoaXppcSBiaWxhbiBpZm9kYWxhbmFkaTo8L3A+CjxkaXYgY2xhc3M9ImZvcm11bGEiPnAgPSAobVIvTVYpVDwvZGl2Pgo8cD5IYWptIGtpY2hpayBib+KAmGxzYSwgY2hpemlxIHRpa3JvcTsgaGFqbSBrYXR0YSBib+KAmGxzYSwgY2hpemlxIHlvdGlxcm9xIGJv4oCYbGFkaS48L3A+CjxjYW52YXMgaWQ9Imlzb0NhbnZhcyIgd2lkdGg9IjkwMCIgaGVpZ2h0PSI0MzAiPjwvY2FudmFzPgo8ZGl2IGNsYXNzPSJjb250cm9scyI+CjxsYWJlbD5IYWptIFYgPSA8YiBpZD0idm9sVGV4dCI+MS4wMDwvYj4gTDwvbGFiZWw+CjxpbnB1dCBpZD0idm9sdW1lIiB0eXBlPSJyYW5nZSIgbWluPSIwLjUiIG1heD0iMyIgc3RlcD0iMC4xIiB2YWx1ZT0iMSI+CjxidXR0b24gaWQ9ImFuaW1hdGVJc28iPkFuaW1hdHNpeWFuaSBib3NobGFzaDwvYnV0dG9uPgo8L2Rpdj4KPGRpdiBjbGFzcz0ic3RhdCIgaWQ9Imlzb05vdGUiPlYga2FtYXlnYW5kYSBpem94b3JhIHFpeWFsaWdpIG9zaGFkaS48L2Rpdj4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gY2xhc3M9ImNhcmQiPgo8aDI+TmFtdW5hdml5IG1hc2FsYTwvaDI+CjxwPjxiPk1hc2FsYTo8L2I+IEdheiAyODAgSyBkYW4gNTQwIEsgZ2FjaGEgaXpveG9yaWsgcWl6ZGlyaWxnYW5kYSB1bmluZyBib3NpbWkgMzkga1BhIGdhIG9ydGRpLiBEYXN0bGFia2kgdmEgb3hpcmdpIGJvc2ltbmkgdG9waW5nLjwvcD4KPHA+PGI+QmVyaWxnYW46PC9iPiBU4oKBID0gMjgwIEssIFTigoIgPSA1NDAgSywgzpRwID0gMzkga1BhLjwvcD4KPHA+PGI+Rm9ybXVsYTo8L2I+IHDigoEvVOKCgSA9IHDigoIvVOKCgiB2YSBw4oKCIOKIkiBw4oKBID0gMzkuPC9wPgo8cD5w4oKCID0gcOKCgSDCtyA1NDAvMjgwLiBTaHVuaW5nIHVjaHVuOjwvcD4KPGRpdiBjbGFzcz0iZm9ybXVsYSI+cOKCgSg1NDAvMjgwIOKIkiAxKSA9IDM5PC9kaXY+CjxkaXYgY2xhc3M9ImZvcm11bGEiPnDigoEgPSA0MiBrUGEgJm5ic3A7Jm5ic3A7IHZhICZuYnNwOyZuYnNwOyBw4oKCID0gODEga1BhPC9kaXY+CjxkaXYgY2xhc3M9ImFuc3dlciI+PGI+SmF2b2I6PC9iPiBkYXN0bGFia2kgYm9zaW0gNDIga1BhLCBveGlyZ2kgYm9zaW0gODEga1BhLjwvZGl2Pgo8L3NlY3Rpb24+Cgo8c2VjdGlvbiBjbGFzcz0iY2FyZCI+CjxoMj5NdXN0YWhrYW1sYXNoPC9oMj4KPG9sPgo8bGk+WW9waXEgcWF0dGlxIGlkaXNoIHFpemRpcmlsZ2FuZGEgbmltYSB1Y2h1biBib3NpbSBvcnRhZGk/PC9saT4KPGxpPjMwMCBLIHZhIDYwMCBLIGhhcm9yYXRkYWdpIGJpciB4aWwgaGFqbWxpIGdhemxhcmRhbiBxYXlzaSBiaXJpbmluZyBib3NpbWkga2F0dGE/IE5lY2hhIG1hcnRhPzwvbGk+CjxsaT5Jem94b3JpayBqYXJheW9uZGEgaGFyb3JhdCAyIG1hcnRhIG9zaHNhLCBib3NpbSBxYW5kYXkgb+KAmHpnYXJhZGk/PC9saT4KPC9vbD4KPGgzPk11c3RhcWlsIG1hc2FsYWxhcjwvaDM+CjxvbD4KPGxpPkdheiAzMDAgSyBkYW4gNDUwIEsgZ2FjaGEgcWl6ZGlyaWxkaS4gRGFzdGxhYmtpIGJvc2ltIDEyMCBrUGEuIE94aXJnaSBib3NpbW5pIHRvcGluZy48L2xpPgo8bGk+R2F6bmluZyBib3NpbWkgMTAwIGtQYS4gVSAzMDAgSyBkYW4gNjAwIEsgZ2FjaGEgcWl6ZGlyaWxkaS4gT3hpcmdpIGJvc2ltbmkgYW5pcWxhbmcuPC9saT4KPC9vbD4KPC9zZWN0aW9uPgoKPHNlY3Rpb24gY2xhc3M9ImNhcmQiPgo8aDI+QXNvc2l5IGZvcm11bGFsYXI8L2gyPgo8dGFibGU+Cjx0cj48dGg+VHVzaHVuY2hhPC90aD48dGg+Rm9ybXVsYTwvdGg+PC90cj4KPHRyPjx0ZD5NZW5kZWxleWV24oCTS2xhcGV5cm9uPC90ZD48dGQ+cFYgPSAobS9NKVJUPC90ZD48L3RyPgo8dHI+PHRkPkl6b3hvcmlrIGphcmF5b248L3RkPjx0ZD5WID0gY29uc3Q8L3RkPjwvdHI+Cjx0cj48dGQ+U2hhcmwgcW9udW5pPC90ZD48dGQ+cC9UID0gY29uc3Q8L3RkPjwvdHI+Cjx0cj48dGQ+SWtraSBob2xhdDwvdGQ+PHRkPnDigoEvVOKCgSA9IHDigoIvVOKCgjwvdGQ+PC90cj4KPHRyPjx0ZD5LZWx2aW48L3RkPjx0ZD5UID0gdCArIDI3MzwvdGQ+PC90cj4KPC90YWJsZT4KPC9zZWN0aW9uPgo8L2Rpdj4KCjxzY3JpcHQ+CmNvbnN0IGdhcz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZ2FzQ2FudmFzJyksIGdjPWdhcy5nZXRDb250ZXh0KCcyZCcpOwpjb25zdCB0ZW1wPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0ZW1wJyksIHRlbXBUZXh0PWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0ZW1wVGV4dCcpOwpjb25zdCBwcmVzc3VyZVRleHQ9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3ByZXNzdXJlVGV4dCcpLCBzcGVlZFRleHQ9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3NwZWVkVGV4dCcpOwpsZXQgcGFydGljbGVzPVtdLCBydW5uaW5nPXRydWU7CmZvcihsZXQgaT0wO2k8Mjg7aSsrKSBwYXJ0aWNsZXMucHVzaCh7eDozNStNYXRoLnJhbmRvbSgpKjQ1MCx5OjM1K01hdGgucmFuZG9tKCkqMjkwLHZ4OihNYXRoLnJhbmRvbSgpLS41KSoyLHZ5OihNYXRoLnJhbmRvbSgpLS41KSoyfSk7CmZ1bmN0aW9uIGdhc0RyYXcoKXsKICBsZXQgVD0rdGVtcC52YWx1ZSwgcz1NYXRoLnNxcnQoVC8zMDApLCBwPTEwMCpULzMwMDsKICB0ZW1wVGV4dC50ZXh0Q29udGVudD1UOyBwcmVzc3VyZVRleHQudGV4dENvbnRlbnQ9cC50b0ZpeGVkKDEpOyBzcGVlZFRleHQudGV4dENvbnRlbnQ9cy50b0ZpeGVkKDIpOwogIGdjLmNsZWFyUmVjdCgwLDAsNTIwLDM2MCk7IGdjLnN0cm9rZVN0eWxlPScjMTcyMTJiJzsgZ2MubGluZVdpZHRoPTQ7IGdjLnN0cm9rZVJlY3QoMTUsMTUsNDkwLDMzMCk7CiAgcGFydGljbGVzLmZvckVhY2gocT0+ewogICAgaWYocnVubmluZyl7cS54Kz1xLnZ4KnM7cS55Kz1xLnZ5KnM7aWYocS54PDIyfHxxLng+NDk4KXEudngqPS0xO2lmKHEueTwyMnx8cS55PjMzOClxLnZ5Kj0tMTt9CiAgICBnYy5iZWdpblBhdGgoKTtnYy5hcmMocS54LHEueSw1LDAsTWF0aC5QSSoyKTtnYy5maWxsU3R5bGU9JyMyNTYzZWInO2djLmZpbGwoKTsKICB9KTsKICBnYy5maWxsU3R5bGU9JyMxNzIxMmInO2djLmZvbnQ9JzE2cHggQXJpYWwnO2djLmZpbGxUZXh0KCdZb3BpcSBxYXR0aXEgaWRpc2gnLDE3MCwzMzUpOwogIHJlcXVlc3RBbmltYXRpb25GcmFtZShnYXNEcmF3KTsKfQpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncGF1c2VHYXMnKS5vbmNsaWNrPSgpPT57cnVubmluZz0hcnVubmluZztkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncGF1c2VHYXMnKS50ZXh0Q29udGVudD1ydW5uaW5nPydQYXV6YSc6J0Rhdm9tIGV0aXNoJ307Cmdhc0RyYXcoKTsKCmZ1bmN0aW9uIGRyYXdMaW5lKGNhbnZhcywgVCwgcCl7CiBsZXQgYz1jYW52YXMuZ2V0Q29udGV4dCgnMmQnKSx3PWNhbnZhcy53aWR0aCxoPWNhbnZhcy5oZWlnaHQ7Yy5jbGVhclJlY3QoMCwwLHcsaCk7CiBjLnN0cm9rZVN0eWxlPScjOTRhM2I4JztjLmxpbmVXaWR0aD0xOwogYy5iZWdpblBhdGgoKTtjLm1vdmVUbyg1NSxoLTQ1KTtjLmxpbmVUbyh3LTIwLGgtNDUpO2MubW92ZVRvKDU1LGgtNDUpO2MubGluZVRvKDU1LDIwKTtjLnN0cm9rZSgpOwogYy5maWxsU3R5bGU9JyMxNzIxMmInO2MuZm9udD0nMTVweCBBcmlhbCc7Yy5maWxsVGV4dCgnVCAoSyknLHctNzAsaC0xOCk7Yy5maWxsVGV4dCgncCAoa1BhKScsMTAsMjgpOwogYy5zdHJva2VTdHlsZT0nI2RjMjYyNic7Yy5saW5lV2lkdGg9MztjLmJlZ2luUGF0aCgpOwogZm9yKGxldCB4PTA7eDw9dy03NTt4Kz0zKXtsZXQgdHg9MTUwK3gqNTUwLyh3LTc1KSxweT1oLTQ1LSgxMDAqdHgvMzAwKSoyLjE7aWYoeD09PTApYy5tb3ZlVG8oNTUreCxweSk7ZWxzZSBjLmxpbmVUbyg1NSt4LHB5KX1jLnN0cm9rZSgpOwogbGV0IHg9NTUrKFQtMTUwKSoody03NSkvNTUwLCB5PWgtNDUtcCoyLjE7CiBjLmZpbGxTdHlsZT0nIzI1NjNlYic7Yy5iZWdpblBhdGgoKTtjLmFyYyh4LHksNywwLE1hdGguUEkqMik7Yy5maWxsKCk7CiBjLmZpbGxUZXh0KCdUPScrVCsnIEssIHA9JytwLnRvRml4ZWQoMSkrJyBrUGEnLDcwLDQ1KTsKfQpmdW5jdGlvbiB1cGRhdGVHKCl7ZHJhd0xpbmUoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dyYXBoMScpLCt0ZW1wLnZhbHVlLDEwMCp0ZW1wLnZhbHVlLzMwMCl9CnRlbXAub25pbnB1dD11cGRhdGVHO3VwZGF0ZUcoKTsKCmNvbnN0IHRlbXAyPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0ZW1wMicpOwpmdW5jdGlvbiB1cGRhdGUyKCl7bGV0IFQ9K3RlbXAyLnZhbHVlLHA9MTAwKlQvMzAwO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0MicpLnRleHRDb250ZW50PVQ7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3AyJykudGV4dENvbnRlbnQ9cC50b0ZpeGVkKDEpO2RyYXdMaW5lKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdncmFwaDInKSxULHApfQp0ZW1wMi5vbmlucHV0PXVwZGF0ZTI7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jlc2V0MicpLm9uY2xpY2s9KCk9Pnt0ZW1wMi52YWx1ZT0zMDA7dXBkYXRlMigpfTt1cGRhdGUyKCk7Cgpjb25zdCBpc289ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2lzb0NhbnZhcycpLCBpYz1pc28uZ2V0Q29udGV4dCgnMmQnKSwgdm9sPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd2b2x1bWUnKTsKZnVuY3Rpb24gZHJhd0lzbyhUcG9pbnQ9MCl7CiBsZXQgVj0rdm9sLnZhbHVlLHc9aXNvLndpZHRoLGg9aXNvLmhlaWdodDtpYy5jbGVhclJlY3QoMCwwLHcsaCk7CiBpYy5zdHJva2VTdHlsZT0nIzk0YTNiOCc7aWMubGluZVdpZHRoPTE7aWMuYmVnaW5QYXRoKCk7aWMubW92ZVRvKDYwLGgtNTUpO2ljLmxpbmVUbyh3LTIwLGgtNTUpO2ljLm1vdmVUbyg2MCxoLTU1KTtpYy5saW5lVG8oNjAsMjUpO2ljLnN0cm9rZSgpOwogaWMuZmlsbFN0eWxlPScjMTcyMTJiJztpYy5mb250PScxNnB4IEFyaWFsJztpYy5maWxsVGV4dCgnVCAoSyknLHctNzAsaC0yMCk7aWMuZmlsbFRleHQoJ3AgKGtQYSknLDEyLDMwKTsKIFswLjUsMSwyLDNdLmZvckVhY2goKHYsaSk9PntsZXQgaz0xODAvdjtpYy5zdHJva2VTdHlsZT1bJyMyNTYzZWInLCcjZGMyNjI2JywnIzE2YTM0YScsJyM5MzMzZWEnXVtpXTtpYy5saW5lV2lkdGg9MztpYy5iZWdpblBhdGgoKTtmb3IobGV0IFQ9MDtUPD03MDA7VCs9NSl7bGV0IHg9NjArVCoody05MCkvNzAwLHk9aC01NS1rKlQqMC4zNTtpZihUPT09MClpYy5tb3ZlVG8oeCx5KTtlbHNlIGljLmxpbmVUbyh4LHkpfWljLnN0cm9rZSgpO2ljLmZpbGxTdHlsZT1pYy5zdHJva2VTdHlsZTtpYy5maWxsVGV4dCgnVj0nK3YrJyBMJyx4PTY1MCw2NStpKjI1KX0pOwogbGV0IHg9NjArVHBvaW50Kih3LTkwKS83MDAseT1oLTU1LSgxODAvVikqVHBvaW50KjAuMzU7aWMuZmlsbFN0eWxlPScjMTExODI3JztpYy5iZWdpblBhdGgoKTtpYy5hcmMoeCx5LDgsMCxNYXRoLlBJKjIpO2ljLmZpbGwoKTsKfQp2b2wub25pbnB1dD0oKT0+e2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd2b2xUZXh0JykudGV4dENvbnRlbnQ9KCt2b2wudmFsdWUpLnRvRml4ZWQoMSk7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2lzb05vdGUnKS50ZXh0Q29udGVudD0rdm9sLnZhbHVlPDEuMj8nSGFqbSBraWNoaWs6IGl6b3hvcmEgdGlrcm9xLic6K3ZvbC52YWx1ZT4yPydIYWptIGthdHRhOiBpem94b3JhIHlvdGlxcm9xLic6J0hham0gb+KAmHJ0YWNoYTogcWl5YWxpayBoYW0gb+KAmHJ0YWNoYS4nO2RyYXdJc28oKX07CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhbmltYXRlSXNvJykub25jbGljaz0oKT0+e2xldCBUPTA7ZnVuY3Rpb24gYSgpe1QrPTU7ZHJhd0lzbyhUKTtpZihUPDcwMClyZXF1ZXN0QW5pbWF0aW9uRnJhbWUoYSl9YSgpfTtkcmF3SXNvKCk7Cjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=&quot;&gt;&lt;/iframe&gt;
+&lt;script&gt;
+function decodeBase64Utf8(b64){const bin=atob(b64);const bytes=new Uint8Array(bin.length);for(let i=0;i&lt;bin.length;i++)bytes[i]=bin.charCodeAt(i);return new TextDecoder(&#x27;utf-8&#x27;).decode(bytes)}
+const frames=[...document.querySelectorAll(&#x27;.frame&#x27;)];
+frames.forEach(f=&gt;{f.srcdoc=decodeBase64Utf8(f.dataset.b64)});
+function showFrame(n){frames.forEach((f,i)=&gt;f.classList.toggle(&#x27;active&#x27;,i===n));document.querySelectorAll(&#x27;.tabs button&#x27;).forEach((b,i)=&gt;b.classList.toggle(&#x27;active&#x27;,i===n));window.scrollTo(0,0)}
+showFrame(0);
+&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+
+<script>
+function showPanel(n){
+  document.querySelectorAll('.panel').forEach((el,i)=>el.classList.toggle('active',i===n));
+  document.querySelectorAll('.tabs button').forEach((el,i)=>el.classList.toggle('active',i===n));
+}
+</script>
+</body>
+</html>
